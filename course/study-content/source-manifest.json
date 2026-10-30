@@ -1,0 +1,144 @@
+{
+  "sources": [
+    {
+      "id": "lecture-08-24",
+      "date": "2026-08-24",
+      "path": "Notes/STAT_611_Notes_08-24-2026.pdf",
+      "page_count": 6,
+      "sha256": "2394e5a04d750c9a3bfb8242a3901e54985f8e8d8ded2e4beb5fbfe0d9dfeaa3",
+      "extracted_text": "sources/STAT_611_Notes_08-24-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-08-26",
+      "date": "2026-08-26",
+      "path": "Notes/STAT_611_Notes_08-26-2026.pdf",
+      "page_count": 7,
+      "sha256": "8da6f67b11d764e00cec8147aadad1a88a6a390db1b67fa126cbc5ddb5eb03f2",
+      "extracted_text": "sources/STAT_611_Notes_08-26-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-08-31",
+      "date": "2026-08-31",
+      "path": "Notes/STAT_611_Notes_08-31-2026.pdf",
+      "page_count": 7,
+      "sha256": "30ecf7f602aa9a6a6bfeb254b19934f4dc124f1050cc955b57032ec4d8ba9db0",
+      "extracted_text": "sources/STAT_611_Notes_08-31-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-09-02",
+      "date": "2026-09-02",
+      "path": "Notes/STAT_611_Notes_09-02-2026.pdf",
+      "page_count": 7,
+      "sha256": "6c4247422b80eb41c11de52501ebd52946803668a60d44680c05f167bf798be2",
+      "extracted_text": "sources/STAT_611_Notes_09-02-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-09-09",
+      "date": "2026-09-09",
+      "path": "Notes/STAT_611_Notes_09-09-2026.pdf",
+      "page_count": 9,
+      "sha256": "3d368ed5ce0c7bf1bab733dcd7f3ca7254e161883c03f17305ecb8722c947afd",
+      "extracted_text": "sources/STAT_611_Notes_09-09-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-09-14",
+      "date": "2026-09-14",
+      "path": "Notes/STAT_611_Notes_09-14-2026.pdf",
+      "page_count": 9,
+      "sha256": "6a0c068ac6c882dc8446d16a7c66bc2b3f79f820755e8d5efddf32201cfaa261",
+      "extracted_text": "sources/STAT_611_Notes_09-14-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-09-16",
+      "date": "2026-09-16",
+      "path": "Notes/STAT_611_Notes_09-16-2026.pdf",
+      "page_count": 11,
+      "sha256": "4122d400e0a14bc9a16e12084c4d828f7c81846e6927e9f405d9a3831770f779",
+      "extracted_text": "sources/STAT_611_Notes_09-16-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-09-21",
+      "date": "2026-09-21",
+      "path": "Notes/STAT_611_Notes_09-21-2026.pdf",
+      "page_count": 12,
+      "sha256": "4cd3f6d73eb6cfdbc440a6cb8f38c65dae21704d5894222dca4df78b887934bb",
+      "extracted_text": "sources/STAT_611_Notes_09-21-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-09-23",
+      "date": "2026-09-23",
+      "path": "Notes/STAT_611_Notes_09-23-2026.pdf",
+      "page_count": 8,
+      "sha256": "a2e2fcadfe36cdbc0e44942a44fca57c8a2ca6395e4ad84cb9aba5fe679f0229",
+      "extracted_text": "sources/STAT_611_Notes_09-23-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-09-28",
+      "date": "2026-09-28",
+      "path": "Notes/STAT_611_Notes_09-28-2026.pdf",
+      "page_count": 11,
+      "sha256": "70c1882c9e441d74967cb8cf776f589a044e75335e9cf80313048424651505c9",
+      "extracted_text": "sources/STAT_611_Notes_09-28-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-09-30",
+      "date": "2026-09-30",
+      "path": "Notes/STAT_611_Notes_09-30-2026.pdf",
+      "page_count": 8,
+      "sha256": "4f1362eff1bbe26d0296105ecc3a35408a5046ef4a0e7652b23093bd495e09c2",
+      "extracted_text": "sources/STAT_611_Notes_09-30-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-10-05",
+      "date": "2026-10-05",
+      "path": "Notes/STAT_611_Notes_10-05-2026.pdf",
+      "page_count": 7,
+      "sha256": "e43ad33ca4932726f35acb9b28f5365349d41fb8605cde0868b2a2247d2e0756",
+      "extracted_text": "sources/STAT_611_Notes_10-05-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-10-07",
+      "date": "2026-10-07",
+      "path": "Notes/STAT_611_Notes_10-07-2026.pdf",
+      "page_count": 7,
+      "sha256": "38d7aa6084ee5eced43f04552f31a67380f68a483e9a263fda757d60b8bf9bba",
+      "extracted_text": "sources/STAT_611_Notes_10-07-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-10-12",
+      "date": "2026-10-12",
+      "path": "Notes/STAT_611_Notes_10-12-2026.pdf",
+      "page_count": 8,
+      "sha256": "cca04be53f704c3d9e26d740fb8204cd5fe1fa4c9ba8c4a192bab646e93c898f",
+      "extracted_text": "sources/STAT_611_Notes_10-12-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    },
+    {
+      "id": "lecture-10-14",
+      "date": "2026-10-14",
+      "path": "Notes/STAT_611_Notes_10-14-2026.pdf",
+      "page_count": 6,
+      "sha256": "7febfadff090670a2c077fe77153f3cb4e1ba60d86f48cc9b879515ef0a13c7d",
+      "extracted_text": "sources/STAT_611_Notes_10-14-2026.txt",
+      "reading_status": "All pages read as extracted text; selected equation/diagram pages visually checked"
+    }
+  ],
+  "syllabus": {
+    "path": "Syllabus STAT A611.docx",
+    "extracted_text": "sources/syllabus.txt"
+  },
+  "total_pdf_pages": 123
+}

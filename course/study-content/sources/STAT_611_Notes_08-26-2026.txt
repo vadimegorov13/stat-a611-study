@@ -1,0 +1,288 @@
+=== PDF PAGE 1 ===
+STAT A411/611 26 August 2026
+STAT A411/611 Lecture Notes
+Instructor: Rieken Venema Office: SSB 158E
+Office hours: MWF 12:00–12:45 Class: 2:30–3:45
+Lecture Plan and Review
+Today: Sections 6.3 and 6.4.
+Next week: Monday — Section 6.4; Wednesday — Chapter 1.
+Last Monday: Syllabus; course outline; statistics; descriptive statistics; inferential statistics.
+1 Section 6.1 — Review: Population and Random Sample
+A population has size 𝑁. A random sample drawn from that population is written
+{𝑥1, 𝑥2, . . . , 𝑥𝑛},
+where 𝑛 is the sample size.
+Population
+size 𝑁
+Random sample
+{𝑥1, . . . , 𝑥𝑛}
+sample size 𝑛
+Descriptive statistics
+summarize the sample
+Inferential statistics
+draw conclusions
+about the population
+2 Section 6.2 — Review: Data Types and Graphical Tools
+A variable may be numerical or non-numerical; datasets use the corresponding terminology.
+Variable
+Numerical
+Non-numerical
+Dataset
+Numerical / quantitative
+Non-numerical / qualitative / categorical
+For non-numerical datasets, standard displays include bar graphs and pie charts.
+(a) Bar graph. (b) Pie chart.
+1
+
+=== PDF PAGE 2 ===
+STAT A411/611 26 August 2026
+2.1 Numerical Datasets
+For numerical data, common displays include dotplots, stem-and-leaf plots, histograms, and ogives. The
+basic workflow is
+Data − → Table − → Graph.
+Display Role
+Dotplot Graphs individual numerical observations.
+Stem-and-leaf plot Organizes small numerical datasets by stem and leaf.
+Histogram Frequency histogram (F.H.) or relative-frequency histogram (R.F.H.).
+Ogive Graph of cumulative relative frequency.
+(a) Schematic dotplot.
+Stem Leaf
+0 258
+1 147
+2 03
+(b) Schematic stem-and-leaf plot.
+(c) Schematic histogram (F.H. or R.F.H.).
+1
+(d) Schematic ogive (RCF).
+A partial frequency distribution is
+Class Frequency (F) Relative frequency (RF) Cumulative frequency (CF) RCF
+[0, 5) 1 1 /40 1 1 /40
+[5, 10) 5 5 /40 6 6 /40
+[10, 15) 0 0 6 6 /40
+... ... ... ... ...
+Final cumulative values 40 1
+Homework: 6b; 8(a,d,e); 10(a,d,e); 16.
+2
+
+=== PDF PAGE 3 ===
+STAT A411/611 26 August 2026
+3 Section 6.3 — Numerical Measures for Numerical Datasets
+3.1 I. Measures for the Center
+A. Sample Mean/Average
+The sample mean is denoted by ¯𝑥:
+¯𝑥 = 𝑥1 + 𝑥2 + · · · +𝑥𝑛
+𝑛 =
+Í𝑛
+𝑖=1 𝑥𝑖
+𝑛 .
+For the data {1, 5, 6, 9},
+¯𝑥 = 1 + 5 + 6 + 9
+4 = 21
+4 = 5.25.
+The population mean is denoted by 𝜇:
+𝜇 = 𝑥1 + 𝑥2 + · · · +𝑥 𝑁
+𝑁 .
+B. Sample Median
+The sample median is denoted by e𝑥. First, order the dataset.
+• If 𝑛 is odd, e𝑥 is the middle value.
+• If 𝑛 is even, e𝑥 is the average of the two middle values.
+For an odd sample size,
+ordered data: 1 , 5, 6 , 9, 17 =⇒ e𝑥 = 6.
+For an even sample size, the data
+2, 8, 7, 11, 21, 14
+become
+2, 7, 8 , 11 , 14, 21,
+so
+e𝑥 = 8 + 11
+2 = 9.5.
+Resistance to Outliers
+The median is a resistant measure: it is not strongly influenced by extreme outliers. The mean is not resistant.
+{1, 2, 3, 4, 5} : ¯ 𝑥 = e𝑥 = 3,
+whereas
+{1, 2, 3, 4, 50} : e𝑥 = 3, ¯𝑥 = 12.
+3
+
+=== PDF PAGE 4 ===
+STAT A411/611 26 August 2026
+C. Mode
+The mode is the value that appears most often in the ordered dataset. Every dataset has one mean and one
+median, but a dataset may have no mode, one mode, or 2, 3, 4, . . . modes.
+3.2 II. Measures for the Variation
+A. Range
+The range is the difference between the largest and smallest values in a dataset. For
+{8, 11, 9, 13, 5, 21, 34, 27},
+𝑅 = 34 − 5 = 29.
+B. Interquartile Range — Preview
+The interquartile range is, roughly, the range of the middle 50% of an ordered dataset.
+25% 25%
+IQR
+middle 50%
+range
+A precise definition of IQR follows in Section 6.4.
+C. Sample Standard Deviation
+The sample standard deviation is denoted by 𝑠.
+A first attempt might average the signed deviations from the mean, but these deviations cancel:
+(𝑥1 − ¯𝑥) + ( 𝑥2 − ¯𝑥) + · · · + (𝑥𝑛 − ¯𝑥)
+𝑛 = (𝑥1 + 𝑥2 + · · · +𝑥𝑛) − 𝑛 ¯𝑥
+𝑛 = 0.
+Squaring the deviations gives the definition
+𝑠 =
+√︂
+(𝑥1 − ¯𝑥)2 + ( 𝑥2 − ¯𝑥)2 + · · · + (𝑥𝑛 − ¯𝑥)2
+𝑛 − 1 .
+Expanding the squared deviations gives an equivalent form:
+𝑠 =
+√︄
+(𝑥2
+1 + · · · +𝑥2𝑛) − 2 ¯𝑥(𝑥1 + · · · +𝑥𝑛) + 𝑛 ¯𝑥2
+𝑛 − 1
+=
+√︄
+(𝑥2
+1 + 𝑥2
+2 + · · · +𝑥2𝑛) − 𝑛 ¯𝑥2
+𝑛 − 1 ,
+using 𝑥1 + 𝑥2 + · · · +𝑥𝑛 = 𝑛 ¯𝑥.
+4
+
+=== PDF PAGE 5 ===
+STAT A411/611 26 August 2026
+Example
+For
+{1, 4, 6, 9, 10},
+first compute
+¯𝑥 = 1 + 4 + 6 + 9 + 10
+5 = 6.
+Using the definition,
+𝑠 =
+√︂
+(1 − 6)2 + (4 − 6)2 + (6 − 6)2 + (9 − 6)2 + (10 − 6)2
+4
+=
+√︂
+25 + 4 + 0 + 9 + 16
+4 =
+√︂
+54
+4 =
+√
+13.5.
+Using the alternative formula,
+𝑠 =
+√︂
+1 + 16 + 36 + 81 + 100 − 5(6)2
+4
+=
+√︂
+234 − 180
+4 =
+√
+13.5.
+In summation notation,
+𝑠 =
+√︄Í𝑛
+𝑖=1(𝑥𝑖 − ¯𝑥)2
+𝑛 − 1 and 𝑠 =
+√︄Í𝑛
+𝑖=1 𝑥2
+𝑖 − 𝑛 ¯𝑥2
+𝑛 − 1 .
+The quantity 𝑠2 is the sample variance. The population variance is denoted by 𝜎2, and the population
+standard deviation is
+𝜎 =
+√︄Í𝑁
+𝑖=1(𝑥𝑖 − 𝜇)2
+𝑁 .
+Size Mean Standard deviation
+Sample 𝑛 ¯𝑥 𝑠
+Population 𝑁 𝜇 𝜎
+More variation in a dataset produces a larger standard deviation. For example,
+{6, 6, 6, 6, 6} : ¯ 𝑥 = e𝑥 = mode = 6, 𝑅 = IQR = 𝑠 = 0,
+{6, 6, 7, 6, 6} : 𝑠2 > 0, {6, 6, 8, 6, 6} : 𝑠3 > 𝑠 2.
+If each observation 𝑥𝑖 is measured in centimeters, then ¯𝑥, e𝑥, and 𝑠 are measured in centimeters, while 𝑠2 is
+measured in square centimeters.
+Homework: 18 (p. 217).
+5
+
+=== PDF PAGE 6 ===
+STAT A411/611 26 August 2026
+4 Section 6.4 — Relative Standing, Percentiles, and Quartiles
+The topics for Section 6.4 are measures of relative standing, percentiles, quartiles, outliers, and boxplots. The
+ordered values considered are
+5, 11, 12, 13, 16, 21, 41.
+4.1 I. Measures of Relative Standing: z-Scores
+A value 𝑥 in a dataset with mean 𝜇 and standard deviation 𝜎 has 𝑧-score
+𝑧 = 𝑥 − 𝜇
+𝜎 , equivalently 𝑥 = 𝜇 + 𝑧𝜎 .
+The 𝑧-score tells how many standard deviations 𝑥 lies above or below the mean.
+Example
+If 𝜇 = 5 and 𝜎 = 0.5, then
+𝑥1 = 6 : 𝑧 = 6 − 5
+0.5 = 2,
+and
+𝑥2 = 4.5 : 𝑧 = 4.5 − 5
+0.5 = −1.
+𝜇 − 2𝜎
+𝑧 = −2
+𝜇 − 𝜎
+𝑧 = −1
+𝜇
+𝑧 = 0
+𝜇 + 𝜎
+𝑧 = 1
+𝜇 + 2𝜎
+𝑧 = 2
+The 3-Standard-Deviation Rule
+As a rule of thumb, almost all values in a dataset are within three standard deviations of the mean. Equivalently,
+almost all values have 𝑧-scores between −3 and 3.
+𝜇 − 3𝜎 𝜇 − 2𝜎 𝜇 𝜇 + 2𝜎 𝜇 + 3𝜎
+MILD OUTLIER MILD OUTLIER
+EXTREME OUTLIER EXTREME OUTLIER
+4.2 II. Percentiles
+If the 20th percentile is 8.34, then 20% of the ordered dataset is at or below 8.34, while 80% is at or above
+8.34.
+Important percentiles include
+1st, 5th, 10th, 25th, 50th, 75th, 90th, 95th, 99th.
+6
+
+=== PDF PAGE 7 ===
+STAT A411/611 26 August 2026
+4.3 III. Quartiles
+The quartiles are the 25th, 50th, and 75th percentiles:
+𝑄1 = first (lower) quartile, 𝑄 2 = second quartile, 𝑄 3 = third (upper) quartile.
+25% 25% 25% 25%
+middle 50%
+𝑄1 𝑄2 𝑄3
+The second quartile is the median of the entire ordered dataset:
+𝑄2 = e𝑥.
+The first quartile 𝑄1 is the median of the lower half, and the third quartile 𝑄3 is the median of the upper half.
+The interquartile range is
+IQR = 𝑄3 − 𝑄1 .
+Finding the Quartiles: Even 𝑛
+If 𝑛 is even, the lower half consists of the smallest 50% of the values and the upper half consists of the largest
+50%.
+For the ordered data
+1, 5, 6, 9, 10, 18,
+the halves are
+1, 5, 6|{z}
+lower half
+9, 10, 18|    {z    }
+upper half
+.
+Thus
+𝑄2 = e𝑥 = 6 + 9
+2 = 7.5, 𝑄 1 = 5, 𝑄 3 = 10,
+and
+IQR = 𝑄3 − 𝑄1 = 10 − 5 = 5 .
+Finding the Quartiles: Odd 𝑛
+For the odd-𝑛 example, the median is included in both halves. With
+2, 8, 9, 10, 17, 18, 35,
+we have
+𝑄2 = e𝑥 = 10,
+and the two halves are
+2, 8, 9, 10|      {z      }
+lower half
+10, 17, 18, 35|           {z           }
+upper half
+.
+Therefore, 𝑄1 = 8.5 and 𝑄3 = 17.5.
+7

@@ -1,0 +1,216 @@
+=== PDF PAGE 1 ===
+STAT A411/611 31 August 2026
+STAT A411/611 Lecture Notes
+Instructor: Rieken Venema Office: SSB 158E
+Office hours: MWF 12:00–12:45 Class: 2:30–3:45
+Lecture Plan and Review
+Today: Section 6.4.
+Wednesday: Chapter 1, Sections 1.1, 1.2, and 1.3.
+Review of Section 6.3
+The Section 6.3 notation emphasized the following numerical measures:
+Center ¯𝑥 (sample mean), e𝑥 (sample median), mode, 𝜇 (population mean)
+Variation range, IQR, 𝑠 (sample standard deviation), 𝜎 (population standard deviation)
+4 Section 6.4 — Relative Standing, Percentiles, Quartiles, Outliers, and Boxplots
+4.1 I. Measures of Relative Standing: 𝑧-Scores
+For a sample observation 𝑥𝑖 from a dataset with sample mean ¯𝑥 and sample standard deviation 𝑠, the 𝑧-score is
+𝑧𝑖 = 𝑥𝑖 − ¯𝑥
+𝑠 .
+Equivalently,
+𝑥𝑖 = ¯𝑥 + 𝑧𝑖 𝑠 .
+The 𝑧-score tells how many standard deviations a value lies above or below the mean. A positive𝑧-score is
+above the mean, a negative 𝑧-score is below the mean, and 𝑧 = 0 occurs at ¯𝑥.
+¯𝑥
+𝑧 = 0− +
+The 3-Standard-Deviation Rule
+As a rule of thumb, almost all values in a dataset lie within three standard deviations of the mean. In 𝑧-score
+form,
+−3 < 𝑧 𝑖 < 3 .
+4.2 II. Percentiles
+If the 15th percentile of a dataset is 6.12, then 15% of the ordered dataset is at or below 6.12.
+1
+
+=== PDF PAGE 2 ===
+STAT A411/611 31 August 2026
+4.3 III. Quartiles
+The second quartile is the median of the entire ordered dataset:
+𝑄2 = e𝑥 .
+The first (lower) quartile 𝑄1 is the median of the lower half, and the third (upper) quartile 𝑄3 is the median of
+the upper half.
+Even and Odd Sample Sizes
+If 𝑛 is even, the lower half consists of the smallest 50% of the values and the upper half consists of the largest
+50%.
+If 𝑛 is odd, 𝑄2 is the middle value. For the convention used in class, the median is included in both halves:
+the lower half ends with 𝑄2, and the upper half begins with 𝑄2.
+Examples: Finding the Three Quartiles
+1) For the data 5 , 6, 10, 4, 17, first order the values:
+4, 5, 6, 10, 17.
+Thus
+𝑄2 = 6, 𝑄 1 = 5, 𝑄 3 = 10 .
+2) For the ordered data
+1, 8, 10, 17, 21, 24,
+we have
+𝑄2 = 10 + 17
+2 = 13.5, 𝑄 1 = 8, 𝑄 3 = 21 .
+3) For the ordered data
+5, 6, 10, 17, 18, 22, 31,
+𝑄2 = 17. Including the median in both halves gives
+5, 6, 10, 17|      {z      }
+lower half
+17, 18, 22, 31|          {z          }
+upper half
+,
+so
+𝑄1 = 8, 𝑄 2 = 17, 𝑄 3 = 20 .
+4.4 IV. Interquartile Range
+The interquartile range is
+IQR = 𝑄3 − 𝑄1 .
+It measures the spread of the middle 50% of an ordered dataset.
+2
+
+=== PDF PAGE 3 ===
+STAT A411/611 31 August 2026
+25% 25% 25% 25%
+𝑄1 𝑄2 𝑄3
+IQR
+range
+4.5 V. Outliers
+A value is an outlier if it is at least 1.5(IQR) away from the nearest quartile. If it is at least 3(IQR) away
+from the nearest quartile, it is an extreme outlier; otherwise it is a mild outlier.
+The four reference points are
+𝑄1 − 3IQR, 𝑄 1 − 1.5IQR, 𝑄 3 + 1.5IQR, 𝑄 3 + 3IQR.
+𝑄1 − 3IQR 𝑄1 − 1.5IQR 𝑄3 + 1.5IQR 𝑄3 + 3IQR
+EXTREME MILD not an outlier MILD EXTREME
+In a boxplot, a mild outlier is indicated by a circle ◦, while an extreme outlier is indicated by an asterisk ∗.
+Most datasets do not have outliers.
+4.6 VI. Boxplots
+A boxplot is also called a box-and-whiskers plot. To construct a boxplot:
+1. Order the dataset.
+2. Find 𝑄2, 𝑄1, 𝑄3, and IQR.
+3. Determine whether there are outliers.
+4. Find
+𝑃1 = smallest value that is not an outlier, and 𝑃2 = largest value that is not an outlier.
+5. Draw the boxplot.
+𝑃1 𝑄1 𝑄2 𝑄3 𝑃2
+◦ ∗
+The Five-Number Summary
+The five-number summary is
+{smallest value, 𝑄 1, 𝑄 2, 𝑄 3, largest value} .
+The smallest and largest values in the five-number summary are the actual dataset extremes, even when one of
+them is plotted separately as an outlier in the boxplot.
+3
+
+=== PDF PAGE 4 ===
+STAT A411/611 31 August 2026
+Four Schematic Distribution Shapes
+The four cases considered were uniform, normal, right (+) skewed, and left (−) skewed.
+Uniform
+Normal
+Right (+) skewed Left (−) skewed
+Example 6.4.1 — Site II
+(a) Boxplot, showing the steps
+1. Order the dataset:
+1, 9, 10, 12, 13, 14, 15, 15, 17, 18, 19, 20, 20, 21, 22, 23, 24, 25.
+2. Quartiles and IQR:
+𝑄2 = 17 + 18
+2 = 17.5, 𝑄 1 = 13, 𝑄 3 = 21,
+IQR = 𝑄3 − 𝑄1 = 21 − 13 = 8 .
+3. Outliers:
+𝑄1 − 1.5IQR = 13 − 12 = 1, 𝑄 1 − 3IQR = 13 − 24 = −11.
+Thus 1 is a mild outlier on the left. On the right,
+𝑄3 + 1.5IQR = 21 + 12 = 33,
+so there is no outlier on the right.
+4. Whisker endpoints:
+𝑃1 = 9, 𝑃 2 = 25 .
+5. Boxplot:
+0 5 10 15 20 25
+9 13 17.5 21 25
+◦
+4
+
+=== PDF PAGE 5 ===
+STAT A411/611 31 August 2026
+(b) Five-Number Summary
+{1, 13, 17.5, 21, 25} .
+(c) Shape
+The distribution is left-skewed.
+Example 6.4.1 — Site I
+(a) Stem-and-Leaf Plot Using Two Lines per Stem
+Note from class: The stem-and-leaf plot on p. 207 has an error. Confirm its ordering and scale/key with
+Venema.
+The stem gives the tens digit and the leaf gives the ones digit. Each stem appears on two rows: the first
+contains leaves 0–4, and the second contains leaves 5–9.
+Stem Leaves
+1 0 2 2 3 3 3 4
+1 6 6 7 8 9
+2 0 1 4
+2 5 7
+3 1 2 2
+3 6 7
+4
+4 9
+For example, 3 | 2 represents 32. The sample size is
+𝑛 = 23 .
+(b) Quartiles, Outliers, and Boxplot
+The ordered data are
+10, 12, 12, 13, 13, 13, 14, 16, 16, 17, 18, 19, 20, 21, 24, 25, 27, 31, 32, 32, 36, 37, 49.
+Using the odd-𝑛 convention from class,
+𝑄2 = 19, 𝑄 1 = 13.5, 𝑄 3 = 29 ,
+and
+IQR = 29 − 13.5 = 15.5 .
+The mild-outlier fences are
+𝑄1 − 1.5IQR = 13.5 − 23.25 = −9.75 < 0,
+𝑄3 + 1.5IQR = 29 + 23.25 = 52.25.
+5
+
+=== PDF PAGE 6 ===
+STAT A411/611 31 August 2026
+There are no outliers on either side, so
+𝑃1 = 10, 𝑃 2 = 49 .
+10 20 30 40 50
+10 13.5 19 29 49
+The five-number summary is
+{10, 13.5, 19, 29, 49} ,
+and the distribution is positively skewed (right-skewed).
+Example 6.4.2
+The dataset was organized by a stem-and-leaf plot with 𝑛 = 21:
+Stem Leaves
+0 8
+1 2
+2 0 7
+3 0 2 5 6
+4 0 0 0 0 1 2 5 7
+5 0 2
+6 1
+7
+8 9
+9
+10 8
+Here again, the stem gives tens and the leaf gives ones.
+Quartiles and IQR
+Using the class convention for odd 𝑛,
+𝑄2 = 40, 𝑄 1 = 32, 𝑄 3 = 47 ,
+so
+IQR = 47 − 32 = 15 .
+Outliers
+On the left,
+𝑄1 − 1.5IQR = 32 − 22.5 = 9.5, 𝑄 1 − 3IQR = 32 − 45 = −13.
+6
+
+=== PDF PAGE 7 ===
+STAT A411/611 31 August 2026
+Thus 8 is a mild outlier.
+On the right,
+𝑄3 + 1.5IQR = 47 + 22.5 = 69.5, 𝑄 3 + 3IQR = 47 + 45 = 92.
+Therefore,
+61 is not an outlier, 89 is a mild outlier, 108 is an extreme outlier.
+The whisker endpoints are
+𝑃1 = 12, 𝑃 2 = 61 .
+0 10 20 30 40 50 60 80 100
+12 32 40 47 61
+◦ ◦ ∗
+The five-number summary is
+{8, 32, 40, 47, 108} .
+Homework and Next Class
+Homework: Problems 28, 32, and 33, pp. 219–223.
+Wednesday: Chapter 1, Sections 1.1, 1.2, and 1.3.
+7

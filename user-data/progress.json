@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "attempts": [],
+  "flags": {},
+  "studied": {},
+  "visits": {
+    "01-data": {
+      "first": "2026-10-23T08:39:00.352Z",
+      "last": "2026-10-23T19:41:48.381Z",
+      "count": 4
+    },
+    "03-boxplots": {
+      "first": "2026-10-23T08:39:42.090Z",
+      "last": "2026-10-23T16:19:45.636Z",
+      "count": 4
+    },
+    "20-sampling": {
+      "first": "2026-10-23T16:18:08.639Z",
+      "last": "2026-10-23T19:42:20.539Z",
+      "count": 7
+    },
+    "13-gamma": {
+      "first": "2026-10-23T18:54:08.948Z",
+      "last": "2026-10-23T18:54:10.519Z",
+      "count": 2
+    },
+    "16-joint": {
+      "first": "2026-10-23T19:42:17.872Z",
+      "last": "2026-10-23T19:42:17.872Z",
+      "count": 1
+    },
+    "17-covariance": {
+      "first": "2026-10-23T19:42:18.989Z",
+      "last": "2026-10-23T19:42:18.989Z",
+      "count": 1
+    },
+    "18-regression": {
+      "first": "2026-10-23T19:42:19.613Z",
+      "last": "2026-10-23T19:42:19.613Z",
+      "count": 1
+    },
+    "19-estimation": {
+      "first": "2026-10-23T19:42:20.094Z",
+      "last": "2026-10-23T19:42:20.094Z",
+      "count": 1
+    }
+  },
+  "examChecklist": {},
+  "saved": {},
+  "examSettings": {
+    "topics": [],
+    "questionCount": 15,
+    "timed": false,
+    "minutes": 45,
+    "includeTypes": [
+      "multiple_choice",
+      "numeric",
+      "free_response"
+    ]
+  },
+  "lastPosition": {
+    "route": "#/lesson/20-sampling",
+    "at": "2026-10-23T19:42:21.342Z"
+  }
+}

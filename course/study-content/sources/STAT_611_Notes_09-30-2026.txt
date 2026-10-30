@@ -1,0 +1,376 @@
+=== PDF PAGE 1 ===
+STAT A411/611 30 September 2026
+STAT A411/611 Class Notes
+Instructor: Rieken Venema Office: SSB 158E
+Office hours: MWF 12:00–12:45 Class: 2:30–3:45
+Plan and Review
+Today: Sections 4.2 and 4.3.
+Next Monday: Sections 4.3 and 4.4.
+Chapter 4: Sections 4.1–4.6; continuous random variables.
+Chapter 3: Discrete random variables and their probability distributions.
+Section 4.1 - Continuous Random Variables
+A continuous random variable 𝑋 is described by a probability density function (pdf) 𝑝(𝑥). Probabilities are
+computed as areas beneath this density.
+Probability Densities and Cumulative Probabilities
+A valid pdf satisfies
+𝑝(𝑥) ≥ 0 ∀𝑥 ∈ R ,
+∫ ∞
+−∞
+𝑝(𝑥) 𝑑𝑥 = 1 .
+For any 𝑎 ≤ 𝑏,
+𝑃(𝑎 ≤ 𝑋 ≤ 𝑏) =
+∫ 𝑏
+𝑎
+𝑝(𝑥) 𝑑𝑥 .
+The cumulative distribution function (cdf) and its derivative are
+𝐹 (𝑥) = 𝑃(𝑋 ≤ 𝑥) =
+∫ 𝑥
+−∞
+𝑝(𝑡) 𝑑𝑡 , 𝐹 ′ (𝑥) = 𝑝(𝑥) .
+The derivative identity applies wherever 𝑝 is continuous (and almost everywhere in general).
+𝑥
+𝑝(𝑥)
+𝑎 𝑏
+Lead-Concentration and Uniform-Distribution Review
+For the lead-concentration density 𝑝(𝑥) = 12.5𝑥 − 1.25 on 0.1 ≤ 𝑥 ≤ 0.5,
+𝑃(0.2 ≤ 𝑋 ≤ 0.3) =
+∫ 0.3
+0.2
+(12.5𝑥 − 1.25) 𝑑𝑥 = 𝐹 (0.3) − 𝐹 (0.2) .
+1
+
+=== PDF PAGE 2 ===
+STAT A411/611 30 September 2026
+𝑥
+𝑝(𝑥)
+5
+.1 .2 .3 .5
+For a continuous uniform random variable 𝑋 ∼ 𝑈 (𝑎, 𝑏), where 𝑎 < 𝑏 ,
+𝑝(𝑥) =
+ 
+
+1
+𝑏 − 𝑎 , 𝑎 ≤ 𝑥 ≤ 𝑏,
+0, otherwise,
+𝐹 (𝑥) =
+ 
+
+0, 𝑥 < 𝑎,
+𝑥 − 𝑎
+𝑏 − 𝑎 , 𝑎 ≤ 𝑥 ≤ 𝑏,
+1, 𝑥 > 𝑏.
+Equal-width intervals Δ𝑥 within [𝑎, 𝑏] have equal probability:
+𝑥
+𝑝(𝑥)
+1/( 𝑏 − 𝑎)
+𝑎 𝑏
+Δ𝑥 Δ𝑥
+Section 4.2 - Expected Values of Continuous Random Variables
+For a function ℎ, the expected value is
+𝐸 [ℎ(𝑋)] =
+∫ ∞
+−∞
+ℎ(𝑥) 𝑝(𝑥) 𝑑𝑥 .
+Important cases (when the relevant expectations exist) are
+𝜇 = 𝐸 [𝑋] =
+∫ ∞
+−∞
+𝑥 𝑝(𝑥) 𝑑𝑥 , sd[𝑋] =
+√︁
+𝐸 [𝑋2] − ( 𝐸 [𝑋]) 2 ,
+𝐸 [𝑎𝑋 + 𝑏] = 𝑎𝐸 [𝑋] + 𝑏 , 𝐸 [𝑋 𝑘] = 𝑘th moment of 𝑋 .
+If 𝑋 ∼ 𝑈 (𝑎, 𝑏), then 𝐸 [𝑋] = (𝑎 + 𝑏)/2 . For the lead-concentration model,
+𝐸 [𝑋] = 11
+30 ≈ 0.3667 .
+𝑥
+𝑝(𝑥)
+𝑎 𝑏
+𝜇 = (𝑎 + 𝑏)/2
+𝑥
+𝑝(𝑥)
+0.1 0.5
+𝜇 = 11/30
+2
+
+=== PDF PAGE 3 ===
+STAT A411/611 30 September 2026
+Moment-Generating Function
+The moment-generating function is
+𝑚𝑋 (𝑡) = 𝐸 [𝑒𝑡 𝑋] , 𝑚 (𝑘 )
+𝑋 (0) = 𝐸 [𝑋 𝑘] .
+The derivative relation holds when the mgf exists on an open interval containing 0. Recall
+𝑒𝑎 = 1 + 𝑎 + 𝑎2
+2! + 𝑎3
+3! + · · ·.
+Example 4.2.2: An Exponential-Shaped pdf
+𝑝(𝑥) =
+(
+𝑒− 𝑥, 𝑥 > 0,
+0, otherwise.
+𝑥
+𝑝(𝑥)
+1
+(a) Show that 𝑝 is a valid pdf.
+𝑝(𝑥) ≥ 0 ∀𝑥,
+∫ ∞
+−∞
+𝑝(𝑥) 𝑑𝑥 =
+∫ 0
+−∞
+0 𝑑𝑥 +
+∫ ∞
+0
+𝑒− 𝑥 𝑑𝑥 = 0 + [−𝑒− 𝑥]∞
+0
+= 0 − (−1) = 1 .
+The chain rule gives
+𝑑
+𝑑𝑥 𝑒 𝑓 ( 𝑥 ) = 𝑒 𝑓 ( 𝑥 ) 𝑓 ′ (𝑥), 𝑑
+𝑑𝑥 𝑒− 𝑥 = −𝑒− 𝑥, 𝑑
+𝑑𝑥 (−𝑒− 𝑥) = 𝑒− 𝑥.
+3
+
+=== PDF PAGE 4 ===
+STAT A411/611 30 September 2026
+(b) Find the mean 𝐸 [𝑋].
+𝐸 [𝑋] =
+∫ ∞
+−∞
+𝑥 𝑝(𝑥) 𝑑𝑥 =
+∫ ∞
+0
+𝑥𝑒 − 𝑥 𝑑𝑥.
+Integration by parts uses
+∫
+𝑓 ′ (𝑥)𝑔 (𝑥) 𝑑𝑥 = 𝑓 (𝑥)𝑔 (𝑥) −
+∫
+𝑓 (𝑥)𝑔 ′ (𝑥) 𝑑𝑥 .
+Choose 𝑓 ′ (𝑥) = 𝑒− 𝑥 and 𝑔 (𝑥) = 𝑥. Then
+𝑓 (𝑥) = −𝑒− 𝑥, 𝑔 ′ (𝑥) = 1.
+Therefore
+𝐸 [𝑋] = [−𝑥𝑒 − 𝑥]∞
+0 +
+∫ ∞
+0
+𝑒− 𝑥 𝑑𝑥
+= lim
+𝑥→∞
+−𝑥
+𝑒 𝑥 − 0 + 1
+= 0 + 1 = 1 .
+For an indeterminate ratio of type 0/0 or ∞/∞, L ’Hˆopital’s rule gives
+lim
+𝑥→𝑎
+𝑓 (𝑥)
+𝑔 (𝑥) = lim
+𝑥→𝑎
+𝑓 ′ (𝑥)
+𝑔 ′ (𝑥)
+when the rule’s hypotheses hold. Here,
+lim
+𝑥→∞
+−𝑥
+𝑒 𝑥 = lim
+𝑥→∞
+−1
+𝑒 𝑥 = 0.
+Choosing 𝑓 ′ (𝑥) = 𝑥 instead leads to a harder integral involving 𝑥2𝑒− 𝑥.
+Homework
+2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 24 .
+Section 4.3 - Gamma, Exponential, and Chi-Squared Distributions
+I. The gamma function
+II. The gamma distribution
+III. The exponential distribution
+IV. The chi-squared distribution
+I. The Gamma Function
+For 𝛼 > 0, the gamma function is
+Γ(𝛼) =
+∫ ∞
+0
+𝑥 𝛼−1𝑒− 𝑥 𝑑𝑥 .
+4
+
+=== PDF PAGE 5 ===
+STAT A411/611 30 September 2026
+Gamma-Function Properties
+Γ(1) = 1 , Γ(𝛼) = (𝛼 − 1)Γ(𝛼 − 1) ( 𝛼 > 1) ,
+Γ(𝑛) = (𝑛 − 1)! , 𝑛 = 1, 2, 3, . . . .
+Proof of Γ(1) = 1:
+Γ(1) =
+∫ ∞
+0
+𝑥0𝑒− 𝑥 𝑑𝑥 =
+∫ ∞
+0
+𝑒− 𝑥 𝑑𝑥 = 1.
+Proof of the recurrence (𝛼 > 1):
+Γ(𝛼) =
+∫ ∞
+0
+𝑥 𝛼−1𝑒− 𝑥 𝑑𝑥
+=
+
+−𝑥 𝛼−1𝑒− 𝑥 ∞
+0 + ( 𝛼 − 1)
+∫ ∞
+0
+𝑥 𝛼−2𝑒− 𝑥 𝑑𝑥
+= (𝛼 − 1)Γ(𝛼 − 1) .
+For 𝛼 > 1, the boundary terms vanish:
+lim
+𝑥→∞
+−𝑥 𝛼−1
+𝑒 𝑥 = 0, lim
+𝑥↓0
+−𝑥 𝛼−1𝑒− 𝑥 = 0.
+Factorial Examples
+Γ(1) = 1 = 0!,
+Γ(2) = 1 · Γ(1) = 1 = 1!,
+Γ(3) = 2Γ(2) = 2 ·1 = 2!,
+Γ(4) = 3Γ(3) = 3 ·2! = 3!,
+Γ(𝑛) = (𝑛 − 1)!.
+Example 4.2.2 Using the Gamma Function
+∫ ∞
+0
+𝑥𝑒 − 𝑥 𝑑𝑥 = Γ (2) = (2 − 1)! = 1! = 1 .
+II. The Gamma Distribution
+𝑋 has a gamma distribution with parameters 𝛼 > 0 and 𝛽 > 0 if
+𝑋 ∼ Γ(𝛼, 𝛽) , 𝑝 (𝑥) =
+ 
+
+𝑥 𝛼−1𝑒− 𝑥/𝛽
+𝛽 𝛼Γ(𝛼) , 𝑥 > 0,
+0, 𝑥 ≤ 0.
+Here 𝛼 is the shape parameter and 𝛽 is the scale parameter.
+5
+
+=== PDF PAGE 6 ===
+STAT A411/611 30 September 2026
+Gamma Mean and Standard Deviation
+For 𝑋 ∼ Γ(𝛼, 𝛽),
+𝐸 [𝑋] = 𝛼𝛽 , sd[𝑋] = 𝛽√𝛼 .
+Three examples are Γ(1, 1), Γ(2, 1), and Γ(2, 2):
+𝑥
+𝑝 ( 𝑥 )
+Γ(1, 1)
+𝑥
+𝑝 ( 𝑥 )
+1
+Γ(2, 1)
+𝑥
+𝑝 ( 𝑥 )
+2
+Γ(2, 2)
+For 𝛼 > 1, the mode is at 𝑥 = (𝛼 − 1) 𝛽 . The graphs are positively (right) skewed.
+The parameters 𝛼, 𝛽 can be estimated from a relative-frequency histogram of data 𝑥1, . . . , 𝑥𝑛 (Chapter 7):
+𝑥
+density
+𝛼 =?, 𝛽 =?
+III. The Exponential Distribution
+For 𝛼 = 1, the gamma distribution becomes an exponential distribution:
+𝑋 ∼ Γ(1, 𝛽) ⇐ ⇒ 𝑋 ∼ 𝐸 (𝛽) .
+𝑝(𝑥) =
+ 
+
+1
+𝛽 𝑒− 𝑥/𝛽, 𝑥 > 0,
+0, 𝑥 ≤ 0,
+𝐸 [𝑋] = 𝛽, sd[𝑋] = 𝛽 .
+𝑥
+𝑝(𝑥)
+1/𝛽
+6
+
+=== PDF PAGE 7 ===
+STAT A411/611 30 September 2026
+Poisson Processes: Waiting Times and Counts
+For a Poisson process with rate 𝛼 events per time unit,
+𝑇 = time until the first event =⇒ 𝑇 ∼ 𝐸
+ 1
+𝛼
+
+.
+If 𝑋 is the number of events during an interval of length 𝑡,
+𝑋 ∼ 𝑃(𝛼𝑡) , 𝐸 [𝑋] = 𝜆 = 𝛼𝑡 .
+time× × × × × ×
+0
+𝑇
+𝑡
+IV. The Chi-Squared Distribution
+The chi-squared distribution is the gamma special case with scale 𝛽 = 2 and shape 𝛼 = 𝜈/2:
+𝑋 ∼ Γ
+ 𝜈
+2 , 2
+
+⇐ ⇒ 𝑋 ∼ 𝜒2
+𝜈 .
+The parameter 𝜈 is the number of degrees of freedom (see Section 8.1).
+Exercises and Distribution Summary
+Exercises: 32, 34, 36. For Exercises 34 and 36, assume a Poisson process.
+Discrete distributions Continuous distributions
+Uniform 𝑈 Uniform 𝑈
+Geometric 𝐺 Gamma Γ
+Binomial 𝐵 Exponential 𝐸
+Negative binomial 𝑁 𝐵 Chi-squared 𝜒2
+Hypergeometric 𝐻𝐺
+Poisson 𝑃
+Section 4.4 - The Normal Distribution (Gaussian)
+The normal distribution has a bell-shaped density. Gauss used it to model measurement errors in astronomy.
+error
+density
+0
+7
+
+=== PDF PAGE 8 ===
+STAT A411/611 30 September 2026
+Properties of a Normal Density
+The normal pdf 𝑝(𝑥) has the following properties:
+1. 𝑝(𝑥) > 0 for all 𝑥 ∈ R.
+2.
+∫ ∞
+−∞
+𝑝(𝑥) 𝑑𝑥 = 1.
+3. The curve is bell-shaped and centered at 𝜇.
+4. 𝜇 = 𝐸 [𝑋] =
+∫ ∞
+−∞
+𝑥 𝑝(𝑥) 𝑑𝑥, and
+𝜎 = sd[𝑋] =
+√︄∫ ∞
+−∞
+(𝑥 − 𝜇)2 𝑝(𝑥) 𝑑𝑥.
+5. Its inflection points are 𝑥 = 𝜇 − 𝜎 and 𝑥 = 𝜇 + 𝜎.
+𝑥
+𝑝(𝑥)
+𝜇 − 𝜎 𝜇 𝜇 + 𝜎
+𝑝′′ > 0 𝑝′′ < 0 𝑝′′ > 0
+Normal pdf and Notation
+If 𝑋 ∼ 𝑁 (𝜇, 𝜎2), then
+𝑝(𝑥) = 1√
+2𝜋𝜎2
+exp
+
+−1
+2
+ 𝑥 − 𝜇
+𝜎
+2
+, −∞ < 𝑥 < ∞.
+Here 𝜇 ∈ R and 𝜎 > 0.
+Example: 𝑋 ∼ 𝑁 (5, 4)
+𝜇 = 5, 𝜎 =
+√
+4 = 2, 𝜇 − 𝜎 = 3, 𝜇 + 𝜎 = 7.
+The Standard Normal Distribution
+A standard normal random variable satisfies
+𝑋 ∼ 𝑁 (0, 1) , 𝑝 (𝑥) = 1√
+2𝜋
+𝑒− 𝑥2/2 , −∞ < 𝑥 < ∞.
+𝑥
+3 5 7
+𝑁 (5, 4)
+𝑥
+𝑝(𝑥)
+−1 10
+𝑁 (0, 1)
+8

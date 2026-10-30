@@ -1,0 +1,2926 @@
+{
+  "schema_version": 1,
+  "note": "Supplemental practice authored for this app. Not instructor material and not part of the original study-content pack. Each numeric key is independently recomputed by scripts/verify_answers.py.",
+  "questions": [
+    {
+      "id": "s01-01",
+      "lesson_id": "01-data",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "A survey records each respondent's ZIP code. Which statement is correct?",
+      "options": [
+        "ZIP code is categorical; numeric codes do not make it quantitative",
+        "ZIP code is quantitative because it is written with digits",
+        "ZIP codes should be summarized with a mean",
+        "ZIP codes should be displayed with a histogram"
+      ],
+      "answer": 0,
+      "hints": [
+        "Would the average of two ZIP codes mean anything?",
+        "Ask whether arithmetic on the values is meaningful."
+      ],
+      "solution": "ZIP codes label locations; arithmetic on them is meaningless, so the variable is categorical.",
+      "steps": [
+        "A quantitative variable records an amount where arithmetic is meaningful.",
+        "ZIP codes are labels for regions.",
+        "Use counts / relative frequencies and a bar graph, not a mean or histogram."
+      ],
+      "reasoning": "The lesson stresses that a numerical code assigned to a category does not make the variable quantitative.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-08-24",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s01-02",
+      "lesson_id": "01-data",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Histogram classes are $[0.02,0.03)$, $[0.03,0.04)$, $[0.04,0.05)$, … An observation equals exactly $0.03$. Which class contains it?",
+      "options": [
+        "$[0.02,0.03)$",
+        "$[0.03,0.04)$",
+        "Both classes",
+        "Neither; it must be discarded"
+      ],
+      "answer": 1,
+      "hints": [
+        "A square bracket includes the endpoint; a round parenthesis excludes it.",
+        "Which interval has 0.03 at its closed end?"
+      ],
+      "solution": "$[0.03,0.04)$ includes its left endpoint 0.03; $[0.02,0.03)$ excludes 0.03.",
+      "steps": [
+        "$[a,b)$ means $a\\le x<b$.",
+        "0.03 fails $x<0.03$, so it is not in $[0.02,0.03)$.",
+        "0.03 satisfies $0.03\\le x<0.04$."
+      ],
+      "reasoning": "Left-closed, right-open classes give every value exactly one class.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-08-24",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s01-03",
+      "lesson_id": "01-data",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "A frequency table (the August 24 histogram data) has class counts $1, 6, 9, 11, 7, 1$, with $n=35$. What is the cumulative relative frequency at the upper boundary of the **fourth** class? Give a decimal to at least 3 decimal places.",
+      "answer": 0.7714285714285715,
+      "hints": [
+        "Add the first four counts.",
+        "Divide the cumulative count by $n=35$."
+      ],
+      "solution": "$(1+6+9+11)/35 = 27/35 \\approx 0.7714$.",
+      "steps": [
+        "Cumulative count through class 4: $1+6+9+11 = 27$.",
+        "Cumulative relative frequency: $27/35 \\approx 0.7714$."
+      ],
+      "reasoning": "This is the height of the ogive at that boundary: about 77% of observations lie below it.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "decimal"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-08-24",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s02-01",
+      "lesson_id": "02-summary",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Measurements are recorded in centimeters. In what units is the sample variance?",
+      "options": [
+        "Centimeters",
+        "Square centimeters",
+        "It has no units",
+        "Centimeters per observation"
+      ],
+      "answer": 1,
+      "hints": [
+        "Variance averages squared deviations.",
+        "Square the units of a deviation."
+      ],
+      "solution": "Deviations are in cm, so squared deviations — and the variance — are in cm².",
+      "steps": [
+        "A deviation $x_i-\\bar x$ is in cm.",
+        "Squaring gives cm².",
+        "Taking the square root (standard deviation) returns to cm."
+      ],
+      "reasoning": "This is one reason the standard deviation is easier to interpret than the variance.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-08-24",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s02-02",
+      "lesson_id": "02-summary",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "The data $2, 4, 6, 8, 10$ are changed to $2, 4, 6, 8, 100$. Which statement is correct?",
+      "options": [
+        "The mean changes from 6 to 24, but the median stays 6",
+        "The median changes from 6 to 24, but the mean stays 6",
+        "Both change to 24",
+        "Neither changes, because only one value changed"
+      ],
+      "answer": 0,
+      "hints": [
+        "Compute both summaries before and after.",
+        "The median depends only on the middle ordered value."
+      ],
+      "solution": "Mean: $30/5=6$ becomes $120/5=24$. The middle value stays 6.",
+      "steps": [
+        "Original mean $=30/5=6$; new mean $=120/5=24$.",
+        "Both datasets have middle value 6."
+      ],
+      "reasoning": "The mean is sensitive to extreme values; the median is resistant.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-08-24",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s02-03",
+      "lesson_id": "02-summary",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "Find the sample standard deviation of $3, 5, 7, 9, 11$. Give at least 3 decimal places.",
+      "answer": 3.1622776601683795,
+      "hints": [
+        "First find $\\bar x$ and the squared deviations.",
+        "Divide their sum by $n-1=4$, then take the square root."
+      ],
+      "solution": "$\\bar x=7$; squared deviations $16,4,0,4,16$ sum to $40$; $s^2=40/4=10$; $s=\\sqrt{10}\\approx3.1623$.",
+      "steps": [
+        "$\\bar x = 35/5 = 7$.",
+        "Squared deviations: $16, 4, 0, 4, 16$; sum $=40$.",
+        "$s^2 = 40/(5-1) = 10$.",
+        "$s = \\sqrt{10} \\approx 3.1623$."
+      ],
+      "reasoning": "Dividing by $n$ instead would give $\\sqrt8\\approx2.828$ — a common mistake.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "value"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-08-24",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s03-01",
+      "lesson_id": "03-boxplots",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "In the five-number summary used in this course, the minimum and maximum are:",
+      "options": [
+        "The actual smallest and largest observations, even if they are outliers",
+        "The whisker endpoints",
+        "The inner fences",
+        "$Q_1$ and $Q_3$"
+      ],
+      "answer": 0,
+      "hints": [
+        "Check the August 31 definition and its worked examples.",
+        "Whiskers stop at non-outliers, but the summary describes the whole dataset."
+      ],
+      "solution": "The five-number summary is (min, $Q_1$, median, $Q_3$, max) with the actual extremes.",
+      "steps": [
+        "Whiskers end at the most extreme non-outliers.",
+        "The five-number summary uses the actual minimum and maximum, including outliers."
+      ],
+      "reasoning": "The September 2 review substitutes whisker endpoints; the pack follows the August 31 definition (see Source issues).",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-08-31",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s03-02",
+      "lesson_id": "03-boxplots",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "A value lies exactly on the lower inner fence $Q_1-1.5\\,IQR$ (and inside the outer fence). Under the August 31 course convention it is:",
+      "options": [
+        "Not an outlier, because the inequality is strict",
+        "A mild outlier",
+        "An extreme outlier",
+        "Removed from the data"
+      ],
+      "answer": 1,
+      "hints": [
+        "The notes use “at least” 1.5 IQR beyond the quartile.",
+        "Is it at or beyond the outer fence too?"
+      ],
+      "solution": "Equality at the inner fence counts, and it is short of the outer fence, so it is a mild outlier.",
+      "steps": [
+        "Course rule: at or beyond an inner fence → outlier.",
+        "Not at or beyond the outer fence → mild, not extreme."
+      ],
+      "reasoning": "Many software packages use a strict inequality; the course does not.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-08-31",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s03-03",
+      "lesson_id": "03-boxplots",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "A dataset has mean $50$ and standard deviation $8$. An observation has z-score $-1.25$. What is the observation?",
+      "answer": 40,
+      "hints": [
+        "Rearrange $z=(x-\\bar x)/s$.",
+        "$x=\\bar x+zs$."
+      ],
+      "solution": "$x = 50 + (-1.25)(8) = 40$.",
+      "steps": [
+        "$x = \\bar x + z s$.",
+        "$= 50 + (-1.25)(8) = 50-10 = 40$."
+      ],
+      "reasoning": "A negative z-score places the value below the mean.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "value"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-08-31",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s04-01",
+      "lesson_id": "04-events",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Events $A$ and $B$ are mutually exclusive. Which statement must be true?",
+      "options": [
+        "$A\\cap B=\\varnothing$",
+        "$P(A)+P(B)=1$",
+        "$A\\cup B=S$",
+        "$A^c=B$"
+      ],
+      "answer": 0,
+      "hints": [
+        "“Mutually exclusive” means they cannot occur together.",
+        "The other options describe complementary events."
+      ],
+      "solution": "Mutually exclusive means disjoint: $A\\cap B=\\varnothing$.",
+      "steps": [
+        "Disjoint events share no outcomes.",
+        "They need not cover the sample space, so their probabilities need not sum to 1."
+      ],
+      "reasoning": "Complementary events are mutually exclusive and exhaustive; mutually exclusive alone is weaker.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s04-02",
+      "lesson_id": "04-events",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "A red die and a blue die are rolled. Find $P(\\text{sum}\\ge 9)$.",
+      "answer": 0.2777777777777778,
+      "hints": [
+        "Use the 36 equally likely ordered pairs.",
+        "Count pairs with sums 9, 10, 11, and 12."
+      ],
+      "solution": "Sum 9: 4 pairs; 10: 3; 11: 2; 12: 1. Total 10, so $10/36\\approx0.2778$.",
+      "steps": [
+        "Sum 9: (3,6),(4,5),(5,4),(6,3) — 4 pairs.",
+        "Sum 10: 3 pairs; sum 11: 2; sum 12: 1.",
+        "Total 10 of 36: $P=10/36\\approx0.2778$."
+      ],
+      "reasoning": "Counting sums instead of ordered pairs would wrongly treat the 11 sums as equally likely.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "decimal"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s04-03",
+      "lesson_id": "04-events",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "A fair coin is tossed 4 times. Find $P(\\text{at least one head})$.",
+      "answer": 0.9375,
+      "hints": [
+        "What is the complement of “at least one head”?",
+        "There is exactly one sequence with no heads among 16 equally likely sequences."
+      ],
+      "solution": "$1-P(\\text{no heads}) = 1-1/16 = 0.9375$.",
+      "steps": [
+        "Complement of “at least one head” is “no heads” (TTTT).",
+        "$P(\\text{TTTT}) = 1/16$.",
+        "$P = 1-1/16 = 15/16 = 0.9375$."
+      ],
+      "reasoning": "The complement turns a many-case problem into a single case.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "decimal"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s05-01",
+      "lesson_id": "05-counting",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Which situation calls for $\\binom nk$ rather than ${}_nP_k$?",
+      "options": [
+        "Choosing a president, vice-president, and treasurer",
+        "Choosing a 3-person subcommittee with identical roles",
+        "Arranging 3 books on a shelf",
+        "Ranking the top 3 finishers"
+      ],
+      "answer": 1,
+      "hints": [
+        "In which situation does reordering the chosen people give the same outcome?",
+        "Roles, positions, and rankings make order matter."
+      ],
+      "solution": "A subcommittee with identical roles is an unordered selection.",
+      "steps": [
+        "Officers, shelf positions, and rankings are ordered.",
+        "A subcommittee without roles is a set: use combinations."
+      ],
+      "reasoning": "Each unordered group of $k$ corresponds to $k!$ ordered lists, so ${}_nP_k = k!\\binom nk$.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s05-02",
+      "lesson_id": "05-counting",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "A probability is computed as favourable outcomes ÷ all outcomes. The numerator counts **ordered** sequences. The denominator must:",
+      "options": [
+        "Also count ordered sequences",
+        "Count unordered sets",
+        "Equal 1",
+        "Use either convention; it does not matter"
+      ],
+      "answer": 0,
+      "hints": [
+        "Both counts must describe the same equally likely sample space.",
+        "Mixing conventions changes the ratio by a factor like $k!$."
+      ],
+      "solution": "Numerator and denominator must use the same convention so the outcomes are equally likely elements of one sample space.",
+      "steps": [
+        "Choose one sample space (ordered or unordered).",
+        "Count favourable and total outcomes within that same space."
+      ],
+      "reasoning": "September 9 shows that the combination method and the sequential (ordered) method agree when used consistently.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s05-03",
+      "lesson_id": "05-counting",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "How many distinct arrangements are there of the letters of **STATISTICS**?",
+      "answer": 50400,
+      "hints": [
+        "Count each letter: S, T, A, I, C.",
+        "Use $n!/(n_1!n_2!\\cdots)$ with $n=10$."
+      ],
+      "solution": "S×3, T×3, I×2, A×1, C×1: $10!/(3!\\,3!\\,2!) = 3628800/72 = 50400$.",
+      "steps": [
+        "Letters: S (3), T (3), A (1), I (2), C (1); $n=10$.",
+        "$10! = 3\\,628\\,800$.",
+        "Divide by $3!\\,3!\\,2!\\,1!\\,1! = 72$.",
+        "Result: $50\\,400$."
+      ],
+      "reasoning": "Identical letters can be swapped without creating a new arrangement, so divide by the factorial of each repeat count.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "count"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s06-01",
+      "lesson_id": "06-rules",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Which statement about $P(A\\mid B)$ and $P(B\\mid A)$ is correct?",
+      "options": [
+        "They are always equal",
+        "They are generally different, because they divide $P(A\\cap B)$ by different probabilities",
+        "$P(A\\mid B)=1-P(B\\mid A)$",
+        "They are equal whenever $A$ and $B$ are disjoint"
+      ],
+      "answer": 1,
+      "hints": [
+        "Write both using the definition of conditional probability.",
+        "Compare the denominators."
+      ],
+      "solution": "$P(A\\mid B)=P(A\\cap B)/P(B)$ while $P(B\\mid A)=P(A\\cap B)/P(A)$; they agree only if $P(A)=P(B)$ (or the intersection is empty).",
+      "steps": [
+        "$P(A\\mid B) = P(A\\cap B)/P(B)$.",
+        "$P(B\\mid A) = P(A\\cap B)/P(A)$.",
+        "Different denominators → generally different values."
+      ],
+      "reasoning": "Reversing a conditional probability is a classic error.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-14",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s06-02",
+      "lesson_id": "06-rules",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Two cards are drawn without replacement from a standard deck. Are “first card is an ace” and “second card is an ace” independent?",
+      "options": [
+        "Yes, each has probability 4/52",
+        "No: $P(\\text{2nd ace}\\mid\\text{1st ace})=3/51\\ne4/52$",
+        "Yes, because the cards are drawn at random",
+        "No, because the events are mutually exclusive"
+      ],
+      "answer": 1,
+      "hints": [
+        "Compare the conditional probability with the unconditional one.",
+        "After an ace is removed, 3 aces remain among 51 cards."
+      ],
+      "solution": "Knowing the first card is an ace lowers the chance the second is an ace, so the events are dependent.",
+      "steps": [
+        "Unconditionally, $P(\\text{2nd ace}) = 4/52$.",
+        "Given the first is an ace, $P = 3/51 \\approx 0.0588 \\ne 0.0769$.",
+        "So the events are not independent (and they can both occur, so they are not disjoint)."
+      ],
+      "reasoning": "Sampling without replacement creates dependence; the September 14 notes use exactly this $(4/52)(3/51)$ structure.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-14",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s06-03",
+      "lesson_id": "06-rules",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "A box holds 5 good and 3 defective fuses. Two are drawn without replacement. Find $P(\\text{both defective})$. Give at least 4 decimal places.",
+      "answer": 0.10714285714285714,
+      "hints": [
+        "Use the multiplication rule with conditioning.",
+        "After one defective is drawn, 2 defectives remain among 7 fuses."
+      ],
+      "solution": "$(3/8)(2/7) = 6/56 \\approx 0.1071$.",
+      "steps": [
+        "$P(\\text{1st defective}) = 3/8$.",
+        "$P(\\text{2nd defective}\\mid\\text{1st defective}) = 2/7$.",
+        "Multiply: $6/56 = 3/28 \\approx 0.1071$."
+      ],
+      "reasoning": "Equivalently $\\binom32/\\binom82 = 3/28$ — the counting and sequential methods agree.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "decimal"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-09-14",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s07-01",
+      "lesson_id": "07-expectation",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Which is a valid PMF on $\\{1,2,3\\}$?",
+      "options": [
+        "$p(1)=0.2,\\ p(2)=0.3,\\ p(3)=0.4$",
+        "$p(1)=0.5,\\ p(2)=0.6,\\ p(3)=-0.1$",
+        "$p(1)=0.1,\\ p(2)=0.3,\\ p(3)=0.6$",
+        "$p(1)=p(2)=p(3)=1$"
+      ],
+      "answer": 2,
+      "hints": [
+        "Check nonnegativity and that the probabilities sum to 1.",
+        "Option A sums to 0.9."
+      ],
+      "solution": "Only $0.1, 0.3, 0.6$ is nonnegative and sums to 1.",
+      "steps": [
+        "A: sum $0.9$ — invalid.",
+        "B: negative value — invalid.",
+        "C: all nonnegative, sum $1$ — valid.",
+        "D: sum $3$ — invalid."
+      ],
+      "reasoning": "Both conditions are required; option B sums to 1 but has a negative entry.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s07-02",
+      "lesson_id": "07-expectation",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "If $E[X]=3$, then $E[2X+5]$ equals:",
+      "options": [
+        "11",
+        "6",
+        "3",
+        "It cannot be determined without the PMF"
+      ],
+      "answer": 0,
+      "hints": [
+        "Use linearity of expectation.",
+        "$E[aX+b]=aE[X]+b$."
+      ],
+      "solution": "$E[2X+5] = 2(3)+5 = 11$.",
+      "steps": [
+        "Linearity: $E[aX+b] = aE[X]+b$.",
+        "$2\\times3+5 = 11$."
+      ],
+      "reasoning": "Linearity needs no other information about the distribution; variance would need $V(X)$.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s07-03",
+      "lesson_id": "07-expectation",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "The maximum $M$ of two independent fair dice has $p(m)=(2m-1)/36$ for $m=1,\\ldots,6$ (September 16). Find $E[M]$. Give at least 3 decimal places.",
+      "answer": 4.472222222222222,
+      "hints": [
+        "Compute $\\sum m\\,p(m)$.",
+        "The products $m(2m-1)$ are $1, 6, 15, 28, 45, 66$."
+      ],
+      "solution": "$E[M] = (1+6+15+28+45+66)/36 = 161/36 \\approx 4.4722$.",
+      "steps": [
+        "$E[M] = \\sum_{m=1}^6 m(2m-1)/36$.",
+        "Numerators: $1, 6, 15, 28, 45, 66$; sum $=161$.",
+        "$E[M] = 161/36 \\approx 4.4722$."
+      ],
+      "reasoning": "The maximum tends to be larger than one die's mean of 3.5, as expected.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "value"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s08-01",
+      "lesson_id": "08-geometric",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Software defines a geometric variable $Y$ on $0,1,2,\\ldots$ (failures before the first success). If $X$ is this course's geometric variable for the same trials, then:",
+      "options": [
+        "$X=Y+1$",
+        "$X=Y-1$",
+        "$X=Y$",
+        "$X=1/Y$"
+      ],
+      "answer": 0,
+      "hints": [
+        "$X$ counts the success trial as well.",
+        "If the first trial succeeds, $Y=0$; what is $X$?"
+      ],
+      "solution": "$X$ counts all trials including the success; $Y$ counts only failures, so $X=Y+1$.",
+      "steps": [
+        "Immediate success: $Y=0$, $X=1$.",
+        "In general $X$ = failures + 1 = $Y+1$."
+      ],
+      "reasoning": "Translate conventions before using software; the means differ by 1 ($1/p$ versus $(1-p)/p$).",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s08-02",
+      "lesson_id": "08-geometric",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Which description fits a discrete uniform distribution?",
+      "options": [
+        "Each of $k$ specified values has probability $1/k$",
+        "The values must be the integers $1,\\ldots,k$",
+        "The probability increases with the value",
+        "The density is constant on an interval"
+      ],
+      "answer": 0,
+      "hints": [
+        "Uniformity is about equal probabilities.",
+        "A constant density on an interval is the continuous uniform."
+      ],
+      "solution": "Discrete uniform: $k$ specified values, each with probability $1/k$; they need not be $1,\\ldots,k$ or equally spaced.",
+      "steps": [
+        "Equal probabilities on a finite list of values.",
+        "The notation $U(k)$ must be accompanied by the actual support."
+      ],
+      "reasoning": "The lesson warns that $U(k)$ alone does not specify the possible values.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s08-03",
+      "lesson_id": "08-geometric",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "Random digits 0–9 are generated independently until the first 0 appears. Find $P(\\text{more than 10 digits are needed})$. Give at least 4 decimal places.",
+      "answer": 0.3486784401000001,
+      "hints": [
+        "“More than 10 needed” means the first 10 digits are all nonzero.",
+        "Use $P(X>k)=(1-p)^k$ with $p=0.1$."
+      ],
+      "solution": "$P(X>10)=0.9^{10}\\approx0.3487$.",
+      "steps": [
+        "Success = digit 0, so $p=0.1$.",
+        "$X>10$ ⇔ the first 10 digits are nonzero.",
+        "$P = 0.9^{10} \\approx 0.3487$."
+      ],
+      "reasoning": "Tail events of the geometric depend only on the first $k$ trials failing.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "decimal"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s09-01",
+      "lesson_id": "09-binomial",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Which count is **not** binomial?",
+      "options": [
+        "Heads in 20 tosses of a fair coin",
+        "Defective items among 10 drawn **with** replacement from a lot that is 5% defective",
+        "Aces in a 5-card hand dealt from one deck",
+        "Sixes in 12 rolls of a fair die"
+      ],
+      "answer": 2,
+      "hints": [
+        "Check independence and constant $p$.",
+        "Cards dealt from one deck are drawn without replacement."
+      ],
+      "solution": "A 5-card hand is drawn without replacement, so the ace count is hypergeometric, $HG(52,4,5)$.",
+      "steps": [
+        "Coin tosses, with-replacement draws, and die rolls: independent trials with constant $p$.",
+        "Dealing cards: dependent draws → hypergeometric."
+      ],
+      "reasoning": "The binomial needs independent trials with the same success probability.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            11,
+            12
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s09-02",
+      "lesson_id": "09-binomial",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "For $X\\sim NB(r,p)$ (total trials until the $r$th success), why is the coefficient $\\binom{x-1}{r-1}$ rather than $\\binom xr$?",
+      "options": [
+        "The last trial must be the $r$th success, so only the first $x-1$ trials are arranged",
+        "Because order does not matter",
+        "To make the probabilities sum to $r$",
+        "Because the trials are dependent"
+      ],
+      "answer": 0,
+      "hints": [
+        "What must happen on trial $x$?",
+        "Where can the other $r-1$ successes be?"
+      ],
+      "solution": "Trial $x$ is fixed as a success; the other $r-1$ successes are placed among the first $x-1$ trials.",
+      "steps": [
+        "Event $X=x$: the $r$th success happens exactly at trial $x$.",
+        "Trial $x$ is a success; choose positions of the remaining $r-1$ successes among $x-1$ earlier trials.",
+        "$\\binom xr$ would include sequences that reached $r$ successes earlier."
+      ],
+      "reasoning": "The same logic gives the geometric PMF when $r=1$.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            11,
+            12
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s09-03",
+      "lesson_id": "09-binomial",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "$X\\sim B(5,\\,0.2)$. Find $P(X\\le1)$. Give at least 4 decimal places.",
+      "answer": 0.7372800000000002,
+      "hints": [
+        "$P(X\\le1)=P(X=0)+P(X=1)$.",
+        "$P(X=1)=\\binom51(0.2)(0.8)^4$."
+      ],
+      "solution": "$0.8^5 + 5(0.2)(0.8)^4 = 0.32768 + 0.4096 = 0.73728$.",
+      "steps": [
+        "$P(X=0) = 0.8^5 = 0.32768$.",
+        "$P(X=1) = 5(0.2)(0.8^4) = 0.4096$.",
+        "Sum: $0.73728$."
+      ],
+      "reasoning": "For “at most” questions, add the PMF from 0 up, or read the cumulative table at 1.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "decimal"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            11,
+            12
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s10-01",
+      "lesson_id": "10-hypergeometric",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "In the notation $HG(N,M,n)$ from the notes, $M$ is:",
+      "options": [
+        "The number of successes in the population",
+        "The probability of success",
+        "The sample size",
+        "The number of failures in the sample"
+      ],
+      "answer": 0,
+      "hints": [
+        "$M/N$ is the population success fraction.",
+        "$n$ is the sample size."
+      ],
+      "solution": "$N$ = population size, $M$ = population successes, $n$ = sample size.",
+      "steps": [
+        "$N$: population size.",
+        "$M$: successes in the population (a count).",
+        "$n$: number drawn."
+      ],
+      "reasoning": "Keeping the three parameters in their correct places prevents most hypergeometric errors.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s10-02",
+      "lesson_id": "10-hypergeometric",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "A lot has $N=10$ items, of which $M=7$ are defective. A sample of $n=5$ is drawn without replacement. What is the **smallest** possible number of defectives in the sample?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "hints": [
+        "How many non-defective items exist?",
+        "Use $\\max(0,\\,n-(N-M))$."
+      ],
+      "solution": "Only 3 items are non-defective, so at least $5-3=2$ sampled items must be defective.",
+      "steps": [
+        "Non-defectives available: $N-M=3$.",
+        "At most 3 of the 5 sampled can be non-defective.",
+        "So at least $5-3=2$ are defective."
+      ],
+      "reasoning": "Probabilities for $x=0,1$ are zero; the formula agrees because $\\binom{3}{5-x}=0$ when $5-x>3$.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s10-03",
+      "lesson_id": "10-hypergeometric",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "From 20 blocks, 15 of which are acceptable, a random sample of 3 is drawn without replacement. Find $P(\\text{exactly 2 acceptable})$. Give at least 4 decimal places.",
+      "answer": 0.4605263157894737,
+      "hints": [
+        "Choose 2 of the 15 acceptable and 1 of the 5 unacceptable.",
+        "Divide by $\\binom{20}3=1140$."
+      ],
+      "solution": "$\\binom{15}2\\binom51/\\binom{20}3 = 105\\cdot5/1140 = 525/1140 \\approx 0.4605$.",
+      "steps": [
+        "$\\binom{15}{2} = 105$.",
+        "$\\binom{5}{1} = 5$.",
+        "$\\binom{20}{3} = 1140$.",
+        "$P = 525/1140 \\approx 0.4605$."
+      ],
+      "reasoning": "This extends the September 9 block example, which found $P(\\text{all 3 acceptable})=\\binom{15}3/\\binom{20}3$.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "decimal"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s11-01",
+      "lesson_id": "11-poisson",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Which quantity is most naturally modelled as Poisson?",
+      "options": [
+        "Calls arriving at a help desk in one hour, at a stable average rate",
+        "Heads in 10 coin tosses",
+        "The time until the next call arrives",
+        "Red cards in a 5-card hand"
+      ],
+      "answer": 0,
+      "hints": [
+        "Poisson counts events in a fixed interval with no fixed number of trials.",
+        "Which option is a waiting time rather than a count?"
+      ],
+      "solution": "Arrivals in a fixed interval at a steady rate fit a Poisson process.",
+      "steps": [
+        "Coin tosses: binomial.",
+        "Waiting time: exponential.",
+        "Cards from one deck: hypergeometric.",
+        "Arrivals per hour: Poisson."
+      ],
+      "reasoning": "Counts are not automatically Poisson; the process assumptions (stable rate, independent disjoint intervals) matter.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            3
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s11-02",
+      "lesson_id": "11-poisson",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Events occur as a Poisson process at 4 per hour. For a 15-minute window, the count is:",
+      "options": [
+        "Poisson with $\\lambda=1$",
+        "Poisson with $\\lambda=4$",
+        "Poisson with $\\lambda=60$",
+        "Exponential with mean 15"
+      ],
+      "answer": 0,
+      "hints": [
+        "Convert 15 minutes into hours.",
+        "$\\lambda = a t$."
+      ],
+      "solution": "$\\lambda = 4\\times0.25 = 1$.",
+      "steps": [
+        "$t = 15$ min $= 0.25$ h.",
+        "$\\lambda = 4\\times0.25 = 1$."
+      ],
+      "reasoning": "The Poisson parameter is the expected count for the specific interval.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            3
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s11-03",
+      "lesson_id": "11-poisson",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "Emergency-room arrivals between 5 and 6 PM are modelled as $X\\sim P(6.9)$ (September 23 setup). Find $P(X=5)$. Give at least 4 decimal places.",
+      "answer": 0.13135066700810716,
+      "hints": [
+        "Use $\\lambda^x e^{-\\lambda}/x!$ with $\\lambda=6.9$, $x=5$.",
+        "$5! = 120$."
+      ],
+      "solution": "$6.9^5e^{-6.9}/120 \\approx 0.1313$.",
+      "steps": [
+        "$6.9^5 \\approx 15640.31$.",
+        "$e^{-6.9} \\approx 0.0010078$.",
+        "Product $\\approx 15.762$; divide by $5!=120$: $\\approx 0.1313$."
+      ],
+      "reasoning": "This evaluates the lecture model numerically; it is an illustrative model, not a prediction from real data.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "decimal"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            3
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s12-01",
+      "lesson_id": "12-continuous",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "For a continuous random variable $X$ with density $f$, which statement is true?",
+      "options": [
+        "$P(X=2)=f(2)$",
+        "$P(1\\le X\\le3)=P(1<X<3)$",
+        "$f(x)\\le1$ for all $x$",
+        "The CDF can decrease"
+      ],
+      "answer": 1,
+      "hints": [
+        "What is the probability of a single point?",
+        "Densities can exceed 1; CDFs never decrease."
+      ],
+      "solution": "Single points have probability zero, so including or excluding endpoints does not change the probability.",
+      "steps": [
+        "$P(X=a)=0$ for every $a$.",
+        "Therefore endpoint inclusion does not matter.",
+        "$f(2)$ is a density height, not a probability."
+      ],
+      "reasoning": "This is a key difference from discrete variables, where endpoints matter.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s12-02",
+      "lesson_id": "12-continuous",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Where the density $f$ is continuous, the CDF $F$ satisfies:",
+      "options": [
+        "$F'(x)=f(x)$",
+        "$f'(x)=F(x)$",
+        "$F(x)=f(x)$",
+        "$F(x)=1-f(x)$"
+      ],
+      "answer": 0,
+      "hints": [
+        "$F(t)=\\int_{-\\infty}^t f(x)\\,dx$.",
+        "Apply the fundamental theorem of calculus."
+      ],
+      "solution": "By the fundamental theorem of calculus, differentiating the accumulated area gives the density.",
+      "steps": [
+        "$F(t)=\\int_{-\\infty}^t f$.",
+        "Differentiate: $F'(t)=f(t)$ where $f$ is continuous."
+      ],
+      "reasoning": "Use this to recover a density from a given CDF.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s12-03",
+      "lesson_id": "12-continuous",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "For the lecture density $f(x)=12.5x-1.25$ on $[0.1,0.5]$ (zero elsewhere), find $P(0.1\\le X\\le0.3)$.",
+      "answer": 0.25,
+      "hints": [
+        "Use $F(x)=6.25x^2-1.25x+0.0625$ on the support.",
+        "Evaluate $F(0.3)$; note $F(0.1)=0$."
+      ],
+      "solution": "$F(0.3)=6.25(0.09)-1.25(0.3)+0.0625=0.25$.",
+      "steps": [
+        "$F(0.3) = 0.5625-0.375+0.0625 = 0.25$.",
+        "$F(0.1) = 0.0625-0.125+0.0625 = 0$.",
+        "$P = 0.25-0 = 0.25$."
+      ],
+      "reasoning": "Check with geometry: the density rises linearly from 0 at 0.1 to 2.5 at 0.3, so the triangle has area $\\tfrac12(0.2)(2.5)=0.25$.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "decimal"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s13-01",
+      "lesson_id": "13-gamma",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Calls arrive as a Poisson process at 3 per hour. In the course's notation $E(\\beta)$ (scale $\\beta$), the waiting time in hours until the next call is:",
+      "options": [
+        "$E(1/3)$",
+        "$E(3)$",
+        "$\\Gamma(3,1)$",
+        "$P(3)$"
+      ],
+      "answer": 0,
+      "hints": [
+        "The exponential scale equals the mean waiting time.",
+        "At 3 calls per hour, the mean wait is 1/3 hour."
+      ],
+      "solution": "Scale $\\beta=1/a=1/3$ hour, so $T\\sim E(1/3)$.",
+      "steps": [
+        "Rate $a=3$ per hour.",
+        "Scale $\\beta = 1/a = 1/3$ hour (20 minutes).",
+        "$T\\sim E(1/3)$."
+      ],
+      "reasoning": "$E(3)$ would mean an average wait of 3 hours — the rate/scale confusion the lesson warns about.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-05",
+          "pages": [
+            2,
+            7
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s13-02",
+      "lesson_id": "13-gamma",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "The chi-squared distribution with $\\nu$ degrees of freedom is:",
+      "options": [
+        "$\\Gamma(\\nu/2,\\,2)$",
+        "$\\Gamma(2,\\,\\nu/2)$",
+        "$\\Gamma(\\nu,\\,1)$",
+        "$N(\\nu,\\,2\\nu)$"
+      ],
+      "answer": 0,
+      "hints": [
+        "Its mean is $\\nu$ and its variance is $2\\nu$.",
+        "Check $\\alpha\\beta=\\nu$ and $\\alpha\\beta^2=2\\nu$."
+      ],
+      "solution": "$\\chi^2_\\nu=\\Gamma(\\nu/2,2)$: mean $(\\nu/2)(2)=\\nu$, variance $(\\nu/2)(4)=2\\nu$.",
+      "steps": [
+        "Shape $\\nu/2$, scale 2.",
+        "Mean $=\\nu$, variance $=2\\nu$."
+      ],
+      "reasoning": "Option B has the right mean but variance $\\nu^2/2$.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-05",
+          "pages": [
+            2,
+            7
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s13-03",
+      "lesson_id": "13-gamma",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "$X\\sim\\Gamma(4,\\,3)$ with shape 4 and scale 3. Find $V(X)$.",
+      "answer": 36,
+      "hints": [
+        "$V(X)=\\alpha\\beta^2$.",
+        "Square the scale."
+      ],
+      "solution": "$V(X)=4\\times3^2=36$.",
+      "steps": [
+        "$\\alpha = 4$, $\\beta = 3$.",
+        "$V(X) = \\alpha\\beta^2 = 4\\times9 = 36$."
+      ],
+      "reasoning": "Using $\\alpha\\beta$ would give the mean (12), not the variance.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "value"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-05",
+          "pages": [
+            2,
+            7
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s14-01",
+      "lesson_id": "14-spread-rules",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "For $X\\sim N(\\mu,\\sigma^2)$, where are the inflection points of the density?",
+      "options": [
+        "$\\mu\\pm\\sigma$",
+        "$\\mu\\pm\\sigma^2$",
+        "$\\mu\\pm2\\sigma$",
+        "Only at $\\mu$"
+      ],
+      "answer": 0,
+      "hints": [
+        "They are one standard deviation from the center.",
+        "Use the standard deviation, not the variance."
+      ],
+      "solution": "The normal curve changes concavity at $\\mu\\pm\\sigma$.",
+      "steps": [
+        "The curve is symmetric about $\\mu$.",
+        "Concavity changes one standard deviation either side."
+      ],
+      "reasoning": "This gives a quick way to read $\\sigma$ off a sketch of a normal curve.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-10-05",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s14-02",
+      "lesson_id": "14-spread-rules",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "A distribution of unknown shape has mean 50 and standard deviation 5. What can you guarantee about $P(40<X<60)$?",
+      "options": [
+        "It is at least 0.75 (Chebyshev with $k=2$)",
+        "It is exactly 0.95",
+        "It is about 0.68",
+        "Nothing can be said"
+      ],
+      "answer": 0,
+      "hints": [
+        "40 and 60 are two standard deviations from the mean.",
+        "Without normality, use Chebyshev."
+      ],
+      "solution": "$k=2$: $P(|X-\\mu|<2\\sigma)\\ge1-1/4=0.75$.",
+      "steps": [
+        "$|X-50|<10$ is $|X-\\mu|<2\\sigma$.",
+        "Chebyshev: at least $1-1/2^2=0.75$.",
+        "0.95 needs a normal model."
+      ],
+      "reasoning": "Chebyshev is a guaranteed lower bound, not an exact probability.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-10-05",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s14-03",
+      "lesson_id": "14-spread-rules",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "Finishing times are modelled as $X\\sim N(61,\\,81)$ minutes (October 14). Find $P(X>70)$. Give at least 3 decimal places.",
+      "answer": 0.15865525393145707,
+      "hints": [
+        "$\\sigma=\\sqrt{81}=9$.",
+        "Standardize, then use $1-\\Phi(z)$."
+      ],
+      "solution": "$z=(70-61)/9=1$; $P(X>70)=1-\\Phi(1)\\approx0.1587$.",
+      "steps": [
+        "$\\sigma = 9$.",
+        "$z = (70-61)/9 = 1$.",
+        "$P(Z>1) = 1-\\Phi(1) \\approx 1-0.8413 = 0.1587$."
+      ],
+      "reasoning": "Right-tail probabilities need the “1 −”; table values to 4 decimals are accepted.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0005,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "decimal"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-10-05",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s15-01",
+      "lesson_id": "15-mgf",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "For any random variable whose MGF exists, $m_X(0)$ equals:",
+      "options": [
+        "1",
+        "0",
+        "$E[X]$",
+        "$V(X)$"
+      ],
+      "answer": 0,
+      "hints": [
+        "Substitute $t=0$ into $E[e^{tX}]$.",
+        "$e^0=1$."
+      ],
+      "solution": "$m_X(0)=E[e^{0}]=E[1]=1$.",
+      "steps": [
+        "$m_X(0) = E[e^{0\\cdot X}]$.",
+        "$= E[1] = 1$."
+      ],
+      "reasoning": "A quick sanity check for any MGF you derive.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            4,
+            6
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            1,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s15-02",
+      "lesson_id": "15-mgf",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Why does the MGF $m_X(t)=1/(1-t)$ of the density $e^{-x}$ ($x>0$) require $t<1$?",
+      "options": [
+        "For $t\\ge1$ the integral $\\int_0^\\infty e^{-(1-t)x}dx$ diverges",
+        "Because probabilities must be less than 1",
+        "Because $t$ is a probability",
+        "Because the mean is 1"
+      ],
+      "answer": 0,
+      "hints": [
+        "Look at the exponent $-(1-t)x$.",
+        "When does $e^{-cx}$ fail to decay?"
+      ],
+      "solution": "The integrand decays only when $1-t>0$; otherwise the integral is infinite.",
+      "steps": [
+        "$m_X(t)=\\int_0^\\infty e^{-(1-t)x}dx$.",
+        "If $1-t\\le0$ the integrand does not decay and the integral diverges.",
+        "So the MGF exists only for $t<1$ (an open interval containing 0, which suffices)."
+      ],
+      "reasoning": "The derivative rule needs the MGF on an open interval around zero.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            4,
+            6
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            1,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s15-03",
+      "lesson_id": "15-mgf",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "A random variable has MGF $m(t)=(1-2t)^{-3}$ for $t<1/2$. Find $E[X]$.",
+      "answer": 6,
+      "hints": [
+        "$m'(t)=-3(1-2t)^{-4}(-2)$.",
+        "Evaluate at $t=0$."
+      ],
+      "solution": "$m'(t)=6(1-2t)^{-4}$, so $E[X]=m'(0)=6$.",
+      "steps": [
+        "Chain rule: $m'(t) = -3(1-2t)^{-4}\\cdot(-2) = 6(1-2t)^{-4}$.",
+        "$E[X] = m'(0) = 6$."
+      ],
+      "reasoning": "Supplemental check: this is the $\\Gamma(3,2)$ MGF, whose mean $\\alpha\\beta=6$ agrees. The notes give the derivative rule; this MGF itself is an extension.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "value"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            4,
+            6
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            1,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s16-01",
+      "lesson_id": "16-joint",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "To show from a joint table that $X$ and $Y$ are **not** independent, it is enough to:",
+      "options": [
+        "Find one cell where $p(x,y)\\ne p_X(x)p_Y(y)$",
+        "Find one cell where $p(x,y)=p_X(x)p_Y(y)$",
+        "Show that the table sums to 1",
+        "Show that each marginal sums to 1"
+      ],
+      "answer": 0,
+      "hints": [
+        "Independence requires factorization in every cell.",
+        "What does one counterexample do to an “every” statement?"
+      ],
+      "solution": "One failing cell disproves independence.",
+      "steps": [
+        "Independence: $p(x,y)=p_X(x)p_Y(y)$ for all cells.",
+        "A single failure contradicts “for all”."
+      ],
+      "reasoning": "A single matching cell proves nothing; every cell must factor.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s16-02",
+      "lesson_id": "16-joint",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "$(X,Y)$ is uniform on the rectangle $[8.5,10.5]\\times[120,240]$ (October 7 model). What is the joint density on the rectangle?",
+      "options": [
+        "$1/240$",
+        "$1/120$",
+        "$1/2$",
+        "$240$"
+      ],
+      "answer": 0,
+      "hints": [
+        "The joint density is 1 divided by the area.",
+        "Area $=2\\times120$."
+      ],
+      "solution": "Area $=(10.5-8.5)(240-120)=240$, so the density is $1/240$.",
+      "steps": [
+        "Width $2$, height $120$, area $240$.",
+        "Constant density $=1/240$ so the total volume is 1."
+      ],
+      "reasoning": "The marginal densities are $1/2$ and $1/120$, whose product is $1/240$ — independence in this rectangular model.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s16-03",
+      "lesson_id": "16-joint",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "Using the October 7 weld/bolt joint table (defective welds $X$, loose bolts $Y$), find $P(X\\ge1\\text{ and }Y\\ge1)$.",
+      "answer": 0.03,
+      "hints": [
+        "Add the cells with $X\\in\\{1,2\\}$ and $Y\\in\\{1,2,3\\}$.",
+        "Row $X=1$: $0.01+0.008+0.002$; row $X=2$: $0.005+0.004+0.001$."
+      ],
+      "solution": "$(0.01+0.008+0.002)+(0.005+0.004+0.001)=0.02+0.01=0.03$.",
+      "steps": [
+        "Cells with $X=1$, $Y\\ge1$: $0.01+0.008+0.002 = 0.02$.",
+        "Cells with $X=2$, $Y\\ge1$: $0.005+0.004+0.001 = 0.01$.",
+        "Total: $0.03$."
+      ],
+      "reasoning": "Event probabilities are sums over the cells satisfying the event — not necessarily a whole row or column.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "decimal"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s17-01",
+      "lesson_id": "17-covariance",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Two temperature variables are both converted from Celsius to Fahrenheit ($F=1.8C+32$). How does their **correlation** change?",
+      "options": [
+        "It is unchanged",
+        "It is multiplied by 1.8",
+        "It is multiplied by $1.8^2=3.24$",
+        "It increases by 32"
+      ],
+      "answer": 0,
+      "hints": [
+        "Covariance is multiplied by $1.8\\times1.8$; each standard deviation by 1.8.",
+        "What happens to the ratio?"
+      ],
+      "solution": "Positive rescaling changes covariance and standard deviations by matching factors, so the correlation is unchanged.",
+      "steps": [
+        "$\\operatorname{Cov}$ becomes $1.8^2\\operatorname{Cov}$.",
+        "Each $sd$ becomes $1.8\\,sd$.",
+        "$\\rho$ is unchanged."
+      ],
+      "reasoning": "Covariance itself does change (by 3.24); see the October 7 source note in Source issues.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s17-02",
+      "lesson_id": "17-covariance",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "If $Y=-2X+7$ and $V(X)>0$, then the correlation of $X$ and $Y$ is:",
+      "options": [
+        "$-1$",
+        "$-2$",
+        "$1$",
+        "$0$"
+      ],
+      "answer": 0,
+      "hints": [
+        "$\\operatorname{Cov}(X,Y)=-2V(X)$ and $sd(Y)=2\\,sd(X)$.",
+        "Correlation must lie in $[-1,1]$."
+      ],
+      "solution": "$\\rho=-2V(X)/(sd(X)\\cdot2sd(X))=-1$.",
+      "steps": [
+        "$\\operatorname{Cov}(X,-2X+7) = -2V(X)$.",
+        "$sd(Y) = |-2|\\,sd(X)$.",
+        "$\\rho = -2V(X)/(2V(X)) = -1$."
+      ],
+      "reasoning": "An exact decreasing linear relationship gives correlation $-1$.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s17-03",
+      "lesson_id": "17-covariance",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "A joint PMF has $p(0,0)=0.2$, $p(0,1)=0.3$, $p(1,0)=0.1$, $p(1,1)=0.4$. Find $\\operatorname{Cov}(X,Y)$.",
+      "answer": 0.05,
+      "hints": [
+        "Find $E[X]$, $E[Y]$, and $E[XY]$.",
+        "Only the cell $(1,1)$ contributes to $E[XY]$."
+      ],
+      "solution": "$E[XY]=0.4$, $E[X]=0.5$, $E[Y]=0.7$; $\\operatorname{Cov}=0.4-0.35=0.05$.",
+      "steps": [
+        "$E[X] = P(X=1) = 0.5$; $E[Y] = P(Y=1) = 0.7$.",
+        "$E[XY] = 1\\cdot1\\cdot0.4 = 0.4$.",
+        "$\\operatorname{Cov} = 0.4-0.5\\times0.7 = 0.05$."
+      ],
+      "reasoning": "Positive covariance agrees with the dependence found in question q16-03.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "value"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s18-01",
+      "lesson_id": "18-regression",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "The least-squares line with an intercept always passes through:",
+      "options": [
+        "$(\\bar x,\\bar y)$",
+        "$(0,0)$",
+        "The first and last data points",
+        "$(s_x,s_y)$"
+      ],
+      "answer": 0,
+      "hints": [
+        "Look at the intercept formula $a=\\bar y-b\\bar x$.",
+        "Evaluate $\\hat y$ at $x=\\bar x$."
+      ],
+      "solution": "$\\hat y(\\bar x)=a+b\\bar x=\\bar y$.",
+      "steps": [
+        "$a = \\bar y - b\\bar x$.",
+        "$\\hat y(\\bar x) = \\bar y - b\\bar x + b\\bar x = \\bar y$."
+      ],
+      "reasoning": "Useful check on any fitted line you compute.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s18-02",
+      "lesson_id": "18-regression",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "A strong U-shaped relationship can have $R$ near 0 because:",
+      "options": [
+        "$R$ measures only linear association",
+        "$R$ is always near 0 in large samples",
+        "Curved data have no variation",
+        "$R$ measures causation"
+      ],
+      "answer": 0,
+      "hints": [
+        "What kind of pattern does $R$ summarize?",
+        "Positive and negative products can cancel."
+      ],
+      "solution": "$R$ summarizes linear association; a symmetric curve can make positive and negative cross-products cancel.",
+      "steps": [
+        "Points left of center contribute products of one sign, points right of center the other.",
+        "They cancel, giving $R\\approx0$ despite a strong relationship."
+      ],
+      "reasoning": "Always inspect a scatterplot before relying on $R$.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s18-03",
+      "lesson_id": "18-regression",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "Summary statistics: $\\bar x=4$, $\\bar y=20$, $s_x=1.5$, $s_y=6$, $R=-0.5$. Find the least-squares prediction $\\hat y$ at $x=7$.",
+      "answer": 14,
+      "hints": [
+        "Slope $b=R\\,s_y/s_x$.",
+        "Intercept $a=\\bar y-b\\bar x$."
+      ],
+      "solution": "$b=-0.5(6/1.5)=-2$; $a=20-(-2)(4)=28$; $\\hat y(7)=28-14=14$.",
+      "steps": [
+        "$b = -0.5\\times6/1.5 = -2$.",
+        "$a = 20-(-2)(4) = 28$.",
+        "$\\hat y = 28-2(7) = 14$."
+      ],
+      "reasoning": "Check: the line passes through $(4,20)$; moving 3 units right lowers the prediction by $3\\times2=6$.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "value"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s19-01",
+      "lesson_id": "19-estimation",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Before a sample is collected, $\\bar X$ is ___; after the data are observed, $\\bar x=12.4$ is ___.",
+      "options": [
+        "an estimator (random); an estimate (a number)",
+        "an estimate; an estimator",
+        "a parameter; a statistic",
+        "a constant; a random variable"
+      ],
+      "answer": 0,
+      "hints": [
+        "Which one varies from sample to sample?",
+        "An estimate is the value an estimator produces."
+      ],
+      "solution": "$\\bar X$ is a random rule (estimator); $\\bar x$ is its observed value (estimate).",
+      "steps": [
+        "Estimator: a rule applied to random data — itself random.",
+        "Estimate: the number obtained from the observed sample."
+      ],
+      "reasoning": "Bias and standard error are properties of the estimator, not of a single estimate.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s19-02",
+      "lesson_id": "19-estimation",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "An IID sample comes from a population with $\\sigma=12$. What sample size $n$ makes the standard error of $\\bar X$ equal to $1.5$?",
+      "answer": 64,
+      "hints": [
+        "Solve $12/\\sqrt n=1.5$.",
+        "$\\sqrt n=8$."
+      ],
+      "solution": "$\\sqrt n=12/1.5=8$, so $n=64$.",
+      "steps": [
+        "$SE = \\sigma/\\sqrt n$.",
+        "$\\sqrt n = 12/1.5 = 8$.",
+        "$n = 64$."
+      ],
+      "reasoning": "Halving the standard error requires quadrupling the sample size.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "count"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s19-03",
+      "lesson_id": "19-estimation",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "The estimator $\\hat\\sigma^2=\\frac1n\\sum(X_i-\\bar X)^2$ has expectation $\\frac{n-1}n\\sigma^2$. For $n=5$ and $\\sigma^2=20$, find its bias.",
+      "answer": -4,
+      "hints": [
+        "Bias $=E[\\hat\\sigma^2]-\\sigma^2$.",
+        "$E[\\hat\\sigma^2]=(4/5)(20)$."
+      ],
+      "solution": "$E[\\hat\\sigma^2]=16$, so bias $=16-20=-4$.",
+      "steps": [
+        "$E[\\hat\\sigma^2] = (4/5)\\times20 = 16$.",
+        "Bias $= 16-20 = -4$."
+      ],
+      "reasoning": "Dividing by $n$ underestimates $\\sigma^2$ on average; dividing by $n-1$ removes the bias.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "value"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s20-01",
+      "lesson_id": "20-sampling",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Individual finishing times are $N(61,81)$. For the mean $\\bar X$ of 9 independent finishers:",
+      "options": [
+        "$\\bar X\\sim N(61,\\,9)$",
+        "$\\bar X\\sim N(61,\\,81)$",
+        "$\\bar X\\sim N(61/9,\\,81)$",
+        "$\\bar X\\sim N(61,\\,3)$"
+      ],
+      "answer": 0,
+      "hints": [
+        "$V(\\bar X)=\\sigma^2/n$.",
+        "The second parameter is a variance."
+      ],
+      "solution": "$\\bar X\\sim N(61,\\,81/9)=N(61,9)$; its standard deviation is 3.",
+      "steps": [
+        "Mean unchanged: 61.",
+        "Variance $81/9 = 9$.",
+        "In $N(\\mu,\\sigma^2)$ notation: $N(61,9)$ (option D wrongly writes the sd)."
+      ],
+      "reasoning": "This is the authored extension of the October 14 finishing-time model.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            3,
+            6
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s20-02",
+      "lesson_id": "20-sampling",
+      "type": "multiple_choice",
+      "kind": "conceptual",
+      "prompt": "Which statement about the mean of IID observations is supported by the supplied notes?",
+      "options": [
+        "If the observations are normal, $\\bar X$ is exactly normal with variance $\\sigma^2/n$",
+        "$\\bar X$ is exactly normal for any population",
+        "$V(\\bar X)=\\sigma^2$",
+        "$\\bar X$ has the same standard deviation as one observation"
+      ],
+      "answer": 0,
+      "hints": [
+        "Normality of the population gives an exact normal sampling distribution.",
+        "A central limit theorem is not developed in the supplied notes."
+      ],
+      "solution": "For IID normal observations, $\\bar X\\sim N(\\mu,\\sigma^2/n)$ exactly.",
+      "steps": [
+        "Linear combinations of independent normals are normal.",
+        "$E[\\bar X]=\\mu$, $V(\\bar X)=\\sigma^2/n$.",
+        "For non-normal populations, the notes give the mean and variance but not the distribution."
+      ],
+      "reasoning": "Keep the coverage boundary: the notes stop before a CLT.",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "source_refs": [
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            3,
+            6
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    },
+    {
+      "id": "s20-03",
+      "lesson_id": "20-sampling",
+      "type": "numeric",
+      "kind": "calculation",
+      "prompt": "Independent $X\\sim N(10,4)$ and $Y\\sim N(3,9)$; $W=2X-Y\\sim N(17,25)$. Find $P(W<7)$. Give at least 3 decimal places.",
+      "answer": 0.02275013194817921,
+      "hints": [
+        "$sd(W)=5$.",
+        "Standardize: $z=(7-17)/5$."
+      ],
+      "solution": "$z=-2$; $P(W<7)=\\Phi(-2)\\approx0.0228$.",
+      "steps": [
+        "$sd(W) = \\sqrt{25} = 5$.",
+        "$z = (7-17)/5 = -2$.",
+        "$\\Phi(-2) \\approx 0.0228$."
+      ],
+      "reasoning": "Uses the linear-combination result from the lesson's worked example.",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0005,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise",
+        "expect": "decimal"
+      },
+      "source_refs": [
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            3,
+            6
+          ]
+        }
+      ],
+      "origin": "Supplemental practice authored for this study app (not instructor material); key independently recomputed by scripts/verify_answers.py"
+    }
+  ]
+}

@@ -1,0 +1,517 @@
+{
+  "01-data": {
+    "objectives": [
+      "Distinguish a population (size $N$) from a sample (size $n$), and descriptive from inferential statistics.",
+      "Classify a variable as quantitative or categorical, even when categories are coded with numbers.",
+      "Compute relative and cumulative relative frequencies from counts.",
+      "Choose and read bar graphs, pie charts, dotplots, stem-and-leaf plots, histograms, and ogives."
+    ],
+    "recognize": [
+      "Labels or groups (country, blood type, ZIP code) → counts and relative frequencies; bar graph or pie chart.",
+      "Numerical measurements → dotplot, stem-and-leaf plot, or histogram with left-closed classes $[a,b)$.",
+      "“What fraction is at or below this boundary?” → cumulative relative frequency / ogive."
+    ],
+    "key_formulas": [
+      { "label": "Relative frequency", "tex": "\\text{rel. freq.} = \\frac{f_i}{n}" },
+      { "label": "Pie-chart angle", "tex": "\\theta_i = \\frac{f_i}{n}\\times 360^\\circ" },
+      { "label": "Cumulative relative frequency", "tex": "\\frac{f_1+\\cdots+f_k}{n}" }
+    ],
+    "mistakes": [
+      "Treating numeric codes for categories as quantitative data.",
+      "Putting a boundary value in the wrong class: $[0.02,0.03)$ excludes 0.03.",
+      "Reading ogive height as a density or as the probability of one value.",
+      "Comparing raw-frequency bar heights when histogram classes have unequal widths."
+    ],
+    "related": ["02-summary", "03-boxplots"]
+  },
+  "02-summary": {
+    "objectives": [
+      "Compute the mean, median, mode, and range of a dataset.",
+      "Compute sample variance and standard deviation with the $n-1$ divisor, by definition and by the computational formula.",
+      "Explain why the median is resistant and the mean is not.",
+      "State the units of each summary and keep sample and population notation separate."
+    ],
+    "recognize": [
+      "Skewed data or an extreme value → report the median as a resistant center.",
+      "“Sample variance / sample standard deviation” → divide squared deviations by $n-1$.",
+      "An entire finite population → $\\mu$ and $\\sigma^2$ with divisor $N$."
+    ],
+    "key_formulas": [
+      { "label": "Sample mean", "tex": "\\bar x = \\frac1n\\sum_{i=1}^n x_i" },
+      { "label": "Sample variance (definition)", "tex": "s^2 = \\frac{\\sum_i (x_i-\\bar x)^2}{n-1}" },
+      { "label": "Sample variance (computational)", "tex": "s^2 = \\frac{\\sum_i x_i^2 - n\\bar x^2}{n-1}" },
+      { "label": "Population variance", "tex": "\\sigma^2 = \\frac1N\\sum_{i=1}^N (x_i-\\mu)^2" }
+    ],
+    "mistakes": [
+      "Finding the median without sorting first.",
+      "Dividing a sample variance by $n$ instead of $n-1$.",
+      "Reporting the variance when the standard deviation is requested (or vice versa).",
+      "Rounding $\\bar x$ early when using the computational formula, which can magnify error."
+    ],
+    "related": ["01-data", "03-boxplots", "07-expectation", "19-estimation"]
+  },
+  "03-boxplots": {
+    "objectives": [
+      "Compute and interpret z-scores; convert back with $x=\\bar x + z s$.",
+      "Find quartiles with the course convention: for odd $n$, include the median in both halves.",
+      "Compute IQR, inner and outer fences, and classify mild and extreme outliers using the inclusive rule.",
+      "Draw a boxplot (whiskers to the most extreme non-outliers) and give the five-number summary (actual min and max)."
+    ],
+    "recognize": [
+      "“How unusual is this value?” or comparing positions on different scales → z-scores.",
+      "“Is this an outlier?” or “draw a boxplot” → quartiles, IQR, and fences.",
+      "A value exactly on a fence → the course counts it as an outlier (inclusive rule)."
+    ],
+    "key_formulas": [
+      { "label": "z-score", "tex": "z_i = \\frac{x_i - \\bar x}{s},\\qquad x_i = \\bar x + z_i s" },
+      { "label": "Interquartile range", "tex": "IQR = Q_3 - Q_1" },
+      { "label": "Inner fences", "tex": "Q_1 - 1.5\\,IQR,\\quad Q_3 + 1.5\\,IQR" },
+      { "label": "Outer fences", "tex": "Q_1 - 3\\,IQR,\\quad Q_3 + 3\\,IQR" }
+    ],
+    "mistakes": [
+      "Using a calculator or software quartile convention instead of the course convention.",
+      "Treating a value exactly on a fence as not an outlier (strict inequality).",
+      "Drawing whiskers to the fences instead of to the most extreme non-outlying observations.",
+      "Putting whisker endpoints in the five-number summary instead of the actual minimum and maximum."
+    ],
+    "related": ["02-summary", "14-spread-rules"]
+  },
+  "04-events": {
+    "objectives": [
+      "Write sample spaces and events as sets.",
+      "Use union, intersection, complement, and De Morgan's laws to translate verbal events.",
+      "Apply $P(A)=\\#A/\\#S$ only when elementary outcomes are equally likely.",
+      "Distinguish mutually exclusive events from other relationships."
+    ],
+    "recognize": [
+      "“At least one …” → work with the complement “none”.",
+      "“Neither …” or “not both …” → De Morgan's laws.",
+      "Dice, coins, cards with physical symmetry → count equally likely ordered outcomes."
+    ],
+    "key_formulas": [
+      { "label": "Classical probability", "tex": "P(A) = \\frac{\\#A}{\\#S}\\quad\\text{(equally likely outcomes)}" },
+      { "label": "Complement", "tex": "P(A^c) = 1 - P(A)" },
+      { "label": "De Morgan", "tex": "(A\\cup B)^c = A^c\\cap B^c,\\qquad (A\\cap B)^c = A^c\\cup B^c" }
+    ],
+    "mistakes": [
+      "Counting outcomes that are not equally likely (e.g. the 11 dice sums).",
+      "Taking the complement of “both occur” to be “neither occurs”.",
+      "Assuming probability zero always means impossible (true for finite equally likely models, not in general).",
+      "Calling a collection mutually exclusive when only some pairs are disjoint."
+    ],
+    "related": ["05-counting", "06-rules"]
+  },
+  "05-counting": {
+    "objectives": [
+      "Apply the multiplication rule to multistage choices.",
+      "Decide between permutations and combinations by asking whether order matters.",
+      "Count arrangements of objects with repeated types.",
+      "Build probabilities as ratios of counts with a consistent ordering convention."
+    ],
+    "recognize": [
+      "Roles, rankings, or arrangements → order matters → $_nP_k$.",
+      "Committees, hands, subsets → order does not matter → $\\binom nk$.",
+      "Letters of a word with repeats → $n!/(n_1!\\cdots n_r!)$.",
+      "Repetition allowed (codes, passwords) → product $n^k$."
+    ],
+    "key_formulas": [
+      { "label": "Permutations", "tex": "{}_nP_k = \\frac{n!}{(n-k)!}" },
+      { "label": "Combinations", "tex": "\\binom nk = \\frac{n!}{k!\\,(n-k)!}" },
+      { "label": "Arrangements with repeats", "tex": "\\frac{n!}{n_1!\\,n_2!\\cdots n_r!}" },
+      { "label": "Two-type sample probability", "tex": "P = \\frac{\\binom{M}{x}\\binom{N-M}{n-x}}{\\binom Nn}" }
+    ],
+    "mistakes": [
+      "Counting ordered outcomes in the numerator but unordered ones in the denominator.",
+      "Forgetting to divide by the factorials of repeated letters.",
+      "Using combinations when positions or roles are distinct.",
+      "Applying the multiplication rule when the number of options depends on earlier choices."
+    ],
+    "related": ["04-events", "06-rules", "09-binomial", "10-hypergeometric"]
+  },
+  "06-rules": {
+    "objectives": [
+      "Use the probability axioms and the complement rule.",
+      "Apply the addition rule for two and three events.",
+      "Compute conditional probabilities and use the multiplication rule for sequential draws.",
+      "Test independence with $P(A\\cap B)=P(A)P(B)$ and distinguish it from disjointness."
+    ],
+    "recognize": [
+      "“Given”, “if”, “among those who …” → conditional probability.",
+      "“A or B” → addition rule; subtract the overlap unless the events are disjoint.",
+      "Sequential draws without replacement → multiply conditional probabilities.",
+      "Physically separate mechanisms or stated independence → multiply unconditional probabilities."
+    ],
+    "key_formulas": [
+      { "label": "Addition rule", "tex": "P(A\\cup B) = P(A) + P(B) - P(A\\cap B)" },
+      { "label": "Conditional probability", "tex": "P(B\\mid A) = \\frac{P(A\\cap B)}{P(A)},\\quad P(A)>0" },
+      { "label": "Multiplication rule", "tex": "P(A\\cap B) = P(A)\\,P(B\\mid A)" },
+      { "label": "Independence", "tex": "P(A\\cap B) = P(A)\\,P(B)" }
+    ],
+    "mistakes": [
+      "Confusing $P(A\\mid B)$ with $P(B\\mid A)$.",
+      "Believing disjoint events with positive probability are independent.",
+      "Multiplying probabilities without an independence or conditioning justification.",
+      "Forgetting the second order when “one of each” can happen in two orders."
+    ],
+    "related": ["04-events", "05-counting", "07-expectation", "16-joint"]
+  },
+  "07-expectation": {
+    "objectives": [
+      "Define a discrete random variable, its support, and its PMF.",
+      "Build a CDF and use $F(b)-F(a-1)$ for integer-valued variables.",
+      "Compute $E[X]$, $E[h(X)]$, $E[X^2]$, and $V(X)$.",
+      "Use linearity of expectation and the geometric-series sums from the notes."
+    ],
+    "recognize": [
+      "A table of values with probabilities → PMF; expected value is a probability-weighted average.",
+      "“At most”, “at least”, “between” for integer values → CDF differences with careful endpoints.",
+      "A function of $X$ (cost, square, payoff) → $E[h(X)]=\\sum h(x)p(x)$."
+    ],
+    "key_formulas": [
+      { "label": "Expectation", "tex": "E[X] = \\sum_x x\\,p(x),\\qquad E[h(X)] = \\sum_x h(x)\\,p(x)" },
+      { "label": "Variance shortcut", "tex": "V(X) = E[X^2] - \\mu^2" },
+      { "label": "Integer interval", "tex": "P(a\\le X\\le b) = F(b) - F(a-1)" },
+      { "label": "Linear transformation", "tex": "E[aX+b] = aE[X]+b,\\qquad V(aX+b) = a^2V(X)" }
+    ],
+    "mistakes": [
+      "Using $F(b)-F(a)$, which drops the value $a$.",
+      "Writing $E[X^2] = (E[X])^2$.",
+      "Not checking that a PMF is nonnegative and sums to 1.",
+      "Expecting $E[X]$ to be a possible value of $X$."
+    ],
+    "related": ["02-summary", "06-rules", "08-geometric", "12-continuous", "15-mgf"]
+  },
+  "08-geometric": {
+    "objectives": [
+      "Specify a discrete uniform distribution by its actual support.",
+      "Model the number of trials through the first success as $G(p)$ (total trials, support $1,2,\\ldots$).",
+      "Compute point and tail probabilities $P(X>k)$ and $P(X\\ge k)$.",
+      "Use $E[X]=1/p$ and the standard deviation $\\sqrt{1-p}/p$."
+    ],
+    "recognize": [
+      "A finite list of values with equal probabilities → discrete uniform.",
+      "Repeat independent identical trials until the first success and count trials → geometric.",
+      "“More than $k$ trials needed” → the first $k$ trials all fail."
+    ],
+    "key_formulas": [
+      { "label": "Geometric PMF", "tex": "P(X=x) = (1-p)^{x-1}p,\\quad x=1,2,\\ldots" },
+      { "label": "Tail probabilities", "tex": "P(X>k) = (1-p)^k,\\qquad P(X\\ge k) = (1-p)^{k-1}" },
+      { "label": "Mean and variance", "tex": "E[X] = \\frac1p,\\qquad V(X) = \\frac{1-p}{p^2}" }
+    ],
+    "mistakes": [
+      "Using a software geometric that counts failures (support from 0) without adding 1.",
+      "Off-by-one errors between $P(X>k)$ and $P(X\\ge k)$.",
+      "Using geometric when trials are dependent or $p$ changes between trials.",
+      "Writing $U(k)$ without stating which $k$ values are possible."
+    ],
+    "related": ["07-expectation", "09-binomial"]
+  },
+  "09-binomial": {
+    "objectives": [
+      "Check the binomial conditions: fixed $n$, independent trials, constant $p$, count successes.",
+      "Compute binomial probabilities directly and from cumulative tables.",
+      "Model the number of trials until the $r$th success as negative binomial.",
+      "Explain the coefficient $\\binom{x-1}{r-1}$ in the negative-binomial PMF."
+    ],
+    "recognize": [
+      "Fixed number of independent trials, count the successes → $B(n,p)$.",
+      "Fixed number of successes, count the trials needed → $NB(r,p)$.",
+      "“The $r$th success occurs on trial $x$” → the last trial is a success."
+    ],
+    "key_formulas": [
+      { "label": "Binomial PMF", "tex": "P(X=x) = \\binom nx p^x(1-p)^{n-x},\\quad x=0,\\ldots,n" },
+      { "label": "Binomial mean and variance", "tex": "E[X]=np,\\qquad V(X)=np(1-p)" },
+      { "label": "Negative binomial PMF", "tex": "P(X=x) = \\binom{x-1}{r-1}p^r(1-p)^{x-r},\\quad x=r,r+1,\\ldots" },
+      { "label": "Table subtraction", "tex": "P(X=k)=F(k)-F(k-1)" }
+    ],
+    "mistakes": [
+      "Using $\\binom xr$ for a stopping-time event (it includes sequences that finished earlier).",
+      "Using the binomial for sampling without replacement from a small population.",
+      "Off-by-one table subtraction: $P(X\\ge k) = 1-F(k-1)$, not $1-F(k)$.",
+      "Mixing up which outcome is labelled “success”."
+    ],
+    "related": ["05-counting", "08-geometric", "10-hypergeometric"]
+  },
+  "10-hypergeometric": {
+    "objectives": [
+      "Set up $HG(N,M,n)$ for sampling without replacement from a two-type population.",
+      "Compute probabilities with combinations and identify the feasible support.",
+      "Use $E[X]=nM/N$.",
+      "Explain why the binomial model does not apply exactly without replacement."
+    ],
+    "recognize": [
+      "A finite population with two types, a sample drawn without replacement, count one type.",
+      "Cards from one deck, defective items in a lot, coloured tokens drawn from a box."
+    ],
+    "key_formulas": [
+      { "label": "Hypergeometric PMF", "tex": "P(X=x) = \\frac{\\binom Mx\\binom{N-M}{n-x}}{\\binom Nn}" },
+      { "label": "Feasible values", "tex": "\\max(0,\\,n-(N-M)) \\le x \\le \\min(n,\\,M)" },
+      { "label": "Mean", "tex": "E[X] = n\\frac MN" }
+    ],
+    "mistakes": [
+      "Using $B(n, M/N)$ when draws are dependent and no approximation is justified.",
+      "Swapping the roles of $N$, $M$, and $n$.",
+      "Treating $M$ as a probability rather than a count.",
+      "Assigning probability to impossible values of $x$."
+    ],
+    "related": ["05-counting", "09-binomial"]
+  },
+  "11-poisson": {
+    "objectives": [
+      "Use the Poisson PMF and interpret $\\lambda$ as the expected count in the interval studied.",
+      "Use $E[X]=V(X)=\\lambda$ and $sd=\\sqrt\\lambda$.",
+      "Scale a process rate to an interval: $\\lambda = a t$ with matching units.",
+      "Distinguish a Poisson count from an exponential waiting time."
+    ],
+    "recognize": [
+      "Counts of events over time, area, or volume at a stable average rate → Poisson.",
+      "“No events in time $t$” → $P(X=0)=e^{-at}$.",
+      "A bounded count from a fixed number of trials is binomial, not Poisson."
+    ],
+    "key_formulas": [
+      { "label": "Poisson PMF", "tex": "P(X=x) = \\frac{\\lambda^x e^{-\\lambda}}{x!},\\quad x=0,1,\\ldots" },
+      { "label": "Mean and variance", "tex": "E[X] = V(X) = \\lambda" },
+      { "label": "Rate scaling", "tex": "\\lambda = a\\,t" },
+      { "label": "At least one event", "tex": "P(X\\ge1) = 1 - e^{-\\lambda}" }
+    ],
+    "mistakes": [
+      "Forgetting to convert the interval into the rate's time units.",
+      "Reporting $\\lambda$ as the standard deviation.",
+      "Using Poisson for a count with a fixed maximum number of trials.",
+      "Confusing the event count with the waiting time between events."
+    ],
+    "related": ["07-expectation", "13-gamma"]
+  },
+  "12-continuous": {
+    "objectives": [
+      "State the PDF conditions and interpret probability as area under the density.",
+      "Construct a piecewise CDF, including values 0 and 1 outside the support.",
+      "Compute $E[X]$, $E[X^2]$, and $V(X)$ by integration.",
+      "Work with the continuous uniform $U(a,b)$."
+    ],
+    "recognize": [
+      "A measurement on a continuum with a density formula → integrate over the event.",
+      "A CDF is given → subtract CDF values; differentiate to recover the density.",
+      "Equal density on an interval → continuous uniform; probabilities are length ratios."
+    ],
+    "key_formulas": [
+      { "label": "Probability as area", "tex": "P(a\\le X\\le b) = \\int_a^b f(x)\\,dx" },
+      { "label": "CDF", "tex": "F(t) = \\int_{-\\infty}^t f(x)\\,dx,\\qquad F'(x) = f(x)" },
+      { "label": "Expectation", "tex": "E[h(X)] = \\int h(x) f(x)\\,dx" },
+      { "label": "Uniform", "tex": "f(x)=\\frac1{b-a},\\ a\\le x\\le b;\\qquad E[X]=\\frac{a+b}2" }
+    ],
+    "mistakes": [
+      "Treating $f(a)$ as $P(X=a)$; for continuous $X$, $P(X=a)=0$.",
+      "Ignoring the support when setting integration limits.",
+      "Leaving the CDF undefined outside the support instead of 0 below and 1 above.",
+      "Integrating $f(x)$ instead of $x f(x)$ to find a mean."
+    ],
+    "related": ["07-expectation", "13-gamma", "14-spread-rules", "16-joint"]
+  },
+  "13-gamma": {
+    "objectives": [
+      "Use the gamma function and $\\Gamma(n)=(n-1)!$.",
+      "Work with $\\Gamma(\\alpha,\\beta)$ using the course's shape-scale convention.",
+      "Use the exponential $E(\\beta)=\\Gamma(1,\\beta)$, its tail $P(X>t)=e^{-t/\\beta}$, and link it to Poisson processes.",
+      "Identify $\\chi^2_\\nu$ as $\\Gamma(\\nu/2,2)$."
+    ],
+    "recognize": [
+      "Waiting time to the first event of a Poisson process at rate $a$ → exponential with scale $\\beta=1/a$.",
+      "An integral of the form $\\int_0^\\infty x^{\\alpha-1}e^{-x/\\beta}dx$ → gamma function / gamma density kernel.",
+      "“Chi-squared with $\\nu$ degrees of freedom” → $\\Gamma(\\nu/2,2)$."
+    ],
+    "key_formulas": [
+      { "label": "Gamma function", "tex": "\\Gamma(\\alpha)=\\int_0^\\infty x^{\\alpha-1}e^{-x}dx,\\quad \\Gamma(n)=(n-1)!" },
+      { "label": "Gamma density (scale β)", "tex": "f(x) = \\frac{x^{\\alpha-1}e^{-x/\\beta}}{\\beta^\\alpha\\Gamma(\\alpha)},\\quad x>0" },
+      { "label": "Gamma moments", "tex": "E[X]=\\alpha\\beta,\\qquad V(X)=\\alpha\\beta^2" },
+      { "label": "Exponential tail", "tex": "P(X>t) = e^{-t/\\beta}" }
+    ],
+    "mistakes": [
+      "Reading $\\beta$ as a rate instead of a scale.",
+      "Writing the variance as $\\alpha\\beta$ instead of $\\alpha\\beta^2$.",
+      "Writing $\\Gamma(n) = n!$.",
+      "Forgetting that the density is zero for $x\\le 0$."
+    ],
+    "related": ["11-poisson", "12-continuous", "15-mgf"]
+  },
+  "14-spread-rules": {
+    "objectives": [
+      "Read $N(\\mu,\\sigma^2)$ with variance as the second parameter.",
+      "Standardize and use $\\Phi$ for left tails, right tails, and intervals.",
+      "Find percentiles with $x_q=\\mu+\\sigma\\Phi^{-1}(q)$.",
+      "Distinguish Chebyshev's guaranteed lower bound from the normal empirical rule."
+    ],
+    "recognize": [
+      "A normal model is stated → standardize with $\\sigma$, then use $\\Phi$.",
+      "“What value cuts off the top/bottom …%?” → inverse problem (percentile).",
+      "Distribution shape unknown, “at least what fraction?” → Chebyshev.",
+      "Approximately normal data and 1, 2, 3 standard deviations → empirical rule."
+    ],
+    "key_formulas": [
+      { "label": "Standardization", "tex": "Z = \\frac{X-\\mu}{\\sigma} \\sim N(0,1)" },
+      { "label": "Left tail", "tex": "P(X\\le a) = \\Phi\\!\\left(\\frac{a-\\mu}{\\sigma}\\right)" },
+      { "label": "Percentile", "tex": "x_q = \\mu + \\sigma\\,\\Phi^{-1}(q)" },
+      { "label": "Chebyshev", "tex": "P(|X-\\mu|<k\\sigma) \\ge 1 - \\frac1{k^2},\\quad k>1" }
+    ],
+    "mistakes": [
+      "Dividing by the variance instead of the standard deviation.",
+      "Reading the second parameter of $N(\\mu,\\sigma^2)$ as $\\sigma$.",
+      "Forgetting “1 −” for a right-tail probability.",
+      "Treating Chebyshev's bound as an exact probability, or 99.7% as a universal rule."
+    ],
+    "related": ["03-boxplots", "12-continuous", "20-sampling"]
+  },
+  "15-mgf": {
+    "objectives": [
+      "Define the moment-generating function $m_X(t)=E[e^{tX}]$ and its domain.",
+      "Obtain raw moments by differentiating at $t=0$, and variance from them.",
+      "Derive the MGF of the exponential density $e^{-x}$.",
+      "Reproduce the proof patterns in the notes: geometric sums, variance identity, gamma recurrence, unbiased $S^2$."
+    ],
+    "recognize": [
+      "An MGF is given and a moment is requested → differentiate and evaluate at $t=0$.",
+      "“Show that …” about expectations → expand, then apply linearity and total probability one."
+    ],
+    "key_formulas": [
+      { "label": "Definition", "tex": "m_X(t) = E\\left[e^{tX}\\right],\\qquad m_X(0)=1" },
+      { "label": "Moments", "tex": "m_X^{(k)}(0) = E[X^k]" },
+      { "label": "Variance", "tex": "V(X) = m''_X(0) - [m'_X(0)]^2" },
+      { "label": "Exponential example", "tex": "m_X(t) = \\frac1{1-t},\\quad t<1" }
+    ],
+    "mistakes": [
+      "Reporting $m''(0)$ as the variance.",
+      "Ignoring where the MGF exists (e.g. $t<1$).",
+      "Differentiating but forgetting to evaluate at $t=0$.",
+      "Skipping the boundary-term check in integration by parts."
+    ],
+    "related": ["07-expectation", "12-continuous", "13-gamma", "19-estimation"]
+  },
+  "16-joint": {
+    "objectives": [
+      "Read a joint PMF table and check that it is valid.",
+      "Compute marginal distributions by summing out the other variable.",
+      "Compute event probabilities by summing the relevant cells.",
+      "Test independence by checking factorization in every cell; recognize the role of support for joint densities."
+    ],
+    "recognize": [
+      "Two variables measured on the same unit with a table of probabilities → joint PMF.",
+      "“$P(X=x)$” from a joint table → row (or column) total.",
+      "“Are $X$ and $Y$ independent?” → compare $p(x,y)$ with $p_X(x)p_Y(y)$."
+    ],
+    "key_formulas": [
+      { "label": "Marginals", "tex": "p_X(x)=\\sum_y p(x,y),\\qquad p_Y(y)=\\sum_x p(x,y)" },
+      { "label": "Event probability", "tex": "P((X,Y)\\in A) = \\sum_{(x,y)\\in A} p(x,y)" },
+      { "label": "Independence", "tex": "p(x,y) = p_X(x)\\,p_Y(y)\\ \\text{for all } (x,y)" }
+    ],
+    "mistakes": [
+      "Summing in the wrong direction when computing a marginal.",
+      "Concluding independence from one matching cell.",
+      "Assuming a constant joint density implies independence on a non-rectangular support.",
+      "Forgetting that all cells must sum to 1."
+    ],
+    "related": ["06-rules", "07-expectation", "12-continuous", "17-covariance"]
+  },
+  "17-covariance": {
+    "objectives": [
+      "Compute $E[h(X,Y)]$ from a joint distribution.",
+      "Compute covariance with the shortcut $E[XY]-E[X]E[Y]$ and interpret its sign.",
+      "Compute correlation and use $-1\\le\\rho\\le1$.",
+      "Apply the scaling rules and explain why zero covariance does not imply independence."
+    ],
+    "recognize": [
+      "“Do $X$ and $Y$ tend to move together linearly?” → covariance or correlation.",
+      "A change of units or a linear transformation → $\\operatorname{Cov}(aX+b,cY+d)=ac\\operatorname{Cov}(X,Y)$.",
+      "Variance of a sum of dependent variables → include covariance terms."
+    ],
+    "key_formulas": [
+      { "label": "Covariance", "tex": "\\operatorname{Cov}(X,Y) = E[XY] - E[X]E[Y]" },
+      { "label": "Correlation", "tex": "\\rho = \\frac{\\operatorname{Cov}(X,Y)}{sd(X)\\,sd(Y)}" },
+      { "label": "Linear transformations", "tex": "\\operatorname{Cov}(aX+b,\\,cY+d) = ac\\,\\operatorname{Cov}(X,Y)" },
+      { "label": "Variance of a sum", "tex": "V(X+Y) = V(X)+V(Y)+2\\operatorname{Cov}(X,Y)" }
+    ],
+    "mistakes": [
+      "Concluding independence from zero covariance.",
+      "Thinking that adding a constant changes covariance.",
+      "Giving correlation units (it has none) or claiming covariance is unit-free.",
+      "Forgetting the absolute value: $sd(aX)=|a|\\,sd(X)$."
+    ],
+    "related": ["16-joint", "18-regression", "20-sampling"]
+  },
+  "18-regression": {
+    "objectives": [
+      "Compute the sample correlation $R$ from paired data or z-scores.",
+      "Compute the least-squares slope and intercept from summary statistics.",
+      "Interpret slope, intercept, and $R^2$ in context.",
+      "State the limits: linear association only, no causation, care with extrapolation."
+    ],
+    "recognize": [
+      "Paired quantitative data → scatterplot first, then $R$ and the least-squares line.",
+      "Given $\\bar x,\\bar y,s_x,s_y,R$ → slope $b=R\\,s_y/s_x$, intercept $a=\\bar y-b\\bar x$.",
+      "“Percent of variation explained” → $R^2$ (as a percent if asked)."
+    ],
+    "key_formulas": [
+      { "label": "Sample correlation", "tex": "R = \\frac{\\sum(x_i-\\bar x)(y_i-\\bar y)}{\\sqrt{\\sum(x_i-\\bar x)^2\\sum(y_i-\\bar y)^2}}" },
+      { "label": "Slope and intercept", "tex": "b = R\\frac{s_y}{s_x},\\qquad a = \\bar y - b\\bar x" },
+      { "label": "Fitted line", "tex": "\\hat y = a + b x" }
+    ],
+    "mistakes": [
+      "Swapping $s_x$ and $s_y$ in the slope.",
+      "Expecting $R^2$ to keep the sign of the relationship.",
+      "Interpreting association as causation.",
+      "Extrapolating far beyond the observed $x$ values; concluding “no relationship” from $R\\approx0$ when the pattern is curved."
+    ],
+    "related": ["02-summary", "03-boxplots", "17-covariance"]
+  },
+  "19-estimation": {
+    "objectives": [
+      "Distinguish a parameter, an estimator (random), and an estimate (a number).",
+      "Compute bias and decide whether an estimator is unbiased.",
+      "Use $E[\\bar X]=\\mu$, $V(\\bar X)=\\sigma^2/n$, and $SE(\\bar X)=\\sigma/\\sqrt n$.",
+      "Explain why $S^2$ divides by $n-1$ and why $S$ is generally biased."
+    ],
+    "recognize": [
+      "“Is this estimator unbiased?” → compute $E[\\hat\\theta]-\\theta$.",
+      "“How precise is the sample mean?” → standard error $\\sigma/\\sqrt n$.",
+      "“How large a sample to cut the standard error by a factor $c$?” → multiply $n$ by $c^2$."
+    ],
+    "key_formulas": [
+      { "label": "Bias", "tex": "\\operatorname{Bias}(\\hat\\theta) = E[\\hat\\theta] - \\theta" },
+      { "label": "Sample mean", "tex": "E[\\bar X]=\\mu,\\qquad V(\\bar X)=\\frac{\\sigma^2}n" },
+      { "label": "Standard error", "tex": "SE(\\bar X)=\\frac{\\sigma}{\\sqrt n}" },
+      { "label": "Unbiased sample variance", "tex": "E[S^2]=\\sigma^2" }
+    ],
+    "mistakes": [
+      "Using $\\sigma$ (spread of individuals) where $\\sigma/\\sqrt n$ (spread of the mean) is needed.",
+      "Dividing by $n$ and calling the result unbiased for $\\sigma^2$.",
+      "Concluding $E[S]=\\sigma$ from $E[S^2]=\\sigma^2$.",
+      "Thinking “unbiased” means every estimate equals the parameter."
+    ],
+    "related": ["02-summary", "15-mgf", "17-covariance", "20-sampling"]
+  },
+  "20-sampling": {
+    "objectives": [
+      "Compute the mean and variance of a linear combination $\\sum a_iX_i$.",
+      "Use independence to drop covariance terms; square coefficients in variances.",
+      "State that a linear combination of independent normals is normal.",
+      "Use $\\bar X\\sim N(\\mu,\\sigma^2/n)$ for IID normal samples, and distinguish an individual from a mean."
+    ],
+    "recognize": [
+      "A total, difference, or weighted sum of independent normal variables → normal with summed mean and variance.",
+      "A probability about a sample mean → standardize with $\\sigma/\\sqrt n$, not $\\sigma$.",
+      "A difference $X-Y$ of independent variables → variances add."
+    ],
+    "key_formulas": [
+      { "label": "Mean of a linear combination", "tex": "E\\left[\\sum a_iX_i\\right] = \\sum a_iE[X_i]" },
+      { "label": "Variance (independent)", "tex": "V\\left(\\sum a_iX_i\\right) = \\sum a_i^2V(X_i)" },
+      { "label": "Normal sample mean", "tex": "\\bar X \\sim N\\!\\left(\\mu, \\frac{\\sigma^2}n\\right)" },
+      { "label": "Standardizing a mean", "tex": "Z = \\frac{\\bar X - \\mu}{\\sigma/\\sqrt n}" }
+    ],
+    "mistakes": [
+      "Subtracting variances for a difference.",
+      "Not squaring the coefficients in the variance.",
+      "Using $\\sigma$ instead of $\\sigma/\\sqrt n$ for a probability about $\\bar X$.",
+      "Invoking a central limit theorem, which the supplied notes do not develop."
+    ],
+    "related": ["14-spread-rules", "17-covariance", "19-estimation"]
+  }
+}

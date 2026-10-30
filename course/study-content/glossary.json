@@ -1,0 +1,209 @@
+{
+  "terms": [
+    {
+      "term": "population",
+      "definition": "Full collection of elements about which a question is asked.",
+      "lesson_id": "01-data"
+    },
+    {
+      "term": "sample",
+      "definition": "Observed subset of a population.",
+      "lesson_id": "01-data"
+    },
+    {
+      "term": "ogive",
+      "definition": "Graph of cumulative relative frequency.",
+      "lesson_id": "01-data"
+    },
+    {
+      "term": "mean",
+      "definition": "Arithmetic average for data; probability-weighted average for a random variable.",
+      "lesson_id": "02-summary"
+    },
+    {
+      "term": "median",
+      "definition": "Middle ordered value, or average of the two middle values.",
+      "lesson_id": "02-summary"
+    },
+    {
+      "term": "variance",
+      "definition": "Mean squared deviation from a distribution mean; sample estimation uses n−1.",
+      "lesson_id": "02-summary"
+    },
+    {
+      "term": "standard deviation",
+      "definition": "Square root of variance, expressed in the original units.",
+      "lesson_id": "02-summary"
+    },
+    {
+      "term": "z-score",
+      "definition": "Signed distance from a mean measured in standard deviations.",
+      "lesson_id": "03-boxplots"
+    },
+    {
+      "term": "IQR",
+      "definition": "Third quartile minus first quartile.",
+      "lesson_id": "03-boxplots"
+    },
+    {
+      "term": "outlier fence",
+      "definition": "A quartile shifted outward by 1.5 or 3 interquartile ranges in the course rule.",
+      "lesson_id": "03-boxplots"
+    },
+    {
+      "term": "sample space",
+      "definition": "Set of possible outcomes of an experiment.",
+      "lesson_id": "04-events"
+    },
+    {
+      "term": "mutually exclusive",
+      "definition": "Events that cannot occur simultaneously.",
+      "lesson_id": "04-events"
+    },
+    {
+      "term": "permutation",
+      "definition": "Ordered selection or arrangement.",
+      "lesson_id": "05-counting"
+    },
+    {
+      "term": "combination",
+      "definition": "Unordered selection of distinct objects.",
+      "lesson_id": "05-counting"
+    },
+    {
+      "term": "conditional probability",
+      "definition": "Probability after restricting to a given event with positive probability.",
+      "lesson_id": "06-rules"
+    },
+    {
+      "term": "independence",
+      "definition": "Joint event probabilities factor; for random variables, the joint distribution factors into marginals.",
+      "lesson_id": "06-rules"
+    },
+    {
+      "term": "PMF",
+      "definition": "Probability assigned to each value of a discrete random variable.",
+      "lesson_id": "07-expectation"
+    },
+    {
+      "term": "CDF",
+      "definition": "F(x)=P(X≤x), defined for every real x.",
+      "lesson_id": "07-expectation"
+    },
+    {
+      "term": "expectation",
+      "definition": "Probability-weighted average of a random quantity, when it exists.",
+      "lesson_id": "07-expectation"
+    },
+    {
+      "term": "geometric",
+      "definition": "Number of total independent constant-p trials through the first success.",
+      "lesson_id": "08-geometric"
+    },
+    {
+      "term": "binomial",
+      "definition": "Success count in a fixed number of independent constant-p Bernoulli trials.",
+      "lesson_id": "09-binomial"
+    },
+    {
+      "term": "negative binomial",
+      "definition": "Number of total independent constant-p trials through the rth success.",
+      "lesson_id": "09-binomial"
+    },
+    {
+      "term": "hypergeometric",
+      "definition": "Success count in simple random sampling without replacement from a finite population.",
+      "lesson_id": "10-hypergeometric"
+    },
+    {
+      "term": "Poisson",
+      "definition": "Nonnegative-integer count distribution with equal mean and variance λ.",
+      "lesson_id": "11-poisson"
+    },
+    {
+      "term": "PDF",
+      "definition": "Density whose area over a region gives probability.",
+      "lesson_id": "12-continuous"
+    },
+    {
+      "term": "gamma scale",
+      "definition": "β in the course gamma distribution; mean is αβ.",
+      "lesson_id": "13-gamma"
+    },
+    {
+      "term": "exponential",
+      "definition": "Continuous waiting-time model with mean equal to scale β.",
+      "lesson_id": "13-gamma"
+    },
+    {
+      "term": "normal",
+      "definition": "Symmetric bell-shaped model N(μ,σ²).",
+      "lesson_id": "14-spread-rules"
+    },
+    {
+      "term": "Chebyshev",
+      "definition": "Distribution-free lower bound on probability near the mean, assuming finite variance.",
+      "lesson_id": "14-spread-rules"
+    },
+    {
+      "term": "MGF",
+      "definition": "E[exp(tX)]; derivatives at zero yield moments when it exists near zero.",
+      "lesson_id": "15-mgf"
+    },
+    {
+      "term": "marginal distribution",
+      "definition": "Distribution of one variable obtained by summing/integrating out the others.",
+      "lesson_id": "16-joint"
+    },
+    {
+      "term": "covariance",
+      "definition": "Expected product of centered variables.",
+      "lesson_id": "17-covariance"
+    },
+    {
+      "term": "correlation",
+      "definition": "Covariance divided by the product of nonzero standard deviations.",
+      "lesson_id": "17-covariance"
+    },
+    {
+      "term": "least squares",
+      "definition": "Fit that minimizes the sum of squared observed-minus-predicted responses.",
+      "lesson_id": "18-regression"
+    },
+    {
+      "term": "R-squared",
+      "definition": "Fraction of observed response variation accounted for by a simple least-squares fit with intercept.",
+      "lesson_id": "18-regression"
+    },
+    {
+      "term": "estimator",
+      "definition": "Random sample-based rule for estimating a parameter.",
+      "lesson_id": "19-estimation"
+    },
+    {
+      "term": "estimate",
+      "definition": "Observed numerical value of an estimator.",
+      "lesson_id": "19-estimation"
+    },
+    {
+      "term": "bias",
+      "definition": "Expected estimator minus the parameter being estimated.",
+      "lesson_id": "19-estimation"
+    },
+    {
+      "term": "standard error",
+      "definition": "Standard deviation of an estimator’s sampling distribution.",
+      "lesson_id": "19-estimation"
+    },
+    {
+      "term": "IID",
+      "definition": "Independent and identically distributed.",
+      "lesson_id": "19-estimation"
+    },
+    {
+      "term": "sampling distribution",
+      "definition": "Probability distribution of a statistic across repeated samples under a specified model.",
+      "lesson_id": "20-sampling"
+    }
+  ]
+}

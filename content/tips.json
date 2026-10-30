@@ -1,0 +1,233 @@
+{
+  "_about": "Study tips added by the study app (supplemental). General strategies summarise published learning research (sources below, links checked 2026-10-23); course tips restate conventions already in the lessons. None of this is instructor material.",
+  "sources": [
+    {
+      "id": "dunlosky",
+      "label": "Dunlosky, Rawson, Marsh, Nathan & Willingham (2013), “Improving students’ learning with effective learning techniques,” Psychological Science in the Public Interest 14(1), 4–58 — summary from the Association for Psychological Science",
+      "url": "https://www.psychologicalscience.org/news/releases/which-study-strategies-make-the-grade.html"
+    },
+    {
+      "id": "learning-scientists",
+      "label": "The Learning Scientists — six strategies for effective learning (combining strategies)",
+      "url": "https://www.learningscientists.org/blog/2017/9/14-1"
+    },
+    {
+      "id": "gaise",
+      "label": "American Statistical Association, GAISE College Report (2005)",
+      "url": "https://www.amstat.org/asa/files/pdfs/GAISE/2005GaiseCollege_Full.pdf"
+    },
+    {
+      "id": "rohrer",
+      "label": "Rohrer et al., interleaved mathematics practice (IES-funded project; e.g. Rohrer, Dedrick & Stershic 2015, J. Educational Psychology 107, 900–908)",
+      "url": "https://ies.ed.gov/use-work/awards/interleaved-mathematics-practice"
+    },
+    {
+      "id": "worked-examples",
+      "label": "University of Delaware meta-analysis poster: worked examples in mathematics (g ≈ 0.43)",
+      "url": "https://www.cehd.udel.edu/wp-content/uploads/2022/02/Worked-Examples-Meta-Poster_022722_SC.pdf"
+    },
+    {
+      "id": "seeing-theory",
+      "label": "Seeing Theory (Brown University) — visual introduction to probability and statistics",
+      "url": "https://seeing-theory.brown.edu/"
+    }
+  ],
+  "categories": [
+    { "id": "study", "title": "How to study (what the research says)" },
+    { "id": "sense", "title": "Making statistics make sense" },
+    { "id": "course", "title": "Course conventions that cost points" },
+    { "id": "exam", "title": "Exam day (open book, calculator)" }
+  ],
+  "tips": [
+    {
+      "id": "retrieval",
+      "category": "study",
+      "title": "Test yourself instead of rereading",
+      "body": "Close the notes and try to produce the answer, then check it. Practice testing is one of the two techniques rated **high utility** in the Dunlosky et al. review; rereading and highlighting were rated **low utility** even though they feel productive. Try a quiz *before* you feel ready: struggling to recall is part of what makes it stick.",
+      "action": { "label": "Start mixed practice", "target": "study://practice/mixed" },
+      "sources": ["dunlosky", "learning-scientists"]
+    },
+    {
+      "id": "spacing",
+      "category": "study",
+      "title": "Spread it out: short sessions over many days",
+      "body": "Distributed (spaced) practice is the other **high-utility** technique. With the final several weeks away, revisit each unit a few times on different days rather than cramming one long session. Returning when you have *partly* forgotten is the point; the effort to recall is what strengthens memory. The review queue brings back what you got wrong.",
+      "action": { "label": "Open the review queue", "target": "study://practice/review" },
+      "sources": ["dunlosky", "learning-scientists"]
+    },
+    {
+      "id": "interleave",
+      "category": "study",
+      "title": "Mix problem types once you know the basics",
+      "body": "On an exam nobody tells you “this is a binomial question”. Interleaved practice (binomial, then Poisson, then hypergeometric, …) forces you to **choose the method**, which blocked practice of one type never trains. Research on mathematics practice found interleaving improves later test scores. Block a topic while you first learn it, then switch to mixed sets.",
+      "action": { "label": "Mixed practice", "target": "study://practice/mixed" },
+      "sources": ["rohrer", "dunlosky"]
+    },
+    {
+      "id": "worked-examples",
+      "category": "study",
+      "title": "Study a worked example, then do one alone",
+      "body": "For new material, studying a fully worked solution first is more efficient than struggling from scratch (in one meta-analysis, a gain of almost half a standard deviation in mathematics). Then cover the solution and redo it yourself, and finally try a *different* problem of the same kind. Each lesson has worked examples from your lectures; each practice question has a step-by-step solution after you answer.",
+      "sources": ["worked-examples", "learning-scientists"]
+    },
+    {
+      "id": "explain-why",
+      "category": "study",
+      "title": "Ask “why does this step work?”",
+      "body": "Elaborative interrogation and self-explanation (moderate utility in the review) mean explaining each step to yourself: *why* divide by n − 1? *why* is the median in both halves? *why* does subtracting Y add its variance? Few learners do this unprompted. Write the one-line reason next to a formula in your notes; if you cannot, that formula is a weak spot.",
+      "action": { "label": "Open my notes", "target": "study://notes" },
+      "sources": ["dunlosky", "learning-scientists"]
+    },
+    {
+      "id": "dual-coding",
+      "category": "study",
+      "title": "Pair every formula with a picture",
+      "body": "Dual coding means combining words with visuals. A probability is an **area**; a variance is a **spread** you can see; P(X ≤ 3) is a set of bars. Sketch the distribution before calculating, or open the visualizer and move the parameters until the formula and the picture agree.",
+      "action": { "label": "Distribution explorer", "target": "study://viz/distributions" },
+      "sources": ["learning-scientists"]
+    },
+    {
+      "id": "concrete",
+      "category": "study",
+      "title": "Turn abstract rules into concrete cases",
+      "body": "Abstract statements (“the median is resistant”) stick better with a concrete case (“changing 5 to 50 in 1, 2, 3, 4, 5 moves the mean from 3 to 12 but the median stays 3”). For each rule, keep one small example you can recompute in your head.",
+      "action": { "label": "Try it with lecture data", "target": "study://viz/describe/dotplot" },
+      "sources": ["learning-scientists"]
+    },
+    {
+      "id": "variability",
+      "category": "sense",
+      "title": "Statistics is about variability",
+      "body": "Almost every idea in the course answers one question: *how much do things vary, and what can we say anyway?* The standard deviation measures it, the IQR measures it resistantly, a distribution models it, and σ²/n tells you how a **mean** varies less than a single observation. When a formula seems arbitrary, ask what variation it is measuring.",
+      "action": { "label": "Watch x̄ vary", "target": "study://viz/sampling" },
+      "sources": ["gaise"]
+    },
+    {
+      "id": "simulate",
+      "category": "sense",
+      "title": "Build intuition by simulating",
+      "body": "The GAISE guidelines recommend using technology to build *conceptual* understanding, not just to compute. Draw a few hundred samples and watch: larger n makes x̄ cluster tighter; skewed data pull the mean toward the tail; R near 0 can hide a strong curve. Guess first, then run the simulation; the surprise is where the learning happens.",
+      "action": { "label": "Open Visualize", "target": "study://viz" },
+      "sources": ["gaise", "seeing-theory"]
+    },
+    {
+      "id": "story",
+      "category": "sense",
+      "title": "Identify the model from its story",
+      "body": "Before any formula, write one line: “X = number of … , X ∼ …”. Fixed number of independent trials, count successes → **binomial**. Trials until the first success → **geometric**. Sampling without replacement from a small population → **hypergeometric**. Events in an interval of time/space → **Poisson**. Waiting time → **exponential/gamma**. Each lesson’s “How to recognize” list is exactly this.",
+      "action": { "label": "Formula reference & method chooser", "target": "study://doc/formula-reference" },
+      "sources": []
+    },
+    {
+      "id": "words-symbols",
+      "category": "sense",
+      "title": "Translate words into inequalities carefully",
+      "body": "“At least 3” is X ≥ 3 = 1 − P(X ≤ 2). “More than 3” is X > 3 = 1 − P(X ≤ 3). “At most 3” is X ≤ 3. “Between 2 and 5 inclusive” is P(2 ≤ X ≤ 5) = F(5) − F(1). For **discrete** X the ≤/< difference matters; for **continuous** X it does not. Writing the inequality before calculating removes most off-by-one errors.",
+      "action": { "label": "Practise with the explorer", "target": "study://viz/distributions/binomial" },
+      "sources": []
+    },
+    {
+      "id": "complement",
+      "category": "sense",
+      "title": "“At least one” → use the complement",
+      "body": "P(at least one) = 1 − P(none). It is usually one short calculation instead of many. The same trick works for “not all” and for tails: P(X > a) = 1 − F(a).",
+      "sources": []
+    },
+    {
+      "id": "sanity",
+      "category": "sense",
+      "title": "Check that the answer is possible",
+      "body": "A probability must lie in [0, 1]. A variance and a standard deviation are never negative, and a standard deviation is in the data’s units (variance in squared units). |R| ≤ 1. A mean should sit inside the range of the data. A 10-second check catches many arithmetic slips.",
+      "sources": []
+    },
+    {
+      "id": "sample-population",
+      "category": "sense",
+      "title": "Keep sample and population symbols apart",
+      "body": "x̄, s, R describe the **sample** you observed; μ, σ, ρ describe the **population** or model. Capital X̄ and S² are the sample statistics *as random variables* before the data are seen. Mixing them up is the most common source of n vs n − 1 and σ vs σ/√n mistakes.",
+      "action": { "label": "Notation sheet", "target": "study://reference/notation" },
+      "sources": []
+    },
+    {
+      "id": "quartiles",
+      "category": "course",
+      "title": "Quartiles: for odd n the median goes in both halves",
+      "body": "This is the class convention (Aug 31 notes). Software such as R or Excel interpolates and gives different Q₁/Q₃, so do not check exam answers with a default software quartile. The box-plot builder shows both.",
+      "action": { "label": "Box plot builder", "target": "study://viz/describe/boxplot" },
+      "lesson": "03-boxplots",
+      "sources": []
+    },
+    {
+      "id": "fences",
+      "category": "course",
+      "title": "Fences are inclusive; whiskers ≠ five-number summary",
+      "body": "A value **equal** to Q₁ − 1.5·IQR or Q₃ + 1.5·IQR is an outlier (Site II: 1 sits exactly on the fence). Whiskers stop at the most extreme **non-outliers**; the five-number summary uses the **actual** minimum and maximum.",
+      "action": { "label": "See the Site II example", "target": "study://viz/describe/boxplot" },
+      "lesson": "03-boxplots",
+      "sources": []
+    },
+    {
+      "id": "geometric",
+      "category": "course",
+      "title": "Geometric and negative binomial count total trials",
+      "body": "In this course X ∼ G(p) is the trial on which the first success happens (x = 1, 2, …), so E[X] = 1/p. Some books count failures instead (x = 0, 1, …) — their formulas differ by 1.",
+      "lesson": "08-geometric",
+      "sources": []
+    },
+    {
+      "id": "normal-variance",
+      "category": "course",
+      "title": "N(μ, σ²): the second number is the variance",
+      "body": "N(5, 4) has σ = 2, so z = (x − 5)/2. Standardize with σ, never σ². Likewise Γ(α, β) and E(β) use a **scale** β (mean αβ, or β).",
+      "action": { "label": "Normal explorer", "target": "study://viz/distributions/normal" },
+      "lesson": "14-spread-rules",
+      "sources": []
+    },
+    {
+      "id": "discrete-cdf",
+      "category": "course",
+      "title": "Discrete tables: P(a ≤ X ≤ b) = F(b) − F(a − 1)",
+      "body": "Cumulative tables give F(x) = P(X ≤ x). For integer X, subtracting F(a) instead of F(a − 1) drops the value a. The distribution explorer prints the F(b) − F(a − 1) step for every interval you choose.",
+      "lesson": "07-expectation",
+      "sources": []
+    },
+    {
+      "id": "variance-sums",
+      "category": "course",
+      "title": "Variances add — even when you subtract",
+      "body": "For independent X and Y, V(X − Y) = V(X) + V(Y), and V(aX) = a²V(X). Square the coefficients; never subtract variances. The mean of x̄ is μ but its variance is σ²/n.",
+      "lesson": "20-sampling",
+      "sources": []
+    },
+    {
+      "id": "own-index",
+      "category": "exam",
+      "title": "Open book: build your own index now",
+      "body": "An open-book exam rewards knowing *where* things are, not having them. Star (☆) the formulas you look up most and use the **Saved** list as a one-page sheet; note the lecture page for each method. Practise with only that sheet so lookups are fast on the day.",
+      "action": { "label": "My saved items", "target": "study://reference/saved" },
+      "sources": []
+    },
+    {
+      "id": "exact",
+      "category": "exam",
+      "title": "Keep full precision until the last step",
+      "body": "Rounding z to one decimal or s to two digits early can change the final answer. Keep calculator memory values, round once at the end, and write the unrounded intermediate on paper so partial credit is possible.",
+      "sources": []
+    },
+    {
+      "id": "write-model",
+      "category": "exam",
+      "title": "Write the setup line first",
+      "body": "Start every problem with the model and the event, e.g. “X ∼ B(10, 0.3); want P(X ≥ 3) = 1 − F(2)”. It shows your reasoning, earns method marks, and catches a wrong model before you compute.",
+      "sources": []
+    },
+    {
+      "id": "exam-practice",
+      "category": "exam",
+      "title": "Rehearse under exam conditions",
+      "body": "A few timed sessions with feedback held until the end show what you can do without hints — and are themselves retrieval practice. Note which topics cost time and send them to the review queue.",
+      "action": { "label": "Exam practice", "target": "study://practice/exam" },
+      "sources": ["dunlosky"]
+    }
+  ]
+}

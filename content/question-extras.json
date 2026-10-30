@@ -1,0 +1,328 @@
+{
+  "q01-01": {
+    "extra_hints": ["Histograms, densities, and scatterplots all need a numerical axis. Do categories have one?"],
+    "steps": ["Identify the variable type: categories (labels), not numbers.", "Category frequencies are displayed with a bar graph (or pie chart).", "Histograms, normal densities, and scatterplots all require quantitative variables."],
+    "reasoning": "Choosing a display starts with the variable type: categorical → bar or pie; quantitative → dotplot, stem-and-leaf, or histogram."
+  },
+  "q01-02": {
+    "extra_hints": ["Relative frequency = category count ÷ total count."],
+    "steps": ["Relative frequency $= f/n$.", "$12/48 = 0.25$.", "Enter a decimal (0.25); 25% is also accepted."],
+    "reasoning": "Relative frequencies put categories on a common 0–1 scale so samples of different sizes can be compared; across all categories they sum to 1."
+  },
+  "q01-03": {
+    "kind": "calculation",
+    "extra_hints": ["Read the vertical axis of an ogive as “fraction of observations at or below this boundary.”"],
+    "steps": ["An ogive plots cumulative relative frequency against upper class boundaries.", "A height of 0.80 at 50 means 80% of the observations lie in the classes ending at 50.", "It says nothing about the density at the single value 50."],
+    "reasoning": "Cumulative displays answer “what fraction is at or below?” — the same idea becomes the CDF $F(t)=P(X\\le t)$ for random variables."
+  },
+  "q02-01": {
+    "extra_hints": ["Compare each summary for 1, 2, 3, 4, 5 and for 1, 2, 3, 4, 50."],
+    "steps": ["The median depends only on the middle ordered value(s).", "Mean, range, and variance all use the extreme value directly.", "Therefore the median is the resistant summary."],
+    "reasoning": "With skewed data or outliers, the median usually represents a typical value better than the mean."
+  },
+  "q02-02": {
+    "extra_hints": ["The deviations from the mean 4 are −2, 0, 2."],
+    "steps": ["$\\bar x = (2+4+6)/3 = 4$.", "Squared deviations: $4, 0, 4$; their sum is $8$.", "$s^2 = 8/(n-1) = 8/2 = 4$."],
+    "reasoning": "The sample variance divides by $n-1$; lesson 19 shows this makes $S^2$ unbiased for $\\sigma^2$."
+  },
+  "q02-03": {
+    "extra_hints": ["$s=\\sqrt{s^2}$, and $s^2$ was found in the previous question."],
+    "steps": ["$s^2 = 4$ from the previous problem.", "$s = \\sqrt 4 = 2$."],
+    "reasoning": "The standard deviation is in the original units of the data, which makes it easier to interpret than the variance."
+  },
+  "q03-01": {
+    "extra_hints": ["Look at how August 26 splits 2, 8, 9, 10, 17, 18, 35."],
+    "steps": ["With odd $n$, the median is a single observation.", "The course puts that observation into both the lower and the upper half.", "$Q_1$ and $Q_3$ are the medians of those halves."],
+    "reasoning": "Quartile conventions differ between textbooks and software; on the exam, use the course convention."
+  },
+  "q03-02": {
+    "extra_hints": ["The lower half, including the median 5, is 1, 3, 5."],
+    "steps": ["Sorted data 1, 3, 5, 7, 9; $n=5$ is odd and $Q_2=5$.", "Lower half including the median: 1, 3, 5.", "$Q_1$ = median of the lower half = 3."],
+    "reasoning": "Excluding the median would give the lower half 1, 3 and $Q_1=2$ — a different convention that this course does not use.",
+    "expect": "value"
+  },
+  "q03-03": {
+    "kind": "calculation",
+    "extra_hints": ["Upper inner fence $= Q_3+1.5\\,IQR$; upper outer fence $= Q_3+3\\,IQR$. Which one does 30 reach?"],
+    "steps": ["$IQR = 18-10 = 8$.", "Upper inner fence $= 18+1.5(8) = 30$; upper outer fence $= 18+3(8) = 42$.", "30 is exactly at the inner fence and below the outer fence.", "The course counts equality, so 30 is a mild outlier."],
+    "reasoning": "Classification uses both fences: at or beyond the inner fence makes a point an outlier; at or beyond the outer fence makes it extreme."
+  },
+  "q04-01": {
+    "extra_hints": ["How many ordered pairs give sum 2? How many give sum 7?"],
+    "steps": ["The 36 ordered pairs of faces are equally likely.", "Sum 2 arises from 1 pair; sum 7 from 6 pairs.", "The 11 possible sums are not equally likely, so $\\#A/\\#S$ over sums is invalid."],
+    "reasoning": "The classical formula needs equally likely elementary outcomes; with two dice those are the ordered pairs, not the sums."
+  },
+  "q04-02": {
+    "extra_hints": ["There are 36 equally likely ordered pairs; list those adding to 7."],
+    "steps": ["Sample space: 36 equally likely ordered pairs.", "Pairs with sum 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) — six pairs.", "$P = 6/36 = 1/6 \\approx 0.1667$."],
+    "reasoning": "Treat the dice as distinguishable (e.g. red and blue) so each ordered pair has probability $1/36$."
+  },
+  "q04-03": {
+    "kind": "conceptual",
+    "extra_hints": ["The complement of a union is the intersection of the complements."],
+    "steps": ["“A or B occurs” is $A\\cup B$ (at least one occurs).", "Its complement is “neither occurs”.", "De Morgan: $(A\\cup B)^c = A^c\\cap B^c$."],
+    "reasoning": "Complements of “or” statements become “and not” statements; this is what makes “at least one” problems easy via the complement “none”."
+  },
+  "q05-01": {
+    "extra_hints": ["Does listing the same three people in a different order give a different committee?"],
+    "steps": ["The three people are distinct and no one is chosen twice.", "A committee has no roles, so order does not matter.", "Use $\\binom{10}{3}$."],
+    "reasoning": "Order matters → permutations; order does not matter → combinations. $10^3$ would allow repeats; $_{10}P_3$ would count ordered lists."
+  },
+  "q05-02": {
+    "extra_hints": ["LEVEL has five letters: L twice, E twice, V once."],
+    "steps": ["If the letters were all distinct: $5! = 120$ arrangements.", "Swapping the two L's or the two E's gives the same word, so divide by $2!\\,2!$.", "$120/4 = 30$."],
+    "reasoning": "Arrangements of a multiset: $n!/(n_1!\\cdots n_r!)$.",
+    "expect": "count"
+  },
+  "q05-03": {
+    "extra_hints": ["This is $_8P_2$: 8 choices for the first role, then 7."],
+    "steps": ["President: 8 choices.", "Secretary: 7 remaining choices.", "Multiplication rule: $8\\times7 = 56$."],
+    "reasoning": "The roles are distinct, so order matters: $_8P_2 = 8!/6! = 56$.",
+    "expect": "count"
+  },
+  "q06-01": {
+    "extra_hints": ["Disjoint means $P(A\\cap B)=0$. What would independence require?"],
+    "steps": ["Disjoint: $P(A\\cap B) = 0$.", "Independence requires $P(A\\cap B) = P(A)P(B) > 0$.", "Contradiction, so they are not independent."],
+    "reasoning": "If one disjoint event occurs, the other becomes impossible — the strongest kind of dependence."
+  },
+  "q06-02": {
+    "extra_hints": ["$P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$."],
+    "steps": ["Add the single-event probabilities: $0.4+0.5 = 0.9$.", "The overlap was counted twice; subtract it once: $0.9-0.2 = 0.7$."],
+    "reasoning": "Simply adding works only for disjoint events."
+  },
+  "q06-03": {
+    "extra_hints": ["$P(B\\mid A)=P(A\\cap B)/P(A)$."],
+    "steps": ["Restrict attention to outcomes in $A$.", "$P(B\\mid A) = 0.12/0.4 = 0.3$."],
+    "reasoning": "Conditioning rescales probabilities inside the given event; the denominator is the probability of the conditioning event."
+  },
+  "q07-01": {
+    "extra_hints": ["$F(5)-F(1)$ removes everything at or below 1, leaving 2, 3, 4, 5."],
+    "steps": ["$F(5) = P(X\\le5)$ includes 2, 3, 4, 5 and everything below 2.", "Subtract $P(X\\le1) = F(1)$ to remove values below 2.", "$P(2\\le X\\le5) = F(5)-F(1)$."],
+    "reasoning": "For integer-valued $X$, $P(a\\le X\\le b)=F(b)-F(a-1)$. Subtracting $F(2)$ would wrongly remove $P(X=2)$."
+  },
+  "q07-02": {
+    "extra_hints": ["Multiply each value by its probability and add the products."],
+    "steps": ["$E[X]=\\sum x\\,p(x)$.", "$0(0.2)+1(0.5)+2(0.3) = 0+0.5+0.6 = 1.1$."],
+    "reasoning": "The expected value is a probability-weighted average; it need not be a possible value of $X$.",
+    "expect": "value"
+  },
+  "q07-03": {
+    "extra_hints": ["Use $V(X)=E[X^2]-(E[X])^2$ with $E[X]=1.1$."],
+    "steps": ["$E[X^2] = 0^2(0.2)+1^2(0.5)+2^2(0.3) = 1.7$.", "$(E[X])^2 = 1.1^2 = 1.21$.", "$V(X) = 1.7-1.21 = 0.49$."],
+    "reasoning": "The shortcut formula avoids computing each squared deviation; do not confuse $E[X^2]$ with $(E[X])^2$.",
+    "expect": "value"
+  },
+  "q08-01": {
+    "extra_hints": ["In this course, $X=1$ means the very first trial is a success."],
+    "steps": ["The geometric variable counts trials up to and including the first success.", "Its support is $1, 2, 3, \\ldots$"],
+    "reasoning": "Some software counts failures before the first success (support from 0); that variable is this course's $X-1$."
+  },
+  "q08-02": {
+    "extra_hints": ["$P(X=x)=(1-p)^{x-1}p$ with $p=0.25$ and $x=3$."],
+    "steps": ["$X=3$ means failure, failure, success.", "$P = (0.75)^2(0.25) = 0.5625\\times0.25 = 0.140625$."],
+    "reasoning": "Independent trials let us multiply the probabilities of the specific sequence."
+  },
+  "q08-03": {
+    "extra_hints": ["$X\\ge3$ happens exactly when the first two trials fail."],
+    "steps": ["$\\{X\\ge3\\}$ = first two trials are failures (what happens after does not matter).", "$P = 0.75^2 = 0.5625$."],
+    "reasoning": "Tail formula: $P(X\\ge k)=(1-p)^{k-1}$; compare $P(X>k)=(1-p)^k$."
+  },
+  "q09-01": {
+    "extra_hints": ["Binomial fixes the number of trials; which model fixes the number of successes?"],
+    "steps": ["The number of successes (4) is fixed.", "The number of trials needed is random.", "That is the negative binomial $NB(4,p)$, counting total trials."],
+    "reasoning": "Ask which quantity is fixed and which is counted: fixed trials → binomial; fixed successes → negative binomial."
+  },
+  "q09-02": {
+    "extra_hints": ["$\\binom42 = 6$ sequences, each with probability $0.5^4$."],
+    "steps": ["$P(X=2) = \\binom42(0.5)^2(0.5)^2$.", "$= 6/16 = 0.375$."],
+    "reasoning": "Each particular sequence with two successes has probability $p^2(1-p)^2$; there are $\\binom42$ such sequences."
+  },
+  "q09-03": {
+    "extra_hints": ["Use $NB(2,0.5)$ at $x=4$: $\\binom{3}{1}p^2(1-p)^2$."],
+    "steps": ["The 4th trial must be the 2nd success.", "Among trials 1–3, exactly one success: $\\binom31$ ways.", "$P = 3(0.5)^2(0.5)^2 = 3/16 = 0.1875$."],
+    "reasoning": "Using $\\binom42$ would include sequences whose 2nd success came before trial 4."
+  },
+  "q10-01": {
+    "extra_hints": ["The binomial requires independent trials with a constant success probability."],
+    "steps": ["Without replacement, each draw changes the population composition.", "So the draws are dependent and $p$ is not constant.", "Counting successes in such a sample is hypergeometric."],
+    "reasoning": "With replacement (or a very large population), the binomial is exact or a good approximation; otherwise use the hypergeometric."
+  },
+  "q10-02": {
+    "extra_hints": ["$\\binom42\\binom61/\\binom{10}3$."],
+    "steps": ["Choose 2 of the 4 reds: $\\binom42 = 6$.", "Choose 1 of the 6 blues: $\\binom61 = 6$.", "All samples of 3: $\\binom{10}3 = 120$.", "$P = 36/120 = 0.3$."],
+    "reasoning": "Every unordered sample of 3 is equally likely, so probability = favourable samples / all samples."
+  },
+  "q10-03": {
+    "extra_hints": ["$N=10$, $M=4$, $n=3$."],
+    "steps": ["$E[X] = nM/N$.", "$= 3\\times4/10 = 1.2$."],
+    "reasoning": "The mean matches the binomial $np$ with $p=M/N$; dependence affects the variance, not the mean.",
+    "expect": "value"
+  },
+  "q11-01": {
+    "extra_hints": ["For a Poisson variable the variance equals $\\lambda$."],
+    "steps": ["$V(X) = \\lambda$.", "$sd(X) = \\sqrt{V(X)} = \\sqrt\\lambda$."],
+    "reasoning": "Mean and variance are both $\\lambda$; the standard deviation is its square root."
+  },
+  "q11-02": {
+    "extra_hints": ["$\\lambda$ = rate × time, with time in the rate's units (hours)."],
+    "steps": ["30 minutes $= 0.5$ hour.", "$\\lambda = 6\\times0.5 = 3$."],
+    "reasoning": "$\\lambda$ is the expected count for the specific interval; it scales with interval length.",
+    "expect": "value"
+  },
+  "q11-03": {
+    "extra_hints": ["$P(X=0)=\\lambda^0e^{-\\lambda}/0! = e^{-\\lambda}$."],
+    "steps": ["$P(X=0) = 2^0e^{-2}/0!$.", "$= e^{-2} \\approx 0.1353$."],
+    "reasoning": "$\\lambda^0=1$ and $0!=1$, so “no events” has probability $e^{-\\lambda}$."
+  },
+  "q12-01": {
+    "extra_hints": ["The only requirements are nonnegativity and total area 1."],
+    "steps": ["Probabilities for a continuous variable are areas, not heights.", "A density of 2 over a short interval can still have total area 1."],
+    "reasoning": "Example: $U(0,0.5)$ has density 2 on its support."
+  },
+  "q12-02": {
+    "extra_hints": ["The density is $1/(8-2)=1/6$ on $[2,8]$."],
+    "steps": ["$f(x) = 1/6$ on $[2,8]$.", "$P(3\\le X\\le5) = (5-3)/6 = 1/3 \\approx 0.3333$."],
+    "reasoning": "For a uniform distribution, probability is proportional to interval length within the support."
+  },
+  "q12-03": {
+    "extra_hints": ["$E[X]=\\int_0^1 x\\cdot 2x\\,dx$."],
+    "steps": ["$E[X] = \\int_0^1 2x^2\\,dx$.", "$= \\left[\\tfrac23x^3\\right]_0^1 = 2/3 \\approx 0.6667$."],
+    "reasoning": "Integrate $x f(x)$, not $f(x)$, over the support.",
+    "expect": "value"
+  },
+  "q13-01": {
+    "extra_hints": ["In the density the exponent is $-x/\\beta$: is $\\beta$ multiplying or dividing $x$?"],
+    "steps": ["The exponent is $-x/\\beta$, so $\\beta$ stretches the $x$ axis.", "That makes $\\beta$ a scale parameter; a rate would be $1/\\beta$."],
+    "reasoning": "Many software packages use rate; always check which convention a formula uses."
+  },
+  "q13-02": {
+    "extra_hints": ["$E[X]=\\alpha\\beta$ with shape $\\alpha=3$ and scale $\\beta=2$."],
+    "steps": ["$E[X] = \\alpha\\beta = 3\\times2 = 6$."],
+    "reasoning": "With a rate convention you would wrongly get $3/2$.",
+    "expect": "value"
+  },
+  "q13-03": {
+    "extra_hints": ["$P(T>t)=e^{-t/\\beta}$ with $\\beta = 5$ minutes."],
+    "steps": ["The exponential mean equals its scale: $\\beta = 5$.", "$P(T>10) = e^{-10/5} = e^{-2} \\approx 0.1353$."],
+    "reasoning": "The exponential tail comes from integrating the density from $t$ to $\\infty$."
+  },
+  "q14-01": {
+    "extra_hints": ["In $N(\\mu,\\sigma^2)$ the second slot is the variance."],
+    "steps": ["$\\sigma^2 = 9$.", "$\\sigma = \\sqrt9 = 3$."],
+    "reasoning": "Mixing up variance and standard deviation is the most common normal-calculation error."
+  },
+  "q14-02": {
+    "extra_hints": ["$\\sigma=\\sqrt9=3$, not 9."],
+    "steps": ["$z = (x-\\mu)/\\sigma$.", "$= (16-10)/3 = 2$."],
+    "reasoning": "Dividing by the variance would give $6/9$, which is not a z-score.",
+    "expect": "value"
+  },
+  "q14-03": {
+    "kind": "calculation",
+    "extra_hints": ["Use $k=3$ in $1-1/k^2$."],
+    "steps": ["Chebyshev: $P(|X-\\mu|<k\\sigma)\\ge1-1/k^2$ for $k>1$.", "$k=3$: $1-1/9 = 8/9 \\approx 88.89\\%$.", "This is a guaranteed minimum for any distribution with finite positive variance."],
+    "reasoning": "Chebyshev gives a bound for every distribution; the 99.7% figure needs a normal model."
+  },
+  "q15-01": {
+    "extra_hints": ["$m'(0)=E[X]$ and $m''(0)=E[X^2]$."],
+    "steps": ["Differentiating $E[e^{tX}]$ twice gives $E[X^2e^{tX}]$.", "At $t=0$ this is $E[X^2]$."],
+    "reasoning": "Variance needs one more step: $m''(0)-m'(0)^2$."
+  },
+  "q15-02": {
+    "extra_hints": ["$m'(t)=(1-t)^{-2}$, so $m''(t)=2(1-t)^{-3}$."],
+    "steps": ["$m'(t) = (1-t)^{-2}$.", "$m''(t) = 2(1-t)^{-3}$.", "$E[X^2] = m''(0) = 2$."],
+    "reasoning": "This is the MGF of the exponential density $e^{-x}$, which has mean 1 and variance $2-1^2=1$.",
+    "expect": "value"
+  },
+  "q15-03": {
+    "extra_hints": ["$\\Gamma(n)=(n-1)!$ for positive integers."],
+    "steps": ["$\\Gamma(5) = 4!$.", "$= 24$."],
+    "reasoning": "The recurrence $\\Gamma(\\alpha)=(\\alpha-1)\\Gamma(\\alpha-1)$ with $\\Gamma(1)=1$ gives the factorial pattern.",
+    "expect": "value"
+  },
+  "q16-01": {
+    "extra_hints": ["To keep $x$, remove $y$."],
+    "steps": ["Fix $x$.", "Add $p(x,y)$ over every value of $y$: $p_X(x)=\\sum_y p(x,y)$."],
+    "reasoning": "Sum over the variable you want to remove; in a table with $X$ as rows, that is a row total."
+  },
+  "q16-02": {
+    "extra_hints": ["Add the cells in the row $X=1$."],
+    "steps": ["$P(X=1) = p(1,0)+p(1,1)$.", "$= 0.1+0.4 = 0.5$."],
+    "reasoning": "A marginal probability is a row (or column) total of the joint table."
+  },
+  "q16-03": {
+    "kind": "calculation",
+    "extra_hints": ["$p_Y(0)=p(0,0)+p(1,0)=0.3$; compare $p(0,0)$ with $p_X(0)p_Y(0)$."],
+    "steps": ["$p_X(0) = 0.2+0.3 = 0.5$; $p_Y(0) = 0.2+0.1 = 0.3$.", "$p_X(0)p_Y(0) = 0.15$, but $p(0,0) = 0.2$.", "Factorization fails, so $X$ and $Y$ are dependent."],
+    "reasoning": "One failing cell disproves independence; proving independence requires every cell to factor."
+  },
+  "q17-01": {
+    "extra_hints": ["Try $X$ uniform on $\\{-1,0,1\\}$ and $Y=X^2$."],
+    "steps": ["For that example, $\\operatorname{Cov}(X,Y) = E[X^3]-E[X]E[X^2] = 0$.", "Yet $Y$ is a function of $X$, so they are dependent.", "So zero covariance does not imply independence in general."],
+    "reasoning": "Covariance measures linear association only; nonlinear dependence can have zero covariance."
+  },
+  "q17-02": {
+    "extra_hints": ["$\\rho=\\operatorname{Cov}(X,Y)/(sd(X)\\,sd(Y))$."],
+    "steps": ["$\\rho = 6/(2\\times4)$.", "$= 0.75$."],
+    "reasoning": "Correlation standardizes covariance, giving a unit-free number between −1 and 1.",
+    "expect": "value"
+  },
+  "q17-03": {
+    "extra_hints": ["Shifts drop out and scales multiply: $\\operatorname{Cov}(aX+b,cY+d)=ac\\operatorname{Cov}(X,Y)$."],
+    "steps": ["$a=3$, $c=2$; the constants 5 and −1 do not matter.", "$\\operatorname{Cov} = 3\\times2\\times2 = 12$."],
+    "reasoning": "Adding constants shifts both variables without changing how their deviations co-vary.",
+    "expect": "value"
+  },
+  "q18-01": {
+    "extra_hints": ["The sign gives the direction; the magnitude gives the strength of the linear pattern."],
+    "steps": ["Negative sign: larger $x$ tends to go with smaller $y$.", "$|R| = 0.9$ is close to 1: a strong linear pattern.", "Correlation alone does not establish causation."],
+    "reasoning": "The strength labels used in lecture are classroom guides, not universal thresholds."
+  },
+  "q18-02": {
+    "extra_hints": ["$b=R\\,s_y/s_x$."],
+    "steps": ["$b = 0.6\\times5/2$.", "$= 1.5$."],
+    "reasoning": "The slope converts a one-standard-deviation change in $x$ into $R$ standard deviations of $y$.",
+    "expect": "value"
+  },
+  "q18-03": {
+    "extra_hints": ["$R^2 = 0.64$; the question asks for a percent, so enter 64."],
+    "steps": ["$R^2 = (-0.8)^2 = 0.64$.", "As a percent: $64\\%$.", "Enter 64 (or 64%)."],
+    "reasoning": "Squaring removes the sign; $R^2$ describes the fraction of observed $y$ variation explained by the fitted line, not causation.",
+    "expect": "percent",
+    "units": "percent"
+  },
+  "q19-01": {
+    "extra_hints": ["Bias $=E[\\hat\\theta]-\\theta$."],
+    "steps": ["Unbiased means $E[\\hat\\theta] = \\theta$.", "Individual estimates still vary from sample to sample."],
+    "reasoning": "Unbiasedness is a property of the estimator's long-run average over repeated samples."
+  },
+  "q19-02": {
+    "extra_hints": ["$SE(\\bar X)=\\sigma/\\sqrt n$."],
+    "steps": ["$\\sqrt{25} = 5$.", "$SE = 15/5 = 3$."],
+    "reasoning": "The standard error describes how much $\\bar X$ varies from sample to sample, which is less than individual variation.",
+    "expect": "value"
+  },
+  "q19-03": {
+    "kind": "conceptual",
+    "extra_hints": ["Is $E[\\sqrt{S^2}]$ the same as $\\sqrt{E[S^2]}$?"],
+    "steps": ["$E[S^2] = \\sigma^2$ (unbiased).", "$S = \\sqrt{S^2}$ is a nonlinear function of $S^2$.", "Expectation does not pass through nonlinear functions, so $E[S]\\ne\\sigma$ in general."],
+    "reasoning": "Linearity of expectation applies only to linear functions."
+  },
+  "q20-01": {
+    "extra_hints": ["$V(aX+bY)=a^2V(X)+b^2V(Y)$ for independent $X,Y$; here $b=-1$."],
+    "steps": ["Coefficients: $a=1$, $b=-1$.", "$V(X-Y) = 1^2V(X)+(-1)^2V(Y) = V(X)+V(Y)$."],
+    "reasoning": "Subtracting adds uncertainty; coefficients are squared, so signs disappear."
+  },
+  "q20-02": {
+    "extra_hints": ["Coefficients $a=2$ and $b=-1$; square both."],
+    "steps": ["$V(2X-Y) = 2^2V(X)+(-1)^2V(Y)$.", "$= 4\\times4+1\\times9 = 25$."],
+    "reasoning": "Independence removes the covariance term.",
+    "expect": "value"
+  },
+  "q20-03": {
+    "extra_hints": ["$V(\\bar X)=\\sigma^2/n$, then take the square root."],
+    "steps": ["$V(\\bar X) = 81/9 = 9$.", "$sd(\\bar X) = \\sqrt9 = 3$."],
+    "reasoning": "The mean of 9 observations varies one-third as much (in sd) as a single observation.",
+    "expect": "value"
+  }
+}

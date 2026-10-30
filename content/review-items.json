@@ -1,0 +1,133 @@
+{
+  "note": "Structured version of study-content/SOURCE-ISSUES.md plus app-specific extraction notes, so each item links to the exact PDF pages. Wording summarizes the pack; it is not instructor text.",
+  "items": [
+    {
+      "id": "r01-outline",
+      "title": "Chapter outline labels differ from the lecture sequence",
+      "status": "source-error",
+      "detail": "The August 24 outline labels Chapter 4 “Bivariate distributions”, but the September 28–October 5 lectures cover continuous univariate distributions in Chapter 4. It also labels a regression entry “Chapter 9” while citing Chapter 11 sections. Lessons follow the actual lecture sequence; regression is treated as a Chapter 11 preview.",
+      "refs": [{ "source_id": "lecture-08-24", "pages": [1] }],
+      "lessons": ["12-continuous", "18-regression"]
+    },
+    {
+      "id": "r02-stemleaf",
+      "title": "Stem-and-leaf display has 34 leaves; frequency table has 35 observations",
+      "status": "source-error",
+      "detail": "The developed stem display on p. 4 lists 34 leaves, while the histogram table lists 35 observations including one in [0.07,0.08); stem row 07 is blank. Each display is used as given; no missing leaf is invented. Page 3 is explicitly schematic.",
+      "refs": [{ "source_id": "lecture-08-24", "pages": [3, 4] }],
+      "lessons": ["01-data"]
+    },
+    {
+      "id": "r03-fences",
+      "title": "Outlier fences are inclusive (course convention)",
+      "status": "convention",
+      "detail": "The notes use “at least” 1.5 IQR and classify a value exactly on the lower inner fence as a mild outlier. Quizzes honour equality rather than the strict inequality used by much software.",
+      "refs": [{ "source_id": "lecture-08-31", "pages": [3, 4] }],
+      "lessons": ["03-boxplots"]
+    },
+    {
+      "id": "r04-site1",
+      "title": "Textbook stem-and-leaf plot for Site I flagged in the notes",
+      "status": "ambiguity",
+      "detail": "The notes flag an error in a textbook stem-and-leaf plot and suggest confirming its ordering/key with the instructor. The 23-value ordered list in the notes is internally usable; the textbook itself was not supplied.",
+      "refs": [{ "source_id": "lecture-08-31", "pages": [5] }],
+      "lessons": ["03-boxplots"]
+    },
+    {
+      "id": "r05-fivenumber",
+      "title": "Five-number summary: actual extremes vs whisker endpoints",
+      "status": "source-error",
+      "detail": "The September 2 review writes {P1, Q1, Q2, Q3, P2} with whisker endpoints. The August 31 definition and worked examples use the actual minimum and maximum (p. 5 uses an outlier as the minimum). Lessons and quizzes use the actual extremes.",
+      "refs": [{ "source_id": "lecture-09-02", "pages": [1] }, { "source_id": "lecture-08-31", "pages": [3, 5] }],
+      "lessons": ["03-boxplots"]
+    },
+    {
+      "id": "r06-probzero",
+      "title": "Probability zero vs impossibility",
+      "status": "ambiguity",
+      "detail": "The finite examples equate probability zero with impossibility. In general (e.g. continuous variables) a singleton has probability zero without being impossible; probability one means almost sure.",
+      "refs": [{ "source_id": "lecture-09-02", "pages": [2] }],
+      "lessons": ["04-events", "12-continuous"]
+    },
+    {
+      "id": "r07-threesd",
+      "title": "“Almost all within three standard deviations” is informal",
+      "status": "ambiguity",
+      "detail": "Early notes use informal three-standard-deviation language. It is not a universal 99.7% claim: October 5 distinguishes Chebyshev's bound from the normal empirical rule.",
+      "refs": [{ "source_id": "lecture-08-26", "pages": [6] }, { "source_id": "lecture-08-31", "pages": [1] }, { "source_id": "lecture-10-05", "pages": [5, 6] }],
+      "lessons": ["03-boxplots", "14-spread-rules"]
+    },
+    {
+      "id": "r08-integral",
+      "title": "Intermediate arithmetic in a definite integral",
+      "status": "source-error",
+      "detail": "The final probability 0.1875 is correct, but the printed intermediate values −0.1875 and −0.375 are not the values of 6.25x² − 1.25x at 0.3 and 0.2 (correct: 0.1875 and 0). The CDF calculation on p. 6 agrees with 0.1875.",
+      "refs": [{ "source_id": "lecture-09-28", "pages": [4, 6] }],
+      "lessons": ["12-continuous"]
+    },
+    {
+      "id": "r09-covunits",
+      "title": "Covariance unit-conversion illustration",
+      "status": "source-error",
+      "detail": "The illustration changes covariance 12.51 to 0.36 for a Celsius-to-Fahrenheit conversion. If both variables convert by F = (9/5)C + 32, covariance scales by (9/5)², giving 40.5324. The October 12 centimeter-to-inch example applies the rule correctly. The questionable numbers are not reproduced.",
+      "refs": [{ "source_id": "lecture-10-07", "pages": [7] }, { "source_id": "lecture-10-12", "pages": [2] }],
+      "lessons": ["17-covariance"]
+    },
+    {
+      "id": "r10-corrlabels",
+      "title": "Weak/moderate/strong correlation labels are classroom heuristics",
+      "status": "convention",
+      "detail": "The strength cutoffs are classroom guides, not universal standards. R measures linear association; the R² interpretation assumes simple least squares with an intercept.",
+      "refs": [{ "source_id": "lecture-10-12", "pages": [3, 5, 7] }],
+      "lessons": ["18-regression"]
+    },
+    {
+      "id": "r11-mle",
+      "title": "Method of moments and MLE are introduction only",
+      "status": "scope",
+      "detail": "Both methods are named, but no procedure is worked through. The general preference statement does not prove every MLE has smaller bias or variance. Not treated as covered material.",
+      "refs": [{ "source_id": "lecture-10-14", "pages": [5] }],
+      "lessons": ["19-estimation"]
+    },
+    {
+      "id": "r12-finishing",
+      "title": "Finishing-time sample-mean calculation is an authored extension",
+      "status": "scope",
+      "detail": "The notes end after specifying the individual model N(61, 81). The sample-of-nine calculation in lesson 20 and related practice are authored extensions.",
+      "refs": [{ "source_id": "lecture-10-14", "pages": [6] }],
+      "lessons": ["20-sampling"]
+    },
+    {
+      "id": "r13-skipped",
+      "title": "Sections 2.4 and 3.9 are explicitly skipped",
+      "status": "scope",
+      "detail": "September 16 says to skip Section 2.4 and September 23 skips Section 3.9. They are not presented as covered.",
+      "refs": [{ "source_id": "lecture-09-16", "pages": [1] }, { "source_id": "lecture-09-23", "pages": [8] }],
+      "lessons": ["06-rules", "11-poisson"]
+    },
+    {
+      "id": "r14-later",
+      "title": "Later syllabus material is not in the supplied notes",
+      "status": "scope",
+      "detail": "The syllabus plans Chapters 8 and 11 and a comprehensive final. The notes (through October 14) do not develop confidence intervals, hypothesis tests, a central limit theorem, or full regression. This app covers the supplied notes only.",
+      "refs": [{ "source_id": "lecture-10-14", "pages": [6] }],
+      "lessons": ["18-regression", "20-sampling"]
+    },
+    {
+      "id": "r15-exercises",
+      "title": "Assigned textbook exercises are referenced but not supplied",
+      "status": "scope",
+      "detail": "The notes cite textbook exercise numbers, but the textbook and homework solution files are not in this folder. Those prompts were not reconstructed; all practice questions in this app are newly authored.",
+      "refs": [],
+      "lessons": []
+    },
+    {
+      "id": "r16-extraction",
+      "title": "Extracted PDF text alters mathematical glyphs",
+      "status": "extraction",
+      "detail": "Search snippets come from text extracted from the PDFs. Math italic letters, fractions, overbars (x̄ appears as “¯x”), and subscripts may be garbled or split across lines. Lessons use authored LaTeX; open the PDF page for the instructor's exact notation. Only selected pages were visually inspected by the content pack.",
+      "refs": [],
+      "lessons": []
+    }
+  ]
+}

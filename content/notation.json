@@ -1,0 +1,945 @@
+{
+ "_about": "Notation sheet and distribution summary added by the study app (supplemental). Symbols marked origin=lecture cite the first lecture page that uses them; tests/unit/notation.test.ts checks each evidence pattern against that page. Distribution rows mirror study-content/FORMULA-REFERENCE.md; supplemental=true marks rows the reference flags with † (not explicitly developed in the lectures).",
+ "symbols": [
+  {
+   "id": "pop-size",
+   "tex": "N,\\ n",
+   "name": "Population size, sample size",
+   "meaning": "$N$ = number of elements in the population; $n$ = number of observations in the sample.",
+   "lesson_id": "01-data",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-08-24",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "evidence": "population of size 𝑁",
+   "aliases": "sample size"
+  },
+  {
+   "id": "obs",
+   "tex": "x_1,\\ldots,x_n",
+   "name": "Sample data",
+   "meaning": "The observations; $x_i$ is the $i$th measurement.",
+   "lesson_id": "01-data",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-08-24",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "evidence": "𝑥𝑖 is the 𝑖th",
+   "aliases": "observations data"
+  },
+  {
+   "id": "sum",
+   "tex": "\\sum_{i=1}^n x_i",
+   "name": "Summation (capital sigma)",
+   "meaning": "Add $x_1+x_2+\\cdots+x_n$.",
+   "lesson_id": "02-summary",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-08-24",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "evidence": "capital sigma",
+   "aliases": "sigma sum"
+  },
+  {
+   "id": "xbar",
+   "tex": "\\bar x",
+   "name": "Sample mean",
+   "meaning": "Average of the sample: $\\bar x=\\frac1n\\sum x_i$.",
+   "lesson_id": "02-summary",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-08-24",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "evidence": "Notation: ¯𝑥",
+   "aliases": "xbar average"
+  },
+  {
+   "id": "mu",
+   "tex": "\\mu",
+   "name": "Population mean",
+   "meaning": "Mean of the whole population; also $E[X]$ for a random variable.",
+   "lesson_id": "02-summary",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-08-24",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "evidence": "population mean/average is denoted by 𝜇",
+   "aliases": "mu mean expected"
+  },
+  {
+   "id": "median",
+   "tex": "\\tilde x",
+   "name": "Sample median",
+   "meaning": "Middle value of the ordered data (average of the two middle values when $n$ is even). The PDF text extraction shows it as “e𝑥”.",
+   "lesson_id": "02-summary",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-08-24",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "evidence": "Notation: e𝑥",
+   "aliases": "median xtilde"
+  },
+  {
+   "id": "s",
+   "tex": "s,\\ s^2",
+   "name": "Sample standard deviation, sample variance",
+   "meaning": "$s^2=\\sum(x_i-\\bar x)^2/(n-1)$; $s=\\sqrt{s^2}$. Same units as the data (variance: squared units).",
+   "lesson_id": "02-summary",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-08-31",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "evidence": "𝑠 \\(sample standard deviation\\)",
+   "aliases": "sd variance spread"
+  },
+  {
+   "id": "sigma",
+   "tex": "\\sigma,\\ \\sigma^2",
+   "name": "Population standard deviation, variance",
+   "meaning": "Spread of the whole population (divide by $N$); for a random variable $\\sigma^2=V(X)$.",
+   "lesson_id": "02-summary",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-08-31",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "evidence": "𝜎 \\(population standard deviation\\)",
+   "aliases": "sd variance"
+  },
+  {
+   "id": "z",
+   "tex": "z",
+   "name": "z-score",
+   "meaning": "$z=(x-\\mu)/\\sigma$ or $z_i=(x_i-\\bar x)/s$: standard deviations above (+) or below (−) the mean.",
+   "lesson_id": "03-boxplots",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-08-26",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "evidence": "𝑧-score",
+   "aliases": "standardize"
+  },
+  {
+   "id": "quartiles",
+   "tex": "Q_1,\\ Q_2,\\ Q_3",
+   "name": "Quartiles",
+   "meaning": "$Q_2$ = median; $Q_1$, $Q_3$ = medians of the lower and upper halves. **Odd $n$: include the median in both halves** (course convention).",
+   "lesson_id": "03-boxplots",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-08-26",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "evidence": "𝑄1 = first \\(lower\\) quartile",
+   "aliases": "quartile percentile"
+  },
+  {
+   "id": "iqr",
+   "tex": "IQR",
+   "name": "Interquartile range",
+   "meaning": "$IQR=Q_3-Q_1$, the spread of the middle 50%.",
+   "lesson_id": "03-boxplots",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-08-26",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "evidence": "IQR = 𝑄3 − 𝑄1",
+   "aliases": "iqr spread"
+  },
+  {
+   "id": "whiskers",
+   "tex": "P_1,\\ P_2",
+   "name": "Whisker endpoints",
+   "meaning": "$P_1$ = smallest value that is not an outlier; $P_2$ = largest value that is not an outlier. Not the same as the five-number-summary extremes.",
+   "lesson_id": "03-boxplots",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-08-31",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "evidence": "𝑃1 = smallest value that is not an outlier",
+   "aliases": "boxplot whisker"
+  },
+  {
+   "id": "fences",
+   "tex": "Q_1-1.5\\,IQR,\\ Q_3+1.5\\,IQR",
+   "name": "Inner fences (mild outliers)",
+   "meaning": "At or beyond an inner fence (equality counts) → outlier; at or beyond the outer fence $Q_1-3IQR$ / $Q_3+3IQR$ → extreme. Boxplot marks: mild ◦, extreme ∗.",
+   "lesson_id": "03-boxplots",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-08-31",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "evidence": "mild outlier is indicated by a circle",
+   "aliases": "outlier fence boxplot"
+  },
+  {
+   "id": "S",
+   "tex": "S",
+   "name": "Sample space",
+   "meaning": "The set of all possible outcomes of an experiment.",
+   "lesson_id": "04-events",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-02",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "evidence": "Its notation is 𝑆",
+   "aliases": "outcomes"
+  },
+  {
+   "id": "PA",
+   "tex": "P(A)",
+   "name": "Probability of event A",
+   "meaning": "How likely the outcome falls in $A$; $0\\le P(A)\\le1$.",
+   "lesson_id": "04-events",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-02",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "evidence": "𝑃\\( 𝐴\\) denotes the probability",
+   "aliases": "probability event"
+  },
+  {
+   "id": "Ac",
+   "tex": "A^c",
+   "name": "Complement",
+   "meaning": "Outcomes in $S$ that are not in $A$; $P(A^c)=1-P(A)$.",
+   "lesson_id": "04-events",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-02",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "evidence": "𝐴𝑐",
+   "aliases": ""
+  },
+  {
+   "id": "union",
+   "tex": "A\\cup B,\\ A\\cap B",
+   "name": "Union, intersection",
+   "meaning": "$A\\cup B$: $A$ or $B$ (or both). $A\\cap B$: both $A$ and $B$.",
+   "lesson_id": "04-events",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-02",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "evidence": "∪",
+   "aliases": "or and union intersection"
+  },
+  {
+   "id": "nPk",
+   "tex": "{}_nP_k",
+   "name": "Permutations",
+   "meaning": "Ordered selections of $k$ from $n$: $n!/(n-k)!$.",
+   "lesson_id": "05-counting",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-02",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "evidence": "𝑃𝑘",
+   "aliases": "permutation npr order"
+  },
+  {
+   "id": "nCk",
+   "tex": "\\binom nk",
+   "name": "Combinations (n choose k)",
+   "meaning": "Unordered selections of $k$ from $n$: $n!/(k!(n-k)!)$.",
+   "lesson_id": "05-counting",
+   "origin": "pack",
+   "refs": [],
+   "aliases": "combination ncr choose"
+  },
+  {
+   "id": "cond",
+   "tex": "P(B\\mid A)",
+   "name": "Conditional probability",
+   "meaning": "Probability of $B$ given that $A$ occurred: $P(A\\cap B)/P(A)$.",
+   "lesson_id": "06-rules",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-14",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "evidence": "𝑃\\(𝐵 \\| 𝐴\\)",
+   "aliases": "given conditional"
+  },
+  {
+   "id": "X",
+   "tex": "X,\\ x",
+   "name": "Random variable and its value",
+   "meaning": "Capital $X$ is the random variable; lowercase $x$ is a particular value it can take.",
+   "lesson_id": "07-expectation",
+   "origin": "pack",
+   "refs": [],
+   "aliases": "random variable rv"
+  },
+  {
+   "id": "pmf",
+   "tex": "p(x)=P(X=x)",
+   "name": "Probability mass / density function",
+   "meaning": "Discrete: $p(x)=P(X=x)$. Continuous: $f(x)$ (the notes also write $p(x)$) is a density; probabilities are areas.",
+   "lesson_id": "07-expectation",
+   "origin": "pack",
+   "refs": [],
+   "aliases": "pmf pdf density"
+  },
+  {
+   "id": "cdf",
+   "tex": "F(x)=P(X\\le x)",
+   "name": "Cumulative distribution function",
+   "meaning": "Probability at or below $x$. For integer-valued $X$: $P(a\\le X\\le b)=F(b)-F(a-1)$.",
+   "lesson_id": "07-expectation",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-16",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "evidence": "𝐹 \\(𝑥\\)|𝐹\\(𝑥\\)",
+   "aliases": "cdf cumulative"
+  },
+  {
+   "id": "EX",
+   "tex": "E[X]",
+   "name": "Expected value",
+   "meaning": "Long-run mean of $X$: $\\sum x\\,p(x)$ or $\\int x f(x)\\,dx$.",
+   "lesson_id": "07-expectation",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-21",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "evidence": "𝐸 \\[",
+   "aliases": "expectation mean"
+  },
+  {
+   "id": "VX",
+   "tex": "V[X],\\ sd[X]",
+   "name": "Variance and standard deviation of X",
+   "meaning": "$V[X]=E[X^2]-E[X]^2$; $sd[X]=\\sqrt{V[X]}$. Lessons also write $V(X)$.",
+   "lesson_id": "07-expectation",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-21",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "evidence": "sd\\[",
+   "aliases": "variance sd"
+  },
+  {
+   "id": "G",
+   "tex": "X\\sim G(p)",
+   "name": "Geometric",
+   "meaning": "Number of **trials** up to and including the first success (course convention: $x=1,2,\\ldots$).",
+   "lesson_id": "08-geometric",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-21",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "evidence": "∼ 𝐺",
+   "aliases": "geometric"
+  },
+  {
+   "id": "B",
+   "tex": "X\\sim B(n,p)",
+   "name": "Binomial",
+   "meaning": "Number of successes in $n$ independent trials with success probability $p$.",
+   "lesson_id": "09-binomial",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-21",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "evidence": "𝐵\\(𝑛|𝐵 \\(𝑛",
+   "aliases": "binomial"
+  },
+  {
+   "id": "NB",
+   "tex": "X\\sim NB(r,p)",
+   "name": "Negative binomial",
+   "meaning": "Number of **trials** up to and including the $r$th success.",
+   "lesson_id": "09-binomial",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-23",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "evidence": "Negative binomial 𝑁 𝐵",
+   "aliases": "negative binomial"
+  },
+  {
+   "id": "HG",
+   "tex": "X\\sim HG(N,M,n)",
+   "name": "Hypergeometric",
+   "meaning": "Successes in a sample of $n$ drawn without replacement from $N$ items of which $M$ are successes.",
+   "lesson_id": "10-hypergeometric",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-23",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "evidence": "𝐻𝐺",
+   "aliases": "hypergeometric"
+  },
+  {
+   "id": "Pois",
+   "tex": "X\\sim P(\\lambda)",
+   "name": "Poisson",
+   "meaning": "Count of events in a fixed interval; $\\lambda$ = mean count = rate × length.",
+   "lesson_id": "11-poisson",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-23",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "evidence": "∼ 𝑃\\(",
+   "aliases": "poisson lambda"
+  },
+  {
+   "id": "U",
+   "tex": "X\\sim U(a,b)",
+   "name": "Continuous uniform",
+   "meaning": "Constant density $1/(b-a)$ on $[a,b]$.",
+   "lesson_id": "12-continuous",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-28",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "evidence": "𝑈 \\(𝑎, 𝑏\\)",
+   "aliases": "uniform"
+  },
+  {
+   "id": "Gam",
+   "tex": "X\\sim\\Gamma(\\alpha,\\beta)",
+   "name": "Gamma (scale β)",
+   "meaning": "Shape $\\alpha$, **scale** $\\beta$: mean $\\alpha\\beta$, variance $\\alpha\\beta^2$.",
+   "lesson_id": "13-gamma",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-30",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "evidence": "Γ\\(𝛼, 𝛽\\)",
+   "aliases": "gamma"
+  },
+  {
+   "id": "Exp",
+   "tex": "X\\sim E(\\beta)",
+   "name": "Exponential (scale β)",
+   "meaning": "$\\Gamma(1,\\beta)$: waiting time to the first event; mean $\\beta$ = 1/rate.",
+   "lesson_id": "13-gamma",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-30",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "evidence": "𝐸 \\(𝛽\\)",
+   "aliases": "exponential"
+  },
+  {
+   "id": "chi",
+   "tex": "X\\sim\\chi^2_\\nu",
+   "name": "Chi-squared",
+   "meaning": "$\\Gamma(\\nu/2,\\,2)$; mean $\\nu$, variance $2\\nu$.",
+   "lesson_id": "13-gamma",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-30",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "evidence": "𝜒2",
+   "aliases": "chi square"
+  },
+  {
+   "id": "Norm",
+   "tex": "X\\sim N(\\mu,\\sigma^2)",
+   "name": "Normal",
+   "meaning": "Second parameter is the **variance**. $N(5,4)$ has standard deviation 2.",
+   "lesson_id": "14-spread-rules",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-30",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "evidence": "𝑁 \\(𝜇, 𝜎2\\)",
+   "aliases": "normal gaussian"
+  },
+  {
+   "id": "Z",
+   "tex": "Z\\sim N(0,1)",
+   "name": "Standard normal",
+   "meaning": "$Z=(X-\\mu)/\\sigma$. Probabilities come from the standard normal table (Table V).",
+   "lesson_id": "14-spread-rules",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-10-07",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "evidence": "Table V gives the standard normal cdf",
+   "aliases": "standard normal"
+  },
+  {
+   "id": "Phi",
+   "tex": "\\Phi(z)",
+   "name": "Standard normal CDF",
+   "meaning": "$\\Phi(z)=P(Z\\le z)$. Used in the course-notes synthesis; the lectures refer to “Table V”.",
+   "lesson_id": "14-spread-rules",
+   "origin": "pack",
+   "refs": [],
+   "aliases": "phi normal cdf table"
+  },
+  {
+   "id": "mgf",
+   "tex": "m_X(t)",
+   "name": "Moment generating function",
+   "meaning": "$m_X(t)=E[e^{tX}]$; $m_X^{(k)}(0)=E[X^k]$.",
+   "lesson_id": "15-mgf",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-09-30",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "evidence": "𝑚𝑋",
+   "aliases": "mgf moment"
+  },
+  {
+   "id": "joint",
+   "tex": "p(x,y)",
+   "name": "Joint distribution",
+   "meaning": "$P(X=x,Y=y)$ (or a joint density). Marginals: sum or integrate out the other variable.",
+   "lesson_id": "16-joint",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-10-07",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "evidence": "𝑝\\(𝑥, 𝑦\\)",
+   "aliases": "joint marginal"
+  },
+  {
+   "id": "cov",
+   "tex": "\\operatorname{Cov}(X,Y)",
+   "name": "Covariance",
+   "meaning": "$E[XY]-E[X]E[Y]$: direction of linear co-movement; units are x-units × y-units.",
+   "lesson_id": "17-covariance",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-10-07",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "evidence": "Cov",
+   "aliases": "covariance"
+  },
+  {
+   "id": "rho",
+   "tex": "\\rho",
+   "name": "Population correlation",
+   "meaning": "$\\operatorname{Cov}(X,Y)/(sd[X]\\,sd[Y])$, between −1 and 1, unitless.",
+   "lesson_id": "17-covariance",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-10-12",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "evidence": "𝜌 = Cov",
+   "aliases": "correlation rho"
+  },
+  {
+   "id": "R",
+   "tex": "R",
+   "name": "Sample correlation coefficient",
+   "meaning": "Estimates $\\rho$ from paired data. Lecture strength guide: |R| ≥ 0.8 strong, 0.5–0.8 moderate, below 0.5 weak.",
+   "lesson_id": "18-regression",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-10-12",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "evidence": "sample correlation coefficient 𝑅",
+   "aliases": "correlation r"
+  },
+  {
+   "id": "ab",
+   "tex": "\\hat y=a+bx",
+   "name": "Least-squares line",
+   "meaning": "Slope $b=R\\,s_y/s_x$, intercept $a=\\bar y-b\\bar x$.",
+   "lesson_id": "18-regression",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-10-12",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "evidence": "𝑏 = 𝑅 𝑆𝑦",
+   "aliases": "regression slope intercept"
+  },
+  {
+   "id": "R2",
+   "tex": "R^2",
+   "name": "Coefficient of determination",
+   "meaning": "$R^2\\cdot100\\%$ = percent of the variation in $y$ explained by the linear fit.",
+   "lesson_id": "18-regression",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-10-12",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "evidence": "coefficient of determination",
+   "aliases": "rsquared"
+  },
+  {
+   "id": "thetahat",
+   "tex": "\\hat\\theta",
+   "name": "Estimator of θ",
+   "meaning": "A statistic used to estimate a parameter $\\theta$; $\\operatorname{Bias}(\\hat\\theta)=E[\\hat\\theta]-\\theta$.",
+   "lesson_id": "19-estimation",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-10-12",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "evidence": "b𝜃|ˆ𝜃|𝜃̂",
+   "aliases": "estimator bias"
+  },
+  {
+   "id": "Xbar",
+   "tex": "\\bar X,\\ S^2",
+   "name": "Sample mean and variance as random variables",
+   "meaning": "Capitals denote statistics before the data are observed; $E[\\bar X]=\\mu$, $V(\\bar X)=\\sigma^2/n$.",
+   "lesson_id": "19-estimation",
+   "origin": "pack",
+   "refs": [],
+   "aliases": "sample mean random"
+  },
+  {
+   "id": "SE",
+   "tex": "SE(\\bar X)=\\sigma/\\sqrt n",
+   "name": "Standard error",
+   "meaning": "Standard deviation of an estimator, e.g. of the sample mean.",
+   "lesson_id": "19-estimation",
+   "origin": "lecture",
+   "refs": [
+    {
+     "source_id": "lecture-10-14",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "evidence": "standard error|S\\.E\\.",
+   "aliases": "standard error"
+  }
+ ],
+ "distributions": [
+  {
+   "id": "uniform-discrete",
+   "name": "Discrete uniform",
+   "notation": "U(k)",
+   "support": "x_1,\\ldots,x_k",
+   "pmf": "p(x)=\\frac1k",
+   "mean": "\\frac1k\\sum x_i",
+   "variance": "\\frac1k\\sum (x_i-\\mu)^2",
+   "lesson_id": "08-geometric",
+   "supplemental": false,
+   "type": "discrete"
+  },
+  {
+   "id": "geometric",
+   "name": "Geometric",
+   "notation": "G(p)",
+   "support": "x=1,2,\\ldots",
+   "pmf": "(1-p)^{x-1}p",
+   "mean": "\\frac1p",
+   "variance": "\\frac{1-p}{p^2}",
+   "lesson_id": "08-geometric",
+   "supplemental": false,
+   "type": "discrete"
+  },
+  {
+   "id": "binomial",
+   "name": "Binomial",
+   "notation": "B(n,p)",
+   "support": "x=0,1,\\ldots,n",
+   "pmf": "\\binom nx p^x(1-p)^{n-x}",
+   "mean": "np",
+   "variance": "np(1-p)",
+   "lesson_id": "09-binomial",
+   "supplemental": false,
+   "type": "discrete"
+  },
+  {
+   "id": "negbin",
+   "name": "Negative binomial",
+   "notation": "NB(r,p)",
+   "support": "x=r,r+1,\\ldots",
+   "pmf": "\\binom{x-1}{r-1}p^r(1-p)^{x-r}",
+   "mean": "\\frac rp",
+   "variance": "\\frac{r(1-p)}{p^2}",
+   "lesson_id": "09-binomial",
+   "supplemental": true,
+   "type": "discrete"
+  },
+  {
+   "id": "hypergeometric",
+   "name": "Hypergeometric",
+   "notation": "HG(N,M,n)",
+   "support": "\\max(0,n-(N-M))\\le x\\le\\min(n,M)",
+   "pmf": "\\frac{\\binom Mx\\binom{N-M}{n-x}}{\\binom Nn}",
+   "mean": "n\\frac MN",
+   "variance": "n\\frac MN\\left(1-\\frac MN\\right)\\frac{N-n}{N-1}",
+   "lesson_id": "10-hypergeometric",
+   "supplemental": true,
+   "type": "discrete"
+  },
+  {
+   "id": "poisson",
+   "name": "Poisson",
+   "notation": "P(\\lambda)",
+   "support": "x=0,1,2,\\ldots",
+   "pmf": "\\frac{\\lambda^x e^{-\\lambda}}{x!}",
+   "mean": "\\lambda",
+   "variance": "\\lambda",
+   "lesson_id": "11-poisson",
+   "supplemental": false,
+   "type": "discrete"
+  },
+  {
+   "id": "uniform",
+   "name": "Continuous uniform",
+   "notation": "U(a,b)",
+   "support": "a\\le x\\le b",
+   "pmf": "\\frac1{b-a}",
+   "mean": "\\frac{a+b}2",
+   "variance": "\\frac{(b-a)^2}{12}",
+   "lesson_id": "12-continuous",
+   "supplemental": true,
+   "type": "continuous"
+  },
+  {
+   "id": "gamma",
+   "name": "Gamma (scale β)",
+   "notation": "\\Gamma(\\alpha,\\beta)",
+   "support": "x>0",
+   "pmf": "\\frac{x^{\\alpha-1}e^{-x/\\beta}}{\\beta^\\alpha\\Gamma(\\alpha)}",
+   "mean": "\\alpha\\beta",
+   "variance": "\\alpha\\beta^2",
+   "lesson_id": "13-gamma",
+   "supplemental": false,
+   "type": "continuous"
+  },
+  {
+   "id": "exponential",
+   "name": "Exponential (scale β)",
+   "notation": "E(\\beta)",
+   "support": "x>0",
+   "pmf": "\\frac1\\beta e^{-x/\\beta}",
+   "mean": "\\beta",
+   "variance": "\\beta^2",
+   "lesson_id": "13-gamma",
+   "supplemental": false,
+   "type": "continuous"
+  },
+  {
+   "id": "chisq",
+   "name": "Chi-squared",
+   "notation": "\\chi^2_\\nu",
+   "support": "x>0",
+   "pmf": "\\Gamma(\\nu/2,\\,2)\\text{ density}",
+   "mean": "\\nu",
+   "variance": "2\\nu",
+   "lesson_id": "13-gamma",
+   "supplemental": false,
+   "type": "continuous"
+  },
+  {
+   "id": "normal",
+   "name": "Normal",
+   "notation": "N(\\mu,\\sigma^2)",
+   "support": "-\\infty<x<\\infty",
+   "pmf": "\\frac{1}{\\sigma\\sqrt{2\\pi}}e^{-(x-\\mu)^2/(2\\sigma^2)}",
+   "mean": "\\mu",
+   "variance": "\\sigma^2",
+   "lesson_id": "14-spread-rules",
+   "supplemental": false,
+   "type": "continuous"
+  }
+ ]
+}

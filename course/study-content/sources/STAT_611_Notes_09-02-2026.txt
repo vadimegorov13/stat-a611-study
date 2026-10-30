@@ -1,0 +1,294 @@
+=== PDF PAGE 1 ===
+STAT A411/611 2 September 2026
+STAT A411/611 Lecture Notes
+Instructor: Rieken Venema Office: SSB 158E
+Office hours: MWF 12:00–12:45 Class: 2:30–3:45
+Lecture Plan and Review
+Today: Chapter 1, Sections 1.1, 1.2, and 1.3.
+Monday: No class.
+Wednesday: Continue Section 1.3.
+Review of Section 6.4
+The main topics were 𝑧-scores, percentiles, quartiles, outliers, and boxplots. A boxplot is built from ordered
+data using 𝑄1, 𝑄2, 𝑄3, the IQR, the outlier check, and the whisker endpoints 𝑃1 and 𝑃2. Its five-number
+summary is
+{𝑃1, 𝑄1, 𝑄2, 𝑄3, 𝑃2},
+with outliers plotted separately.
+1 Chapter 1 — Probability
+1.1 Section 1.1 — Classical Formula for Probability Calculations (C.F.)
+Sample Space
+An experiment is performed and its possible outcomes are collected in a set.
+Definition. The sample space is the set of all possible outcomes of an experiment. Its notation is 𝑆.
+Example: two dice. Roll a fair six-sided red die and a fair six-sided blue die and observe the sum of the two
+upward-facing sides. Then
+𝑆 = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}.
+Events
+Definition. Any subset of 𝑆 is called an event. If the observed outcome falls in the set 𝐴, then event 𝐴 occurs.
+An event can therefore be described verbally or written as a set.
+For the two-dice experiment,
+𝐴 = {roll an even sum} = {2, 4, 6, 8, 10, 12}.
+Probability Notation
+𝑃( 𝐴) denotes the probability that event 𝐴 occurs, or how likely it is that the outcome of the experiment falls
+in set 𝐴. Its value always satisfies
+0 ≤ 𝑃( 𝐴) ≤ 1 .
+1
+
+=== PDF PAGE 2 ===
+STAT A411/611 2 September 2026
+If 𝑃( 𝐴) = 0, 𝐴 is an impossible event; if 𝑃( 𝐴) = 1, 𝐴 is a certain event. For example, with two ordinary dice,
+𝑃(sum < 2) = 0, 𝑃 (sum ≤ 12) = 1.
+Classical Formula for Probability Calculations
+Suppose all outcomes in 𝑆 are equally likely. Then for any event 𝐴,
+𝑃( 𝐴) = #{elements in 𝐴}
+#{elements in 𝑆} = #{ways event 𝐴 can occur}
+#{possible outcomes} .
+Example 1: Flip a Fair Coin Twice
+What is the probability that at most one head comes up? The sample space is
+𝑆 = {𝐻𝐻, 𝐻𝑇 , 𝑇 𝐻, 𝑇𝑇 },
+and all four outcomes are equally likely. Hence
+𝑃(at most one head) = 3
+4 .
+Example 2: Sum of a Red and Blue Die
+A first attempt is
+𝑃(sum = 8) =?, 𝑆 = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}.
+If the Classical Formula were applied directly to these eleven values, it would give
+𝑃(sum = 8) = 1
+11 .
+This attempt fails because the eleven possible sums are not equally likely. For example, a sum of 2 has one
+ordered realization, while a sum of 7 has six.
+Second, better attempt. Use the 36 equally likely ordered pairs (𝑅, 𝐵).
+𝑅\𝐵 1 2 3 4 5 6
+1 2 3 4 5 6 7
+2 3 4 5 6 7 8
+3 4 5 6 7 8 9
+4 5 6 7 8 9 10
+5 6 7 8 9 10 11
+6 7 8 9 10 11 12
+𝑅 𝐵
+2 6
+3 5
+4 4
+5 3
+6 2
+There are five equally likely pairs giving a sum of 8, so
+𝑃(sum = 8) = 5
+36 .
+2
+
+=== PDF PAGE 3 ===
+STAT A411/611 2 September 2026
+A Deck of 52 Playing Cards
+A standard deck contains 52 cards:
+52 cards
+26 red
+26 black
+13 hearts
+13 diamonds
+13 clubs
+13 spades
+A, 2, 3, . . . , 10, J, Q, K
+· · ·
+· · ·
+A, 2, 3, . . . , 10, J, Q, K
+denominations
+Each suit contains the denominations ace, 2, 3, . . . , 10, jack, queen, and king. Therefore,
+𝑃(red) = 26
+52 = 1
+2 , 𝑃 (spade) = 13
+52 = 1
+4 , 𝑃 (a 7) = 4
+52 = 1
+13 .
+Poker Setup
+A dealer shuffles a deck of 52 cards and gives a player 5 randomly selected cards without replacement. For
+the event “exactly two spades,” the classical-formula setup is
+𝑃(exactly two spades) = #{5-card selections with 2 spades and 3 non-spades}
+#{5-card selections} .
+The counting tools needed to evaluate this ratio are developed in Section 1.3.
+Homework: 2 and 4 (pp. 17–18).
+1.2 Section 1.2 — Some Concepts from Set Theory
+Union and Intersection
+For two events 𝐴 and 𝐵:
+• The union 𝐴 ∪ 𝐵 occurs if either 𝐴 occurs or 𝐵 occurs (or both). Equivalently, at least one of the two
+events occurs.
+• The intersection 𝐴 ∩ 𝐵 occurs if both 𝐴 and 𝐵 occur.
+𝐴 ∪ 𝐵 = 𝐴 OR 𝐵, 𝐴 ∩ 𝐵 = 𝐴 AND 𝐵.
+𝐴 𝐵
+𝑆
+𝐴 ∪ 𝐵
+𝐴 𝐵
+𝑆
+𝐴 ∩ 𝐵
+3
+
+=== PDF PAGE 4 ===
+STAT A411/611 2 September 2026
+For several events,
+𝑛Ø
+𝑖=1
+𝐴𝑖 = 𝐴1 ∪ 𝐴2 ∪ · · · ∪𝐴𝑛,
+𝑛Ù
+𝑖=1
+𝐴𝑖 = 𝐴1 ∩ 𝐴2 ∩ · · · ∩𝐴𝑛.
+Complement
+The complement of 𝐴, denoted 𝐴𝑐 (written 𝐴′ in the textbook), occurs when 𝐴 does not occur.
+𝐴
+𝐴𝑐
+𝑆
+The basic properties are
+𝐴 ∩ 𝐴𝑐 = ∅, 𝐴 ∪ 𝐴𝑐 = 𝑆.
+De Morgan’s laws are
+( 𝐴 ∩ 𝐵)𝑐 = 𝐴𝑐 ∪ 𝐵𝑐 , ( 𝐴 ∪ 𝐵)𝑐 = 𝐴𝑐 ∩ 𝐵𝑐 .
+𝐴 𝐵
+𝑆
+LHS: ( 𝐴 ∩ 𝐵)𝑐
+=
+𝐴 𝐵
+𝑆
+RHS: 𝐴𝑐 ∪ 𝐵𝑐
+Mutually Exclusive Events
+Two events 𝐴 and 𝐵 are mutually exclusive (or disjoint) if they cannot occur at the same time:
+𝐴 ∩ 𝐵 = ∅ .
+Equivalently, at most one of them can occur.
+More generally, 𝐴1, 𝐴2, . . . , 𝐴𝑛 are mutually exclusive if
+𝐴𝑖 ∩ 𝐴 𝑗 = ∅ for all 𝑖 ≠ 𝑗 ,
+where 𝑖, 𝑗 ∈ { 1, 2, . . . , 𝑛} index the events.
+𝐴1 𝐴2
+𝐴3 𝐴4
+4
+
+=== PDF PAGE 5 ===
+STAT A411/611 2 September 2026
+In this configuration, 𝐴1, 𝐴2, 𝐴3 are mutually exclusive and 𝐴1, 𝐴2, 𝐴4 are mutually exclusive, but all four
+events are not mutually exclusive because 𝐴3 and 𝐴4 overlap.
+Text reference: p. 9, Definition 1.2.3. Homework: 6 and 8.
+1.3 Section 1.3 — Counting Rules
+Combinatorial Analysis
+I. Basic Rule of Counting (BRC)
+Suppose we perform 𝑘 successive experiments. If experiment 𝑖 has 𝑛𝑖 possible outcomes, for 𝑖 = 1, 2, . . . , 𝑘,
+then the entire sequence has
+𝑛1𝑛2 · · ·𝑛𝑘
+possible different outcomes.
+This is the counting rule used to determine the numerator and denominator in classical probability
+calculations when direct listing is impractical.
+Example 1: Dinner Menu
+A restaurant dinner consists of an appetizer, an entree, and a dessert. If there are 2 appetizers, 3 entrees, and 2
+desserts, then
+2 ·3 ·2 = 12
+different dinners are possible. The successive choices can be represented by a tree:
+𝐴1
+𝐴2
+𝐸1
+𝐸2
+𝐸3
+𝐷1
+𝐷2
+𝐷1
+𝐷2
+𝐷1
+𝐷2
+𝐸1
+𝐸2
+𝐸3
+𝐷1
+𝐷2
+𝐷1
+𝐷2
+𝐷1
+𝐷2
+Example 2: License Plates
+A license plate consists of four letters ( 𝐴–𝑍) followed by three digits (0–9). Write the letter positions as
+𝐿1, 𝐿2, 𝐿3, 𝐿4 and the digit positions as 𝐷1, 𝐷2, 𝐷3, where 𝐿 denotes a letter and 𝐷 denotes a digit.
+With repetition. A schematic choice tree is
+𝐿1 𝐿2 𝐿3 𝐿4 𝐷1 𝐷2 𝐷3
+A
+B
+...
+Z
+A
+B
+...
+Z
+A
+B
+...
+Z
+A
+B
+...
+Z
+0
+3
+...
+9
+0
+3
+...9
+0
+3
+...9
+branches: 26 26 26 26 10 10 10
+5
+
+=== PDF PAGE 6 ===
+STAT A411/611 2 September 2026
+Thus, by the Basic Rule of Counting,
+26 ·26 ·26 ·26 ·10 ·10 ·10 = 264 103 .
+Without repetition. If repetition is not allowed, each successive letter choice leaves one fewer letter
+available, and each successive digit choice leaves one fewer digit available:
+𝐿1
+26
+𝐿2
+25
+𝐿3
+24
+𝐿4
+23
+𝐷1
+10
+𝐷2
+9
+𝐷3
+8branches:
+Therefore,
+26 ·25 ·24 ·23 ·10 ·9 ·8 .
+Likewise, the BRC can be used to count the number of possible passwords, ZIP codes, telephone numbers,
+and similar sequential constructions.
+II. Permutations
+Start with 𝑛 distinct elements. Select 𝑘 elements randomly and without replacement, where
+1 ≤ 𝑘 ≤ 𝑛,
+and where the order of selection matters. Every different ordered selection is called a permutation.
+The total number of possible permutations is denoted 𝑛𝑃𝑘. To find a formula using the BRC, view the
+selection as 𝑘 successive choices:
+𝑛 𝑛 − 1 · · · 𝑛 − 𝑘 + 1
+sel1 sel2 · · · sel𝑘
+Hence,
+𝑛𝑃𝑘 = 𝑛(𝑛 − 1) (𝑛 − 2) · · · (𝑛 − 𝑘 + 1).
+For example,
+𝑛𝑃2 = 𝑛(𝑛 − 1), 𝑛𝑃3 = 𝑛(𝑛 − 1) (𝑛 − 2).
+Factorials
+Zero factorial is defined to be 1. Thus,
+0! = 1, 1! = 1, 2! = 2 ·1 = 2, 3! = 3 ·2 ·1 = 6,
+and, for example,
+4! = 24, 5! = 120, 6! = 720, 10! = 3,628,800 > 3.5 million.
+6
+
+=== PDF PAGE 7 ===
+STAT A411/611 2 September 2026
+To rewrite the permutation formula in factorial form, extend the product by the remaining factors and
+divide by the same quantity:
+𝑛𝑃𝑘 = 𝑛(𝑛 − 1) · · · (𝑛 − 𝑘 + 1)
+= 𝑛(𝑛 − 1) · · · (𝑛 − 𝑘 + 1) (𝑛 − 𝑘) (𝑛 − 𝑘 − 1) · · ·3 ·2 ·1
+(𝑛 − 𝑘) (𝑛 − 𝑘 − 1) · · ·3 ·2 ·1
+= 𝑛!
+(𝑛 − 𝑘)! .
+Combinations
+A related formula for combinations is
+𝑛𝐶𝑘 =
+𝑛
+𝑘
+
+= 𝑛!
+𝑘!(𝑛 − 𝑘)! .
+This topic will be developed later.
+Next lecture: continue Section 1.3.
+7

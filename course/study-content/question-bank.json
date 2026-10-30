@@ -1,0 +1,2622 @@
+{
+  "schema_version": 1,
+  "grading_notes": "MC answers are zero-based option indices. Numeric probabilities are decimals; honor units stated in the prompt. Free responses use self-assessment rubrics. All questions are authored practice, not instructor-assigned questions.",
+  "questions": [
+    {
+      "id": "q01-01",
+      "lesson_id": "01-data",
+      "type": "multiple_choice",
+      "prompt": "Which display is designed for frequencies of categories?",
+      "answer": 0,
+      "hints": [
+        "Think about category labels."
+      ],
+      "solution": "A bar graph compares category counts; a histogram groups numerical observations into intervals.",
+      "source_refs": [
+        {
+          "source_id": "lecture-08-24",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "options": [
+        "Bar graph",
+        "Histogram of continuous intervals",
+        "Normal density",
+        "Scatterplot of paired measurements"
+      ]
+    },
+    {
+      "id": "q01-02",
+      "lesson_id": "01-data",
+      "type": "numeric",
+      "prompt": "A category contains 12 of 48 observations. What is its relative frequency?",
+      "answer": 0.25,
+      "hints": [
+        "Divide category count by total."
+      ],
+      "solution": "12/48 = 0.25, or 25%.",
+      "source_refs": [
+        {
+          "source_id": "lecture-08-24",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q01-03",
+      "lesson_id": "01-data",
+      "type": "free_response",
+      "prompt": "An ogive reaches 0.80 at an upper class boundary of 50. Interpret it.",
+      "answer": [
+        "States cumulative proportion",
+        "Relates 80% to observations below/at the boundary",
+        "Does not interpret this as density at 50"
+      ],
+      "hints": [
+        "An ogive accumulates frequencies."
+      ],
+      "solution": "Approximately 80% of observations lie up to that boundary; the exact endpoint language follows the bin convention.",
+      "source_refs": [
+        {
+          "source_id": "lecture-08-24",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "mode": "self_assessment",
+        "rubric": [
+          "States cumulative proportion",
+          "Relates 80% to observations below/at the boundary",
+          "Does not interpret this as density at 50"
+        ]
+      }
+    },
+    {
+      "id": "q02-01",
+      "lesson_id": "02-summary",
+      "type": "multiple_choice",
+      "prompt": "Which summary is usually more resistant to an extreme observation?",
+      "answer": 1,
+      "hints": [
+        "Consider replacing the largest value by a huge value."
+      ],
+      "solution": "The median depends on central ordered observations and is resistant to an extreme value.",
+      "source_refs": [
+        {
+          "source_id": "lecture-08-24",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "01-data"
+      ],
+      "options": [
+        "Mean",
+        "Median",
+        "Range",
+        "Sample variance"
+      ]
+    },
+    {
+      "id": "q02-02",
+      "lesson_id": "02-summary",
+      "type": "numeric",
+      "prompt": "Find the sample variance of 2, 4, 6.",
+      "answer": 4,
+      "hints": [
+        "Find the mean, then divide squared deviations by n−1."
+      ],
+      "solution": "Mean = 4. Squared deviations total 4+0+4 = 8. Sample variance = 8/2 = 4.",
+      "source_refs": [
+        {
+          "source_id": "lecture-08-24",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "01-data"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q02-03",
+      "lesson_id": "02-summary",
+      "type": "numeric",
+      "prompt": "Find the sample standard deviation of 2, 4, 6.",
+      "answer": 2,
+      "hints": [
+        "Take the square root of the sample variance."
+      ],
+      "solution": "Sample variance = 4; standard deviation = sqrt(4) = 2, in the original units.",
+      "source_refs": [
+        {
+          "source_id": "lecture-08-24",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "01-data"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q03-01",
+      "lesson_id": "03-boxplots",
+      "type": "multiple_choice",
+      "prompt": "For odd n, how do these lectures define the halves used for quartiles?",
+      "answer": 1,
+      "hints": [
+        "Use the course convention rather than a software default."
+      ],
+      "solution": "August 26 and August 31 include the middle observation in both halves.",
+      "source_refs": [
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-08-31",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "02-summary"
+      ],
+      "options": [
+        "Exclude the median from both",
+        "Include the median in both",
+        "Put the median only in the lower half",
+        "Use interpolation automatically"
+      ]
+    },
+    {
+      "id": "q03-02",
+      "lesson_id": "03-boxplots",
+      "type": "numeric",
+      "prompt": "Using the course convention, find Q1 for 1, 3, 5, 7, 9.",
+      "answer": 3,
+      "hints": [
+        "Include the median in the lower half."
+      ],
+      "solution": "The lower half is 1,3,5, whose median is 3.",
+      "source_refs": [
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-08-31",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "02-summary"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q03-03",
+      "lesson_id": "03-boxplots",
+      "type": "free_response",
+      "prompt": "Q1=10, Q3=18. An observation equals 30. Classify it using the course fence rule.",
+      "answer": [
+        "Computes IQR=8",
+        "Computes upper inner fence 30 and outer fence 42",
+        "Calls 30 a mild outlier under the course inclusive rule"
+      ],
+      "hints": [
+        "Check both fences and equality."
+      ],
+      "solution": "IQR=8. Upper fences are 18+12=30 and 18+24=42. Equality at the inner fence counts here, so 30 is a mild outlier.",
+      "source_refs": [
+        {
+          "source_id": "lecture-08-26",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-08-31",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "02-summary"
+      ],
+      "grading": {
+        "mode": "self_assessment",
+        "rubric": [
+          "Computes IQR=8",
+          "Computes upper inner fence 30 and outer fence 42",
+          "Calls 30 a mild outlier under the course inclusive rule"
+        ]
+      }
+    },
+    {
+      "id": "q04-01",
+      "lesson_id": "04-events",
+      "type": "multiple_choice",
+      "prompt": "Why is P(sum=7) not 1/11 for two independent fair dice?",
+      "answer": 1,
+      "hints": [
+        "Count ordered pairs."
+      ],
+      "solution": "Six of 36 equally likely ordered pairs sum to 7; sums 2 through 12 have unequal probabilities.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [],
+      "options": [
+        "There are only six sums",
+        "The possible sums are not equally likely",
+        "The dice must be identical colors",
+        "Seven is impossible"
+      ]
+    },
+    {
+      "id": "q04-02",
+      "lesson_id": "04-events",
+      "type": "numeric",
+      "prompt": "What is the probability that two independent fair dice sum to 7?",
+      "answer": 0.16666666666666666,
+      "hints": [
+        "List pairs with total 7."
+      ],
+      "solution": "The pairs are (1,6),(2,5),(3,4),(4,3),(5,2),(6,1), so 6/36=1/6.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q04-03",
+      "lesson_id": "04-events",
+      "type": "free_response",
+      "prompt": "Write the complement of “A or B occurs” in words and set notation.",
+      "answer": [
+        "Neither A nor B occurs",
+        "Uses A^c intersection B^c"
+      ],
+      "hints": [
+        "Apply De Morgan’s law."
+      ],
+      "solution": "Neither occurs: (A union B)^c = A^c intersection B^c.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [],
+      "grading": {
+        "mode": "self_assessment",
+        "rubric": [
+          "Neither A nor B occurs",
+          "Uses A^c intersection B^c"
+        ]
+      }
+    },
+    {
+      "id": "q05-01",
+      "lesson_id": "05-counting",
+      "type": "multiple_choice",
+      "prompt": "Choosing an unordered committee of three from ten distinct people uses:",
+      "answer": 3,
+      "hints": [
+        "Changing the listing order does not change a committee."
+      ],
+      "solution": "Use combinations: choose 3 distinct people without replacement, ignoring order.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "04-events"
+      ],
+      "options": [
+        "10^3",
+        "10!",
+        "10P3",
+        "10 choose 3"
+      ]
+    },
+    {
+      "id": "q05-02",
+      "lesson_id": "05-counting",
+      "type": "numeric",
+      "prompt": "How many distinct arrangements are there of the letters LEVEL?",
+      "answer": 30,
+      "hints": [
+        "Account for two Ls and two Es."
+      ],
+      "solution": "5!/(2!2!1!)=120/4=30.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "04-events"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q05-03",
+      "lesson_id": "05-counting",
+      "type": "numeric",
+      "prompt": "How many ordered choices of president and secretary can be made from 8 people, with different people in the roles?",
+      "answer": 56,
+      "hints": [
+        "Order matters and no person fills both roles."
+      ],
+      "solution": "8 choices for president times 7 for secretary = 56.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-02",
+          "pages": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "04-events"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q06-01",
+      "lesson_id": "06-rules",
+      "type": "multiple_choice",
+      "prompt": "Two disjoint events both have positive probability. Are they independent?",
+      "answer": 1,
+      "hints": [
+        "Compare intersection probability with the product."
+      ],
+      "solution": "Their intersection has probability zero but the product of their positive probabilities is positive.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-14",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "04-events",
+        "05-counting"
+      ],
+      "options": [
+        "Always",
+        "No",
+        "Only if equally likely",
+        "Only if their probabilities sum to one"
+      ]
+    },
+    {
+      "id": "q06-02",
+      "lesson_id": "06-rules",
+      "type": "numeric",
+      "prompt": "P(A)=0.4, P(B)=0.5, P(A intersection B)=0.2. Find P(A union B).",
+      "answer": 0.7,
+      "hints": [
+        "Subtract the overlap once."
+      ],
+      "solution": "0.4+0.5−0.2=0.7.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-14",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "04-events",
+        "05-counting"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q06-03",
+      "lesson_id": "06-rules",
+      "type": "numeric",
+      "prompt": "P(A)=0.4 and P(A intersection B)=0.12. Find P(B given A).",
+      "answer": 0.3,
+      "hints": [
+        "Divide by the probability of the conditioning event."
+      ],
+      "solution": "P(B|A)=0.12/0.4=0.3.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-14",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "04-events",
+        "05-counting"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q07-01",
+      "lesson_id": "07-expectation",
+      "type": "multiple_choice",
+      "prompt": "For integer-valued X, P(2 ≤ X ≤ 5) equals:",
+      "answer": 1,
+      "hints": [
+        "Do not subtract the probability at the included lower endpoint."
+      ],
+      "solution": "Subtract all probability strictly below 2: F(5)−F(1).",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "06-rules",
+        "02-summary"
+      ],
+      "options": [
+        "F(5)−F(2)",
+        "F(5)−F(1)",
+        "F(4)−F(2)",
+        "F(5)+F(2)"
+      ]
+    },
+    {
+      "id": "q07-02",
+      "lesson_id": "07-expectation",
+      "type": "numeric",
+      "prompt": "X takes 0,1,2 with probabilities 0.2,0.5,0.3. Find E[X].",
+      "answer": 1.1,
+      "hints": [
+        "Compute a probability-weighted average."
+      ],
+      "solution": "0(0.2)+1(0.5)+2(0.3)=1.1.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "06-rules",
+        "02-summary"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q07-03",
+      "lesson_id": "07-expectation",
+      "type": "numeric",
+      "prompt": "For the same X with probabilities 0.2,0.5,0.3 at 0,1,2, find V(X).",
+      "answer": 0.49,
+      "hints": [
+        "Find E[X²] first."
+      ],
+      "solution": "E[X²]=0+0.5+4(0.3)=1.7. V(X)=1.7−1.1²=0.49.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "06-rules",
+        "02-summary"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q08-01",
+      "lesson_id": "08-geometric",
+      "type": "multiple_choice",
+      "prompt": "A geometric variable in this course counts:",
+      "answer": 1,
+      "hints": [
+        "Its support starts at 1."
+      ],
+      "solution": "The success trial is included; X=1 means immediate success.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "07-expectation"
+      ],
+      "options": [
+        "Failures before the first success",
+        "Total trials through the first success",
+        "Successes in fixed n trials",
+        "Events in a time interval"
+      ]
+    },
+    {
+      "id": "q08-02",
+      "lesson_id": "08-geometric",
+      "type": "numeric",
+      "prompt": "X~G(0.25). Find P(X=3).",
+      "answer": 0.140625,
+      "hints": [
+        "Two failures, then success."
+      ],
+      "solution": "(0.75)²(0.25)=0.140625.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "07-expectation"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q08-03",
+      "lesson_id": "08-geometric",
+      "type": "numeric",
+      "prompt": "X~G(0.25). Find P(X≥3).",
+      "answer": 0.5625,
+      "hints": [
+        "Only the first two trials must fail."
+      ],
+      "solution": "P(X≥3)=P(first two failures)=0.75²=0.5625.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "07-expectation"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q09-01",
+      "lesson_id": "09-binomial",
+      "type": "multiple_choice",
+      "prompt": "Counting trials until the fourth success uses which model?",
+      "answer": 1,
+      "hints": [
+        "The success count is fixed; trial count is random."
+      ],
+      "solution": "With independent constant-p Bernoulli trials, this is NB(4,p).",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            11,
+            12
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "05-counting",
+        "08-geometric"
+      ],
+      "options": [
+        "Binomial",
+        "Negative binomial",
+        "Hypergeometric",
+        "Discrete uniform"
+      ]
+    },
+    {
+      "id": "q09-02",
+      "lesson_id": "09-binomial",
+      "type": "numeric",
+      "prompt": "X~B(4,0.5). Find P(X=2).",
+      "answer": 0.375,
+      "hints": [
+        "Count sequences with two successes."
+      ],
+      "solution": "Choose 2 positions among 4, then multiply by 0.5^4: 6/16=0.375.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            11,
+            12
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "05-counting",
+        "08-geometric"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q09-03",
+      "lesson_id": "09-binomial",
+      "type": "numeric",
+      "prompt": "With independent trials and p=0.5, what is the probability that the second success occurs on trial 4?",
+      "answer": 0.1875,
+      "hints": [
+        "One success among the first three, followed by success."
+      ],
+      "solution": "Choose(3,1)(0.5)²(0.5)²=3/16=0.1875.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            11,
+            12
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "05-counting",
+        "08-geometric"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q10-01",
+      "lesson_id": "10-hypergeometric",
+      "type": "multiple_choice",
+      "prompt": "Which feature points to hypergeometric rather than binomial sampling?",
+      "answer": 1,
+      "hints": [
+        "The population composition changes after each draw."
+      ],
+      "solution": "Without replacement, draws are dependent; hypergeometric counts successes in the sample.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "05-counting",
+        "09-binomial"
+      ],
+      "options": [
+        "Fixed sample size alone",
+        "Sampling without replacement from a finite population",
+        "A continuous measurement",
+        "Waiting for first success"
+      ]
+    },
+    {
+      "id": "q10-02",
+      "lesson_id": "10-hypergeometric",
+      "type": "numeric",
+      "prompt": "From 4 red and 6 blue tokens, draw 3 without replacement. Find P(exactly 2 red).",
+      "answer": 0.3,
+      "hints": [
+        "Choose reds and blues separately."
+      ],
+      "solution": "Choose(4,2)choose(6,1)/choose(10,3)=36/120=0.3.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "05-counting",
+        "09-binomial"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q10-03",
+      "lesson_id": "10-hypergeometric",
+      "type": "numeric",
+      "prompt": "For that sample, what is the expected number of red tokens?",
+      "answer": 1.2,
+      "hints": [
+        "Use nM/N."
+      ],
+      "solution": "3(4/10)=1.2.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-09",
+          "pages": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "05-counting",
+        "09-binomial"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q11-01",
+      "lesson_id": "11-poisson",
+      "type": "multiple_choice",
+      "prompt": "For a Poisson variable with parameter λ, its standard deviation is:",
+      "answer": 2,
+      "hints": [
+        "Mean and variance both equal λ."
+      ],
+      "solution": "Standard deviation is the square root of variance, so sqrt(λ).",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            3
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "07-expectation"
+      ],
+      "options": [
+        "λ",
+        "λ²",
+        "sqrt(λ)",
+        "1/λ"
+      ]
+    },
+    {
+      "id": "q11-02",
+      "lesson_id": "11-poisson",
+      "type": "numeric",
+      "prompt": "A Poisson process has rate 6 per hour. What is λ for a 30-minute count?",
+      "answer": 3,
+      "hints": [
+        "Convert 30 minutes to hours."
+      ],
+      "solution": "λ=6(0.5)=3.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            3
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "07-expectation"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q11-03",
+      "lesson_id": "11-poisson",
+      "type": "numeric",
+      "prompt": "For a Poisson count with λ=2, find P(X=0).",
+      "answer": 0.1353352832366127,
+      "hints": [
+        "Use 0!=1."
+      ],
+      "solution": "2^0 exp(−2)/0! = exp(−2) ≈ 0.1353353.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-23",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            3
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "07-expectation"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q12-01",
+      "lesson_id": "12-continuous",
+      "type": "multiple_choice",
+      "prompt": "A continuous PDF has value 2 at x=0.4. Does that alone make it invalid?",
+      "answer": 1,
+      "hints": [
+        "Probability is area, not height."
+      ],
+      "solution": "A valid density needs nonnegativity and total area 1; height can exceed 1.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "07-expectation"
+      ],
+      "options": [
+        "Yes, probabilities cannot exceed one",
+        "No, density height may exceed one",
+        "Yes, every density must be constant",
+        "No, total area does not matter"
+      ]
+    },
+    {
+      "id": "q12-02",
+      "lesson_id": "12-continuous",
+      "type": "numeric",
+      "prompt": "X~U(2,8). Find P(3≤X≤5).",
+      "answer": 0.3333333333333333,
+      "hints": [
+        "Divide interval length by total support length."
+      ],
+      "solution": "(5−3)/(8−2)=2/6=1/3.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "07-expectation"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q12-03",
+      "lesson_id": "12-continuous",
+      "type": "numeric",
+      "prompt": "A density is f(x)=2x for 0<x<1 and zero otherwise. Find E[X].",
+      "answer": 0.6666666666666666,
+      "hints": [
+        "Integrate x times the density."
+      ],
+      "solution": "E[X]=integral from 0 to 1 of 2x² dx=2/3.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-28",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "07-expectation"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q13-01",
+      "lesson_id": "13-gamma",
+      "type": "multiple_choice",
+      "prompt": "In these notes, the second parameter β in Γ(α,β) is:",
+      "answer": 1,
+      "hints": [
+        "Inspect the exponent −x/β."
+      ],
+      "solution": "β is scale. A rate parameter would be its reciprocal.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-05",
+          "pages": [
+            2,
+            7
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "12-continuous",
+        "11-poisson"
+      ],
+      "options": [
+        "Rate",
+        "Scale",
+        "Variance",
+        "Degrees of freedom"
+      ]
+    },
+    {
+      "id": "q13-02",
+      "lesson_id": "13-gamma",
+      "type": "numeric",
+      "prompt": "X~Γ(3,2), using shape and scale. Find E[X].",
+      "answer": 6,
+      "hints": [
+        "Multiply shape by scale."
+      ],
+      "solution": "E[X]=αβ=3·2=6.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-05",
+          "pages": [
+            2,
+            7
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "12-continuous",
+        "11-poisson"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q13-03",
+      "lesson_id": "13-gamma",
+      "type": "numeric",
+      "prompt": "An exponential waiting time has mean 5 minutes. Find P(T>10 minutes).",
+      "answer": 0.1353352832366127,
+      "hints": [
+        "The mean is the scale β."
+      ],
+      "solution": "P(T>10)=exp(−10/5)=exp(−2) ≈ 0.1353353.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-05",
+          "pages": [
+            2,
+            7
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "12-continuous",
+        "11-poisson"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q14-01",
+      "lesson_id": "14-spread-rules",
+      "type": "multiple_choice",
+      "prompt": "X~N(10,9). What is its standard deviation?",
+      "answer": 2,
+      "hints": [
+        "The second parameter is variance."
+      ],
+      "solution": "σ=sqrt(9)=3.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-10-05",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "03-boxplots",
+        "12-continuous"
+      ],
+      "options": [
+        "9",
+        "81",
+        "3",
+        "1/3"
+      ]
+    },
+    {
+      "id": "q14-02",
+      "lesson_id": "14-spread-rules",
+      "type": "numeric",
+      "prompt": "X~N(10,9). Find the z-score of x=16.",
+      "answer": 2,
+      "hints": [
+        "Subtract the mean and divide by σ."
+      ],
+      "solution": "z=(16−10)/3=2.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-10-05",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "03-boxplots",
+        "12-continuous"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q14-03",
+      "lesson_id": "14-spread-rules",
+      "type": "free_response",
+      "prompt": "Without assuming normality, what does Chebyshev guarantee within three standard deviations?",
+      "answer": [
+        "States at least 8/9 or 88.89%",
+        "Recognizes it is a lower bound",
+        "Does not claim 99.7% universally"
+      ],
+      "hints": [
+        "Use 1−1/k²."
+      ],
+      "solution": "For finite positive variance, at least 1−1/9=8/9≈88.89%. The 99.7% figure is a normal-model approximation.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-10-05",
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "03-boxplots",
+        "12-continuous"
+      ],
+      "grading": {
+        "mode": "self_assessment",
+        "rubric": [
+          "States at least 8/9 or 88.89%",
+          "Recognizes it is a lower bound",
+          "Does not claim 99.7% universally"
+        ]
+      }
+    },
+    {
+      "id": "q15-01",
+      "lesson_id": "15-mgf",
+      "type": "multiple_choice",
+      "prompt": "For an MGF existing near zero, m″(0) gives:",
+      "answer": 1,
+      "hints": [
+        "Variance also needs the square of the mean."
+      ],
+      "solution": "m″(0)=E[X²]; variance is m″(0)−m′(0)².",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            4,
+            6
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            1,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "07-expectation",
+        "12-continuous"
+      ],
+      "options": [
+        "Variance directly",
+        "Second raw moment E[X²]",
+        "Standard deviation",
+        "Median"
+      ]
+    },
+    {
+      "id": "q15-02",
+      "lesson_id": "15-mgf",
+      "type": "numeric",
+      "prompt": "For m(t)=1/(1−t), t<1, find E[X²].",
+      "answer": 2,
+      "hints": [
+        "Differentiate twice, then set t=0."
+      ],
+      "solution": "m′(t)=(1−t)^−2 and m″(t)=2(1−t)^−3, giving 2.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            4,
+            6
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            1,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "07-expectation",
+        "12-continuous"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q15-03",
+      "lesson_id": "15-mgf",
+      "type": "numeric",
+      "prompt": "Evaluate Γ(5).",
+      "answer": 24,
+      "hints": [
+        "Γ(n)=(n−1)!."
+      ],
+      "solution": "Γ(5)=4!=24.",
+      "source_refs": [
+        {
+          "source_id": "lecture-09-16",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-09-21",
+          "pages": [
+            4,
+            6
+          ]
+        },
+        {
+          "source_id": "lecture-09-30",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            1,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "07-expectation",
+        "12-continuous"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q16-01",
+      "lesson_id": "16-joint",
+      "type": "multiple_choice",
+      "prompt": "To obtain p_X(x) from a discrete joint PMF, you:",
+      "answer": 1,
+      "hints": [
+        "Remove the other variable."
+      ],
+      "solution": "For fixed x, sum p(x,y) over all y.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "06-rules",
+        "07-expectation",
+        "12-continuous"
+      ],
+      "options": [
+        "Sum over x",
+        "Sum over y",
+        "Multiply all cells",
+        "Divide by x"
+      ]
+    },
+    {
+      "id": "q16-02",
+      "lesson_id": "16-joint",
+      "type": "numeric",
+      "prompt": "A joint table has p(0,0)=0.2, p(0,1)=0.3, p(1,0)=0.1, p(1,1)=0.4. Find P(X=1).",
+      "answer": 0.5,
+      "hints": [
+        "Sum the row with X=1."
+      ],
+      "solution": "0.1+0.4=0.5.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "06-rules",
+        "07-expectation",
+        "12-continuous"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q16-03",
+      "lesson_id": "16-joint",
+      "type": "free_response",
+      "prompt": "Are X and Y independent for the same joint table?",
+      "answer": [
+        "Computes p_X(0)=0.5 and p_Y(0)=0.3",
+        "Compares 0.2 with 0.15",
+        "Concludes dependence"
+      ],
+      "hints": [
+        "One mismatch is enough to disprove factorization."
+      ],
+      "solution": "p_X(0)p_Y(0)=0.5·0.3=0.15, not p(0,0)=0.2. Hence they are dependent.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "06-rules",
+        "07-expectation",
+        "12-continuous"
+      ],
+      "grading": {
+        "mode": "self_assessment",
+        "rubric": [
+          "Computes p_X(0)=0.5 and p_Y(0)=0.3",
+          "Compares 0.2 with 0.15",
+          "Concludes dependence"
+        ]
+      }
+    },
+    {
+      "id": "q17-01",
+      "lesson_id": "17-covariance",
+      "type": "multiple_choice",
+      "prompt": "Zero covariance implies independence:",
+      "answer": 1,
+      "hints": [
+        "Think of a symmetric X and Y=X²."
+      ],
+      "solution": "Covariance measures linear association; dependent variables can have covariance zero.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "16-joint",
+        "07-expectation"
+      ],
+      "options": [
+        "Always",
+        "In general, no",
+        "Whenever means exist",
+        "Whenever variables are discrete"
+      ]
+    },
+    {
+      "id": "q17-02",
+      "lesson_id": "17-covariance",
+      "type": "numeric",
+      "prompt": "Cov(X,Y)=6, sd(X)=2, sd(Y)=4. Find correlation.",
+      "answer": 0.75,
+      "hints": [
+        "Divide by both standard deviations."
+      ],
+      "solution": "ρ=6/(2·4)=0.75.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "16-joint",
+        "07-expectation"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q17-03",
+      "lesson_id": "17-covariance",
+      "type": "numeric",
+      "prompt": "Cov(X,Y)=2. Find Cov(3X+5,2Y−1).",
+      "answer": 12,
+      "hints": [
+        "Offsets disappear and scales multiply."
+      ],
+      "solution": "Cov(3X+5,2Y−1)=3·2·Cov(X,Y)=12.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-07",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "16-joint",
+        "07-expectation"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q18-01",
+      "lesson_id": "18-regression",
+      "type": "multiple_choice",
+      "prompt": "A sample correlation R=−0.9 describes:",
+      "answer": 1,
+      "hints": [
+        "Sign gives direction; magnitude gives linear strength."
+      ],
+      "solution": "The linear association is strongly negative; it does not establish causation.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "02-summary",
+        "03-boxplots",
+        "17-covariance"
+      ],
+      "options": [
+        "Strong positive linear association",
+        "Strong negative linear association",
+        "No association",
+        "Proof that X causes Y"
+      ]
+    },
+    {
+      "id": "q18-02",
+      "lesson_id": "18-regression",
+      "type": "numeric",
+      "prompt": "R=0.6, sx=2, sy=5. Find the least-squares slope.",
+      "answer": 1.5,
+      "hints": [
+        "Use b=R sy/sx."
+      ],
+      "solution": "b=0.6·5/2=1.5.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "02-summary",
+        "03-boxplots",
+        "17-covariance"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q18-03",
+      "lesson_id": "18-regression",
+      "type": "numeric",
+      "prompt": "For simple linear regression with an intercept and R=−0.8, what percent of observed y variation is explained?",
+      "answer": 64,
+      "hints": [
+        "Square R and multiply by 100."
+      ],
+      "solution": "(−0.8)²·100=64%. Enter 64 because the question requests a percent.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "02-summary",
+        "03-boxplots",
+        "17-covariance"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q19-01",
+      "lesson_id": "19-estimation",
+      "type": "multiple_choice",
+      "prompt": "An estimator is unbiased when:",
+      "answer": 1,
+      "hints": [
+        "Bias concerns repeated-sample expectation."
+      ],
+      "solution": "Unbiased means E[estimator]=parameter; individual estimates still vary.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "02-summary",
+        "07-expectation",
+        "17-covariance"
+      ],
+      "options": [
+        "It equals the parameter for every sample",
+        "Its expectation equals the parameter",
+        "Its variance is zero",
+        "It is always positive"
+      ]
+    },
+    {
+      "id": "q19-02",
+      "lesson_id": "19-estimation",
+      "type": "numeric",
+      "prompt": "An IID sample has population σ=15 and n=25. Find SE of the sample mean.",
+      "answer": 3,
+      "hints": [
+        "Use σ/sqrt(n)."
+      ],
+      "solution": "15/sqrt(25)=15/5=3.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "02-summary",
+        "07-expectation",
+        "17-covariance"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q19-03",
+      "lesson_id": "19-estimation",
+      "type": "free_response",
+      "prompt": "Does unbiased S² imply unbiased S? Explain.",
+      "answer": [
+        "Answers no",
+        "Distinguishes E[S²] from E[S]²",
+        "Notes square root is nonlinear"
+      ],
+      "hints": [
+        "Expectation does not commute with arbitrary nonlinear functions."
+      ],
+      "solution": "No. E[S²]=σ² does not establish E[S]=σ. Taking a square root inside an expectation changes the problem; S is generally biased.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-12",
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "02-summary",
+        "07-expectation",
+        "17-covariance"
+      ],
+      "grading": {
+        "mode": "self_assessment",
+        "rubric": [
+          "Answers no",
+          "Distinguishes E[S²] from E[S]²",
+          "Notes square root is nonlinear"
+        ]
+      }
+    },
+    {
+      "id": "q20-01",
+      "lesson_id": "20-sampling",
+      "type": "multiple_choice",
+      "prompt": "For independent X,Y, V(X−Y) equals:",
+      "answer": 1,
+      "hints": [
+        "The coefficient of Y is squared."
+      ],
+      "solution": "V(X−Y)=V(X)+(−1)²V(Y)=V(X)+V(Y).",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            3,
+            6
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "foundational",
+      "related_lessons": [
+        "14-spread-rules",
+        "17-covariance",
+        "19-estimation"
+      ],
+      "options": [
+        "V(X)−V(Y)",
+        "V(X)+V(Y)",
+        "sd(X)+sd(Y)",
+        "Zero"
+      ]
+    },
+    {
+      "id": "q20-02",
+      "lesson_id": "20-sampling",
+      "type": "numeric",
+      "prompt": "Independent X~N(10,4), Y~N(3,9). Find V(2X−Y).",
+      "answer": 25,
+      "hints": [
+        "Square each coefficient in the variance formula."
+      ],
+      "solution": "2²·4+(−1)²·9=16+9=25.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            3,
+            6
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "14-spread-rules",
+        "17-covariance",
+        "19-estimation"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    },
+    {
+      "id": "q20-03",
+      "lesson_id": "20-sampling",
+      "type": "numeric",
+      "prompt": "For n=9 IID normal observations with variance 81, what is sd of the sample mean?",
+      "answer": 3,
+      "hints": [
+        "Variance divides by n; then take the square root."
+      ],
+      "solution": "V(mean)=81/9=9, so sd(mean)=3.",
+      "source_refs": [
+        {
+          "source_id": "lecture-10-14",
+          "pages": [
+            3,
+            6
+          ]
+        }
+      ],
+      "origin": "Original practice authored for this pack, not assigned course work",
+      "difficulty": "standard",
+      "related_lessons": [
+        "14-spread-rules",
+        "17-covariance",
+        "19-estimation"
+      ],
+      "grading": {
+        "absolute_tolerance": 0.0001,
+        "relative_tolerance": 0.001,
+        "input": "number; probabilities as decimals unless stated otherwise"
+      }
+    }
+  ]
+}

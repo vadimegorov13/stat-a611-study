@@ -1,0 +1,66 @@
+University of Alaska Anchorage 
+College of Arts and Sciences 
+Department of Mathematics and Statistics 
+SYLLABUS 
+STAT A411 – General Statistics and Regression (Fall 2026, Section 651, 3 credits)
+STAT A611 – General Statistics for Data Science (Fall 2026, Section 651, 3 credits)
+
+Class Hours:Mon Wed  2:30 – 3:45  BMH 116
+Office Hours:Mon Wed Fri  12:00 – 12:45  SSB 158E (or by appointment)
+
+Instructor: 
+Dr. Rieken Venema 
+Office:  
+SSB 158E 
+Phone:  
+(907) 786-4854 
+Email:  
+rvenema@alaska.edu
+
+Textbook: Introduction to Probability and Statistics – Susan Milton and Jesse Arnold. McGraw-Hill, Fourth Edition, 2003.
+
+Prerequisite for STAT A411: MATH A252 (Calculus II) or MATH A252F (F.A.T. Calculus II) with a grade of C or higher. 
+
+Registration Restrictions for STAT A611: Graduate standing or instructor approval.
+Course Description STAT A411: Introduces basic probability and statistics, including density functions, distribution functions, mathematical expectations, and moment generators for discrete and continuous random variables. Introduces regression analysis. 
+Course Description STAT A611: Covers general probability and statistics, including density functions, distribution functions, mathematical expectations, and moment generators for discrete and continuous random variables. Covers regression analysis.
+Attendance: Daily attendance is vital to success in this course. Frequently material is covered that is not in the textbook, for instance additional theorems, examples or applications, or different proofs of theorems. If you will be required to miss class for work or university business, including athletics, please inform the instructor at the beginning of the semester. 
+Homework: A student cannot learn statistics simply listening to lectures and reading the textbook. The student must work through exercises to understand the material (the more the better). Each time a textbook section is covered a selection of exercises will be assigned. Solutions to all exercises will be provided via email regularly during the semester. You can also find the worked-out homework problems in the Course Content on Blackboard. Students are strongly encouraged to work through these exercises before their solutions are provided, and ask questions about them at the beginning of each lecture. 
+Exams: There will be one comprehensive final exam at the end of the semester. It is an open book exam. You will be permitted to use a calculator on the exam. If a student misses an exam, it is his/her responsibility to take the exam at another date. Please arrange excused absences for exams before the exam if at all possible; otherwise make arrangements within one day of the exam. 
+Grading Policy: The final exam grade will be your final grade in the class.
+UAA Student Code of Conduct, Ethical Behavior & Academic Integrity: Students are expected to know and follow the Student Code of Conduct. If an instructor has reason to believe that plagiarism, cheating, or academic dishonesty, as defined in the Student Code of Conduct, has occurred, the matter will be referred to the Office of the Dean of Students. If there is a finding from the Dean of Students that plagiarism, cheating, or academic dishonesty has occurred, academic sanctions imposed by the instructor may include substantial reduction of the grade for the assignment, 0 (no credit) for the assignment, or a failing grade for the course. 
+Disability Statement: Students with disabilities who may need adjustments should contact Disability Support Services. They are located in Rasmuson Hall 105 and can be reached by phone at (907) 786-4530 or by e-mail at aydss@uaa.alaska.edu. 
+Notice of Nondiscrimination: The University of Alaska is an affirmative action/equal opportunity employer and educational institution.  The University of Alaska does not discriminate on the basis of race, religion, color, national origin, citizenship, age, sex, physical or mental disability, status as a protected veteran, marital status, changes in marital status, pregnancy, childbirth or related medical conditions, parenthood, sexual orientation, gender identity, political affiliation or belief, genetic information, or other legally protected status. The University's commitment to nondiscrimination, including against sex discrimination, applies to students, employees, and applicants for admission and employment. Contact information, applicable laws, and complaint procedures are included on UA's statement of nondiscrimination available at http:// www.alaska.edu/titleIXcompliance/nondiscrimination. 
+No AI Use Allowed: In this course, do not use generative AI tools (Gemini, Copilot, ChatGPT, etc.) on any of the assignments or tests. If you aren’t sure whether a tool counts as AI, please check with me before using it! I am happy to recommend university resources and study tools that don’t incorporate AI. If I suspect AI use on an assignment or test, you will not receive a grade for that work until you have discussed it with me. I will refer serious violations of the course AI policy to the Dean of Students to review as a potential academic integrity violation; consequences may include zero credit for the assignment or test and repeated violations may result in an F for the course.
+
+
+
+
+
+
+
+
+
+
+
+Schedule: Week 01 (08/24 – 08/28) Chapter 6 
+  Week 02 (08/31 – 09/04) Chapter 6,1 
+  Week 03 (09/07 – 09/11)  *  Chapter 1 
+  Week 04 (09/14 – 09/18) Chapter 1,2
+  Week 05 (09/21 – 09/25) Chapter 3
+Week 06 (09/28 – 10/02) Chapter 3,4
+  Week 07 (10/05 – 10/09) Chapter 4,5
+  Week 08 (10/12 – 10/16) Chapter 5,7  
+  Week 09 (10/19 – 10/23) Chapter 7,8
+  Week 10 (10/26 – 10/30) Chapter 8
+  Week 11 (11/02 – 11/06) Chapter 8
+  Week 12 (11/09 – 11/13) Chapter 11
+  Week 13 (11/16 – 11/20) Chapter 11 
+  Week 14 (11/23 – 11/27) Chapter 11  *
+  Week 15 (11/30 – 12/04) Review 
+  Week 16 (12/07 – 12/11) Final Exam 
+
+Exams/Holidays: 
+Monday Sep 7No Class (Labor Day)
+Wednesday Nov 25No Class (Thanksgiving Break)
+Wednesday Dec 9Final Exam 1:00 – 3:45

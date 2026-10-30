@@ -1,0 +1,50 @@
+{
+  "note": "Curated external resources. Each URL was fetched on 2026-10-22 and returned HTTP 200 with the stated page title. They supplement, and never replace, the course notes. Embedding is re-checked live by the app.",
+  "resources": [
+    {
+      "id": "psu-stat414",
+      "title": "Penn State STAT 414 — Introduction to Probability Theory",
+      "url": "https://online.stat.psu.edu/stat414/",
+      "description": "Free online course notes on probability, discrete and continuous distributions, MGFs, joint distributions, and sampling distributions.",
+      "verified": "2026-10-22: HTTP 200, title “STAT 414 | Introduction to Probability Theory”",
+      "embeddable": true,
+      "topics": ["04-events", "05-counting", "06-rules", "07-expectation", "08-geometric", "09-binomial", "10-hypergeometric", "11-poisson", "12-continuous", "13-gamma", "14-spread-rules", "15-mgf", "16-joint", "17-covariance", "19-estimation", "20-sampling"]
+    },
+    {
+      "id": "psu-stat500",
+      "title": "Penn State STAT 500 — Applied Statistics",
+      "url": "https://online.stat.psu.edu/stat500/",
+      "description": "Free online notes on descriptive statistics, graphical summaries, correlation, and simple linear regression.",
+      "verified": "2026-10-22: HTTP 200, title “STAT 500 | Applied Statistics”",
+      "embeddable": true,
+      "topics": ["01-data", "02-summary", "03-boxplots", "18-regression"]
+    },
+    {
+      "id": "nist-handbook",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods",
+      "url": "https://www.itl.nist.gov/div898/handbook/",
+      "description": "Reference handbook covering exploratory data analysis, distributions, and regression. Blocks embedding (opens in your browser).",
+      "verified": "2026-10-22: HTTP 200, title “NIST/SEMATECH e-Handbook of Statistical Methods”; sends X-Frame-Options: SAMEORIGIN",
+      "embeddable": false,
+      "topics": ["01-data", "02-summary", "03-boxplots", "14-spread-rules", "18-regression"]
+    },
+    {
+      "id": "seeing-theory",
+      "title": "Seeing Theory (Brown University)",
+      "url": "https://seeing-theory.brown.edu/",
+      "description": "Interactive visual introductions to probability, distributions, and inference.",
+      "verified": "2026-10-22: HTTP 200, title “Seeing Theory”",
+      "embeddable": true,
+      "topics": ["04-events", "06-rules", "07-expectation", "09-binomial", "12-continuous", "14-spread-rules", "18-regression"]
+    },
+    {
+      "id": "statlect",
+      "title": "Statlect — digital textbook of probability and statistics",
+      "url": "https://www.statlect.com/",
+      "description": "Lecture-style pages on probability distributions, expected value, MGFs, covariance, and point estimation.",
+      "verified": "2026-10-22: HTTP 200, title “Statlect, the digital textbook | Probability, statistics, matrix algebra”",
+      "embeddable": true,
+      "topics": ["07-expectation", "09-binomial", "11-poisson", "13-gamma", "15-mgf", "17-covariance", "19-estimation"]
+    }
+  ]
+}

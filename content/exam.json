@@ -1,0 +1,18 @@
+{
+  "summary": "One comprehensive final exam, scheduled in the syllabus for Wednesday, December 9, 2026, 1:00–3:45 PM.",
+  "details": [
+    "Syllabus: “There will be one comprehensive final exam at the end of the semester. It is an open book exam. You will be permitted to use a calculator on the exam.”",
+    "Syllabus: “The final exam grade will be your final grade in the class.”",
+    "Syllabus schedule: Week 16 (12/07 – 12/11) Final Exam; “Wednesday Dec 9 Final Exam 1:00 – 3:45”.",
+    "This date comes from the supplied syllabus document, not a live confirmation — check with the instructor or the official exam schedule.",
+    "The supplied notes end October 14, 2026. A comprehensive final will include later material (e.g. Chapters 8 and 11) that this app does not yet cover.",
+    "The syllabus prohibits generative AI on assignments and tests. This app is a preparation aid only; confirm with the instructor if you are unsure whether AI-authored study material is acceptable for preparation."
+  ],
+  "syllabusSource": "Syllabus STAT A611.docx",
+  "final": {
+    "label": "Final exam",
+    "start": "2026-12-09T13:00:00",
+    "end": "2026-12-09T15:45:00",
+    "note": "From the syllabus schedule (“Wednesday Dec 9 Final Exam 1:00 – 3:45”), read as local time on this computer. Confirm with the instructor or the official exam schedule."
+  }
+}
